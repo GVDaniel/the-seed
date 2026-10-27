@@ -1,0 +1,16 @@
+{
+  "id": "chen",
+  "display_name": "Chen Wei",
+  "role": "Comerciante del Mercado de Jezero",
+  "home": "mars",
+  "group": "local",
+  "order": 30,
+  "portrait": "res://assets/art/portraits/chen.png",
+  "sprite": "res://assets/art/characters/chen.png",
+  "bio": "Vende herramientas y repuestos para que la colonia dependa menos de MarsCorp.",
+  "idle_lines": [
+    "MarsCorp controla el agua de la colonia. Yo vendo herramientas para que cada cual pueda arreglar lo suyo.",
+    "Un motor iónico empuja muy poquito, pero sin parar durante meses. ¡Paciencia de ingeniero!",
+    "En la Tierra se han encontrado meteoritos que vinieron de Marte. Tengo una réplica a la venta."
+  ]
+}

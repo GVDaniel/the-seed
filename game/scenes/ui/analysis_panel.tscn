@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://nalysispnl01"]
+
+[ext_resource type="Script" path="res://scripts/ui/analysis_panel.gd" id="1_panel"]
+
+[node name="AnalysisPanel" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_panel")
+
+[node name="PanelRoot" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="PanelRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.04, 0.08, 0.72)
+
+[node name="Card" type="PanelContainer" parent="PanelRoot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -260.0
+offset_right = 200.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="PanelRoot/Card"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="PanelRoot/Card/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="PanelRoot/Card/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 22
+text = "Destino"
+autowrap_mode = 3
+
+[node name="StatusLabel" type="Label" parent="PanelRoot/Card/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "ESTADO"
+autowrap_mode = 3
+
+[node name="DescriptionLabel" type="Label" parent="PanelRoot/Card/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.945, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "Descripción"
+autowrap_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="PanelRoot/Card/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+custom_minimum_size = Vector2(0, 180)
+
+[node name="FactsBox" type="VBoxContainer" parent="PanelRoot/Card/Margin/VBox/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="DisclaimerLabel" type="Label" parent="PanelRoot/Card/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.78, 1)
+theme_override_font_sizes/font_size = 11
+text = "Aviso arcade"
+autowrap_mode = 3
+
+[node name="CloseButton" type="Button" parent="PanelRoot/Card/Margin/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+text = "Cerrar (Esc)"

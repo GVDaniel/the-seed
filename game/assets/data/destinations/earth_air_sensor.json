@@ -1,0 +1,40 @@
+{
+  "id": "earth_air_sensor",
+  "display_name": "Sensor de aire",
+  "kind": "instrumento",
+  "short_description": "Una estación que mide los gases del aire. Hoy marca una cifra preocupante de dióxido de carbono (CO₂).",
+  "scientific_facts": [
+    {
+      "label": "Aire de la Tierra actual",
+      "value": "≈ 78 % nitrógeno, 21 % oxígeno, ~1 % argón",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_earth_facts"
+      ]
+    },
+    {
+      "label": "CO₂ en la atmósfera (2024)",
+      "value": "Más de 420 ppm (partes por millón)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "noaa_co2"
+      ]
+    },
+    {
+      "label": "Efecto invernadero",
+      "value": "El CO₂ atrapa calor: más CO₂, planeta más caliente",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_climate"
+      ]
+    },
+    {
+      "label": "Lectura del sensor (año 2187)",
+      "value": "≈ 900 ppm de CO₂",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Valor inventado para la historia."
+    }
+  ],
+  "arcade_disclaimer": "Las cifras de 2024 son reales. La lectura del año 2187 es inventada para el juego."
+}

@@ -1,0 +1,24 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "La Tierra Marchita",
+      "subtitle": "Año 2187. Las plantas se apagan; una semilla puede encenderlas de nuevo."
+    },
+    {
+      "chapter": 2,
+      "title": "Agua en la oscuridad",
+      "subtitle": "Una señal perdida y el hielo escondido en los cráteres de la Luna."
+    },
+    {
+      "chapter": 3,
+      "title": "Un jardín rojo",
+      "subtitle": "Marte guarda la memoria de un río. ¿Puede guardar también un brote?"
+    },
+    {
+      "chapter": 4,
+      "title": "Continuará…",
+      "subtitle": "Rumbo a TRAPPIST-1e."
+    }
+  ]
+}

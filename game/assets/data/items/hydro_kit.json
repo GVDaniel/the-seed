@@ -1,0 +1,9 @@
+{
+  "id": "hydro_kit",
+  "order": 32,
+  "category": "recuerdo",
+  "display_name": "Kit de cultivo hidropónico",
+  "description": "Tubos, nutrientes y una lámpara: para cultivar sin tierra, aunque llueva ácido.",
+  "fact": "La hidroponía cultiva plantas sin tierra, solo con agua y nutrientes. En 2015, astronautas de la Estación Espacial comieron lechuga cultivada a bordo.",
+  "icon": "res://assets/art/items/hydro_kit.png"
+}

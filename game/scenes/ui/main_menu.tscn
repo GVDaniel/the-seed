@@ -1,0 +1,137 @@
+[gd_scene load_steps=4 format=3 uid="uid://mainmenu00001"]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu_controller.gd" id="1_menu"]
+[ext_resource type="Texture2D" path="res://assets/art/story/title_bg.png" id="2_bg"]
+[ext_resource type="FontFile" path="res://assets/fonts/KenneyFuture.ttf" id="3_title"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.043, 0.071, 0.125, 1)
+
+[node name="Art" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -280.0
+offset_right = 520.0
+offset_bottom = 300.0
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_colors/font_shadow_color = Color(0.239, 0.906, 0.788, 0.6)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("3_title")
+theme_override_font_sizes/font_size = 72
+text = "THE SEED"
+
+[node name="Subtitle" type="Label" parent="VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.239, 0.906, 0.788, 1)
+theme_override_font_sizes/font_size = 22
+text = "La última semilla de la Tierra viaja contigo."
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="VBox"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Continuar viaje"
+
+[node name="StartButton" type="Button" parent="VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Nueva aventura"
+
+[node name="LabButton" type="Button" parent="VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "Laboratorio de sondas"
+
+[node name="QuitButton" type="Button" parent="VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "Salir"
+
+[node name="StarsLabel" type="Label" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 18
+text = "Cadete aprendiz · XP 0"
+
+[node name="ApiStatusLabel" type="Label" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.72, 0.85, 1)
+theme_override_font_sizes/font_size = 14
+text = "API: comprobando…"
+
+[node name="Credits" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -36.0
+offset_right = -16.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.55, 0.72, 0.85, 0.8)
+theme_override_font_sizes/font_size = 13
+text = "Demo v0.6 · Tiles: Kenney (CC0) · Fuente: Pixelify Sans (OFL)"
+horizontal_alignment = 2
+
+[node name="ConfirmNew" type="ConfirmationDialog" parent="."]
+unique_name_in_owner = true
+title = "Nueva aventura"
+size = Vector2i(480, 160)
+ok_button_text = "Sí, empezar de nuevo"
+cancel_button_text = "Cancelar"
+dialog_text = "Se borrará el progreso guardado (misiones, cuaderno y XP). ¿Seguro?"
+dialog_autowrap = true
+
+[connection signal="pressed" from="VBox/ContinueButton" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBox/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBox/LabButton" to="." method="_on_lab_pressed"]
+[connection signal="pressed" from="VBox/QuitButton" to="." method="_on_quit_pressed"]

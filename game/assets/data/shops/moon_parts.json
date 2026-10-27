@@ -1,0 +1,20 @@
+{
+  "id": "moon_parts",
+  "display_name": "Repuestos Regolito",
+  "keeper": "ingrid",
+  "greeting": "¿ASTRA hace ruidos raros? Tengo justo lo que necesita.",
+  "stock": [
+    {
+      "item": "battery_pack",
+      "price": 70
+    },
+    {
+      "item": "whipple_shield",
+      "price": 60
+    },
+    {
+      "item": "moon_rock_replica",
+      "price": 20
+    }
+  ]
+}

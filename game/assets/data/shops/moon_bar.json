@@ -1,0 +1,16 @@
+{
+  "id": "moon_bar",
+  "display_name": "Bar Cráter",
+  "keeper": "lupe",
+  "greeting": "¡Te damos la bienvenida al Bar Cráter! Batidos fríos y conversación caliente.",
+  "stock": [
+    {
+      "item": "freeze_dried_shake",
+      "price": 10
+    },
+    {
+      "item": "space_tortilla",
+      "price": 10
+    }
+  ]
+}

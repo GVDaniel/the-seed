@@ -1,0 +1,15 @@
+{
+  "id": "loop_corridor_01",
+  "title": "Pasillo con bucle",
+  "briefing": "Hay que avanzar varias casillas iguales. Usa REPETIR … FIN_REPETIR para no copiar AVANZAR muchas veces. Luego escanea y transmite.",
+  "concepts_text": "SECUENCIA: orden de arriba a abajo.\nCONDICIÓN: el juego comprueba si puedes escanear/transmitir.\nBUCLE: REPETIR N envuelve un bloque hasta FIN_REPETIR y lo ejecuta N veces (aquí N=2..6).",
+  "allow_loops": true,
+  "width": 6,
+  "height": 4,
+  "start": [0, 1],
+  "start_dir": "E",
+  "pois": [[4, 1]],
+  "transmit": [4, 3],
+  "blocked": [[2, 0], [2, 2], [2, 3]],
+  "available_ops": ["AVANZAR", "GIRAR_IZQUIERDA", "GIRAR_DERECHA", "ESCANEAR", "TRANSMITIR", "REPETIR", "FIN_REPETIR"]
+}

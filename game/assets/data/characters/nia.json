@@ -1,0 +1,16 @@
+{
+  "id": "nia",
+  "display_name": "Nia",
+  "role": "Alumna de la escuela de Jezero",
+  "home": "mars",
+  "group": "local",
+  "order": 33,
+  "portrait": "res://assets/art/portraits/nia.png",
+  "sprite": "res://assets/art/characters/nia.png",
+  "bio": "Nació en Marte y nunca ha visto el mar. Su pelo cian brilla bajo las luces de la colonia.",
+  "idle_lines": [
+    "Nací en Marte. ¿Es verdad que en la Tierra el atardecer es rojo? Aquí los atardeceres son azulados.",
+    "Marte tiene dos lunas pequeñitas: Fobos y Deimos. ¡Parecen papas!",
+    "Mi profe dice que el polvo es rojo por el óxido de hierro. ¡Marte está oxidado!"
+  ]
+}

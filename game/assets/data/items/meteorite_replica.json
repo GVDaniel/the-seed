@@ -1,0 +1,9 @@
+{
+  "id": "meteorite_replica",
+  "order": 34,
+  "category": "recuerdo",
+  "display_name": "Réplica de meteorito marciano",
+  "description": "Una copia exacta de un meteorito famoso, con su etiqueta de museo.",
+  "fact": "En la Tierra se han encontrado más de 300 meteoritos que vinieron de Marte: los arrancaron grandes impactos hace millones de años.",
+  "icon": "res://assets/art/items/meteorite_replica.png"
+}

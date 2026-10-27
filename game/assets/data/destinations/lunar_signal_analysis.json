@@ -1,0 +1,23 @@
+{
+  "id": "lunar_signal_analysis",
+  "display_name": "Análisis: telemetría lunar",
+  "kind": "report",
+  "short_description": "Informe desbloqueado al completar la misión «Señal desde la Luna». Resume qué recuperó el escáner de ASTRA.",
+  "scientific_facts": [
+    {
+      "label": "Dato recuperado (juego)",
+      "value": "Intensidad de baliza + sello de tiempo de la sonda",
+      "is_game_simplification": true,
+      "simplification_note": "Paquete inventado para la misión; ilustra que la telemetría trae medidas y marcas de tiempo.",
+      "source_ids": ["nasa_moon_facts"]
+    },
+    {
+      "label": "Contexto real",
+      "value": "Las misiones lunares usan redes de seguimiento (p. ej. Deep Space Network) para recibir datos",
+      "is_game_simplification": true,
+      "simplification_note": "Nombre y detalle de redes simplificados para ~12 años.",
+      "source_ids": ["nasa_moon_facts"]
+    }
+  ],
+  "arcade_disclaimer": "Este informe es recompensa narrativa de ASTRA, no un documento científico oficial."
+}

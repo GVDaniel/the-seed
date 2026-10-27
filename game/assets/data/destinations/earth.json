@@ -1,0 +1,34 @@
+{
+  "id": "earth",
+  "display_name": "Tierra",
+  "kind": "planet",
+  "short_description": "Nuestro planeta hogar: el único conocido con vida abundante y océanos líquidos estables en la superficie.",
+  "scientific_facts": [
+    {
+      "label": "Diámetro ecuatorial",
+      "value": "12 756 km",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_earth_facts"]
+    },
+    {
+      "label": "Distancia media al Sol",
+      "value": "≈ 149,6 millones km (1 ua)",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_earth_facts"]
+    },
+    {
+      "label": "Periodo de rotación (día sidéreo)",
+      "value": "≈ 23 h 56 min",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_earth_facts"]
+    },
+    {
+      "label": "Atmósfera (composición principal)",
+      "value": "~78 % N₂, ~21 % O₂",
+      "is_game_simplification": true,
+      "simplification_note": "Porcentajes redondeados; hay gases traza (Ar, CO₂, etc.).",
+      "source_ids": ["nasa_earth_facts"]
+    }
+  ],
+  "arcade_disclaimer": "La posición de la Tierra en el mapa de ASTRA es solo jugable. No representa distancias, escalas ni tiempos de viaje reales del sistema solar."
+}

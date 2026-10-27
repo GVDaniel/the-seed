@@ -1,0 +1,15 @@
+{
+  "id": "demo_sol_overview",
+  "title": "Nuestro Sol",
+  "age_band": "10-14",
+  "facts": [
+    "El Sol es una estrella de tipo G2V.",
+    "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+    "En el núcleo del Sol ocurre fusión nuclear de hidrógeno."
+  ],
+  "quiz": {
+    "question": "¿Cuántos minutos tarda aproximadamente la luz del Sol en llegar a la Tierra?",
+    "options": ["2", "8", "60", "24"],
+    "answer_index": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "pocket_telescope",
+  "order": 30,
+  "category": "recuerdo",
+  "display_name": "Telescopio de bolsillo",
+  "description": "Lentes rescatadas de un observatorio en ruinas. Don Ramiro lo pulió a mano.",
+  "fact": "Galileo apuntó un telescopio a Júpiter en 1610 y descubrió cuatro de sus lunas.",
+  "icon": "res://assets/art/items/pocket_telescope.png"
+}

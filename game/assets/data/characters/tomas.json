@@ -1,0 +1,16 @@
+{
+  "id": "tomas",
+  "display_name": "Tomás",
+  "role": "Minero de hielo",
+  "home": "moon",
+  "group": "local",
+  "order": 22,
+  "portrait": "res://assets/art/portraits/tomas.png",
+  "sprite": "res://assets/art/characters/tomas.png",
+  "bio": "Trabaja en el borde del cráter Shackleton. Su implante le marca la temperatura del hielo.",
+  "idle_lines": [
+    "En el fondo de los cráteres polares nunca da el Sol. Ahí el hielo lleva millones de años guardado.",
+    "Aquí no hay aire que lleve el sonido. Sin la radio del casco, no nos oiríamos ni a un metro.",
+    "En la Luna el cielo es negro incluso de día: no hay atmósfera que disperse la luz del Sol."
+  ]
+}

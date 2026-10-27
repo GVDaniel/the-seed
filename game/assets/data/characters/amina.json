@@ -1,0 +1,16 @@
+{
+  "id": "amina",
+  "display_name": "Dra. Amina Diallo",
+  "role": "Astrónoma del observatorio lunar",
+  "home": "moon",
+  "group": "local",
+  "order": 23,
+  "portrait": "res://assets/art/portraits/amina.png",
+  "sprite": "res://assets/art/characters/amina.png",
+  "bio": "Pasa las noches mirando estrellas y las tardes en el Bar Cráter contando lo que vio.",
+  "idle_lines": [
+    "Desde la cara visible de la Luna, la Tierra casi no se mueve en el cielo: siempre está en el mismo sitio.",
+    "Un radiotelescopio en la cara oculta de la Luna quedaría a salvo del ruido de radio de la Tierra.",
+    "La luz de la Tierra tarda poco más de un segundo en llegar hasta aquí."
+  ]
+}

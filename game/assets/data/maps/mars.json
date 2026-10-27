@@ -1,0 +1,812 @@
+{
+ "id": "mars",
+ "display_name": "Base Jezero · Marte",
+ "tileset": "mars",
+ "void_color": "#2a120a",
+ "ambient": "#9a7a80",
+ "weather": "dust",
+ "dark": true,
+ "music": "mission",
+ "legend": {
+  "0": {
+   "tile": 0
+  },
+  "1": {
+   "tile": 1
+  },
+  "2": {
+   "tile": 2
+  },
+  "3": {
+   "tile": 3
+  },
+  "4": {
+   "tile": 4
+  },
+  "p": {
+   "tile": 11
+  },
+  "~": {
+   "tile": 6
+  },
+  "i": {
+   "tile": 7
+  },
+  "=": {
+   "tile": 8
+  },
+  "|": {
+   "tile": 10
+  },
+  "R": {
+   "tile": 5,
+   "solid": true
+  },
+  "H": {
+   "tile": 9,
+   "solid": true
+  }
+ },
+ "ground": [
+  "00203230pp23201042p0101222110001p20012",
+  "120300012pp133201220322201024020121100",
+  "1p213001031011310031304012123301200331",
+  "133============22221322p33001010314211",
+  "311============p2023232013202032033333",
+  "p31============12222203303012p13023003",
+  "p32============20423p012032230103003p1",
+  "33p============3023p101000p31022343131",
+  "220============02323232003311002222311",
+  "020============22423421102211142101130",
+  "030121200p001230013021p03311p211201021",
+  "1134223p332231120041042233334332301210",
+  "300001213p3031003310p1223p022213013130",
+  "02110p3322302p310p1231iiiiiiiiiii03213",
+  "314220332122224101p101iiiiiiiiiii01211",
+  "0233002111100p12020002iiiiiiiiiii31331",
+  "1303130021010123p02110iiiiiiiiiii11p02",
+  "1333||||||31203p320031iiiiiiiiiip13230",
+  "2123||||||1pp12330121piiiiiiiiii232330",
+  "3330||||||212112022323iiiiiiiii1p12003",
+  "2222||||||21003322p313iiiiiiii12001302",
+  "p221||||||030200012322iiiiiii21p232103",
+  "113111||11002002120133iiiiii2110024310",
+  "2p2110||00021132331201iiii200031243330",
+  "032120||412020132321010321323103111031",
+  "320003||2041133p2331133013332p13301142",
+  "403=================================11",
+  "220=================================21",
+  "242=================================02",
+  "331=================================34",
+  "220=================================10",
+  "312=================================32",
+  "201=================================31",
+  "313=================================10",
+  "113=================================p1",
+  "211=================================12",
+  "10p141040300003p032310223103210214133p",
+  "32332132113pp032310312120200031211p223"
+ ],
+ "objects": [
+  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+  "R                                    R",
+  "R  HHHHHHHHHHHH                      R",
+  "R                             R      R",
+  "R                 R                  R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                R   R",
+  "R                                    R",
+  "R                                    R",
+  "R R                                  R",
+  "R                                    R",
+  "R                                    R",
+  "R           R                        R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R               R                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "R                                    R",
+  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR"
+ ],
+ "entities": [
+  {
+   "type": "spawn",
+   "id": "ship",
+   "pos": [
+    6.5,
+    21
+   ]
+  },
+  {
+   "type": "ship",
+   "id": "astra",
+   "pos": [
+    6.5,
+    20
+   ],
+   "prompt": "Subir a ASTRA y despegar",
+   "radius": 34
+  },
+  {
+   "type": "prop",
+   "sprite": "habitat",
+   "pos": [
+    5.5,
+    5
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "habitat",
+   "pos": [
+    10.5,
+    5
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "antenna",
+   "pos": [
+    14,
+    5
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "osei",
+   "pos": [
+    12,
+    8
+   ],
+   "facing": "down"
+  },
+  {
+   "type": "object",
+   "id": "mars_greenhouse",
+   "pos": [
+    8,
+    13
+   ],
+   "sprite": "dome_empty",
+   "sprite_done": "dome_alive",
+   "done_flag": "mars_planted",
+   "solid": [
+    3,
+    1
+   ],
+   "prompt": "Plantar un brote de La Semilla",
+   "locked_text": "El invernadero de la base. Primero termina los estudios que pidió la comandante.",
+   "use_lines": [
+    {
+     "who": "andres",
+     "text": "Un poco de suelo tratado, agua de la Luna… y luz. ¡Crece, pequeño!"
+    },
+    {
+     "who": "hal",
+     "text": "Temperatura interior: 21 °C. Presión: como en la Tierra. ¡El brote está vivo!"
+    }
+   ],
+   "done_lines": [
+    {
+     "who": "hal",
+     "text": "El brote sigue creciendo dentro de la cúpula."
+    }
+   ]
+  },
+  {
+   "type": "scan",
+   "id": "mars_rover",
+   "pos": [
+    25,
+    7
+   ],
+   "sprite": "rover",
+   "solid": [
+    2,
+    1
+   ],
+   "radius": 40
+  },
+  {
+   "type": "scan",
+   "id": "mars_delta",
+   "pos": [
+    28,
+    17
+   ],
+   "sprite": "sample",
+   "radius": 40
+  },
+  {
+   "type": "terminal",
+   "id": "delta_terminal",
+   "challenge_id": "delta_samples",
+   "pos": [
+    21,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "locked_text": "Terminal de muestras. Primero escanea el delta y el rover."
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_mars",
+   "pos": [
+    20,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_mars",
+   "pos": [
+    32,
+    13
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_mars",
+   "pos": [
+    14,
+    18
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_mars",
+   "pos": [
+    27,
+    22
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_mars",
+   "pos": [
+    34,
+    5
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_bar",
+   "pos": [
+    8.5,
+    29
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -39
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_mars_bar",
+   "label": "Cantina",
+   "prompt": "Entrar en la Cantina Polvo Rojo",
+   "target": "mars_bar",
+   "spawn": "entrance",
+   "radius": 26
+  },
+  {
+   "type": "spawn",
+   "id": "bar_door",
+   "pos": [
+    8.5,
+    30
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_shop",
+   "pos": [
+    15.5,
+    29
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -39
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_mars_shop",
+   "label": "Mercado",
+   "prompt": "Entrar en el Mercado de Jezero",
+   "target": "mars_shop",
+   "spawn": "entrance",
+   "radius": 26
+  },
+  {
+   "type": "spawn",
+   "id": "shop_door",
+   "pos": [
+    15.5,
+    30
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_school",
+   "pos": [
+    22.5,
+    29
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -39
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_school",
+   "label": "Escuela",
+   "prompt": "Mirar por la ventana de la escuela",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "En la pizarra: «Marte: 4.º planeta. Día: 24 h 40 min. Año: 687 días terrestres»."
+    },
+    {
+     "who": "hal",
+     "text": "Hoy no hay clase: los alumnos están fuera con el profesor Yusuf."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_garage",
+   "pos": [
+    29.5,
+    29
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -35
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_garage",
+   "label": "Taller",
+   "prompt": "Asomarse al taller",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Dentro hay tres rovers desmontados y una radio que suena muy alto."
+    },
+    {
+     "who": "hal",
+     "text": "Bruno suele estar en la puerta, peleándose con una rueda."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_house",
+   "pos": [
+    8,
+    36
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -31
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "mars_house_a",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Osei."
+    },
+    {
+     "who": "hal",
+     "text": "La comandante casi nunca está en casa. En la puerta hay una piedra con forma de corazón."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_house",
+   "pos": [
+    14,
+    36
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -31
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "mars_house_b",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia de Nia."
+    },
+    {
+     "who": "hal",
+     "text": "Una nota infantil: «Fui a la cantina. Vuelvo antes del atardecer azul»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_mars_house",
+   "pos": [
+    33,
+    36
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -31
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "mars_house_c",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Wei."
+    },
+    {
+     "who": "hal",
+     "text": "Cajas apiladas hasta el techo: Chen guarda aquí la mercancía."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "sign",
+   "id": "holo_marscorp",
+   "pos": [
+    26,
+    34
+   ],
+   "sprite": "holo_mars",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Mirar el anuncio",
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.4,
+    "energy": 1.0,
+    "flicker": true
+   },
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Anuncio: «MarsCorp: agua, aire y trabajo. Todo bajo control»."
+    },
+    {
+     "who": "hal",
+     "text": "Hmm. Yo prefiero que cada colonia controle su propia agua."
+    }
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_pink",
+   "pos": [
+    5,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_cyan",
+   "pos": [
+    12,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_pink",
+   "pos": [
+    19,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_cyan",
+   "pos": [
+    33,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_rust",
+   "pos": [
+    35,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate",
+   "pos": [
+    35,
+    30
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "yusuf",
+   "pos": [
+    22,
+    32
+   ],
+   "facing": "down",
+   "wander": 2
+  },
+  {
+   "type": "npc",
+   "id": "bruno",
+   "pos": [
+    29,
+    31
+   ],
+   "facing": "down",
+   "wander": 1
+  },
+  {
+   "type": "light",
+   "id": "light_base",
+   "pos": [
+    8,
+    5
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -8
+    ],
+    "scale": 3.4,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_greenhouse",
+   "pos": [
+    8,
+    13
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 2.6,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_ship",
+   "pos": [
+    6.5,
+    20
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 3.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_delta_terminal",
+   "pos": [
+    21,
+    15
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.5,
+    "energy": 0.8
+   }
+  }
+ ],
+ "arrival_lines": [
+  {
+   "who": "hal",
+   "text": "Aterrizaje en el cráter Jezero. Hay una pequeña tormenta de polvo: visibilidad reducida."
+  },
+  {
+   "who": "hal",
+   "text": "Un día en Marte (un «sol») dura unas 24 h y 40 min. La comandante Osei está en la base, al noroeste."
+  },
+  {
+   "who": "hal",
+   "text": "Al sur está la colonia: cantina, mercado, escuela y taller. MarsCorp lo controla casi todo."
+  }
+ ]
+}

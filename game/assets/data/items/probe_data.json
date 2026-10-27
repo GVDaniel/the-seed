@@ -1,0 +1,13 @@
+{
+  "id": "probe_data",
+  "order": 5,
+  "category": "muestra",
+  "display_name": "Datos de la sonda",
+  "description": "La señal recuperada de la sonda lunar. La Dra. Vega la necesita en Aurora.",
+  "fact": "Las señales de radio viajan a la velocidad de la luz: desde la Luna tardan poco más de un segundo en llegar a la Tierra.",
+  "granted_by": {
+    "type": "scan_destination",
+    "value": "lunar_probe_signal"
+  },
+  "icon": "res://assets/art/items/probe_data.png"
+}

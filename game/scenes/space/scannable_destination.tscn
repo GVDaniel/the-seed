@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cum6a4psk7iyy"]
+
+[ext_resource type="Script" path="res://scripts/gameplay/scannable_destination.gd" id="1_scan"]
+
+[node name="ScannableDestination" type="Area2D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_scan")
+
+[node name="BodyVisual" type="Polygon2D" parent="."]
+unique_name_in_owner = true
+
+[node name="RingVisual" type="Polygon2D" parent="."]
+unique_name_in_owner = true
+
+[node name="ScanShape" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+
+[node name="DestLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -90.0
+offset_top = -120.0
+offset_right = 90.0
+offset_bottom = -90.0
+theme_override_colors/font_color = Color(0.91, 0.945, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Destino"
+horizontal_alignment = 1

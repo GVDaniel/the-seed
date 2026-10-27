@@ -1,0 +1,293 @@
+{
+ "id": "moon_bar",
+ "region": "moon",
+ "display_name": "Bar Cráter · Luna",
+ "tileset": "interior",
+ "void_color": "#0b0812",
+ "ambient": "#8a84a8",
+ "weather": "",
+ "dark": true,
+ "music": "cantina",
+ "legend": {
+  ".": {
+   "tile": [
+    0,
+    1
+   ]
+  },
+  ",": {
+   "tile": [
+    2,
+    3
+   ]
+  },
+  ";": {
+   "tile": [
+    4,
+    5
+   ]
+  },
+  "r": {
+   "tile": 6
+  },
+  "x": {
+   "tile": 7
+  },
+  "#": {
+   "tile": 8,
+   "solid": true
+  },
+  "w": {
+   "tile": 9,
+   "solid": true
+  },
+  "c": {
+   "tile": 10,
+   "solid": true
+  },
+  "m": {
+   "tile": 11,
+   "solid": true
+  },
+  "s": {
+   "tile": 12,
+   "solid": true
+  },
+  "C": {
+   "tile": 13,
+   "solid": true
+  },
+  "S": {
+   "tile": 14,
+   "solid": true
+  },
+  "B": {
+   "tile": 15,
+   "solid": true
+  }
+ },
+ "ground": [
+  "................",
+  "................",
+  "................",
+  "................",
+  "................",
+  "..........rrrr..",
+  "..........rrrr..",
+  "..........rrrr..",
+  "................",
+  ".......xx.......",
+  "................"
+ ],
+ "objects": [
+  "################",
+  "#BBBBBBBBwswwsw#",
+  "#              #",
+  "#CCCCCCCC      #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "################"
+ ],
+ "entities": [
+  {
+   "type": "spawn",
+   "id": "entrance",
+   "pos": [
+    7.5,
+    7
+   ]
+  },
+  {
+   "type": "door",
+   "id": "exit",
+   "pos": [
+    7.5,
+    9
+   ],
+   "label": "Salida",
+   "prompt": "Salir a la base",
+   "target": "moon",
+   "spawn": "bar_door",
+   "radius": 18
+  },
+  {
+   "type": "npc",
+   "id": "lupe",
+   "pos": [
+    4,
+    2
+   ],
+   "facing": "down",
+   "shop": "moon_bar",
+   "radius": 46
+  },
+  {
+   "type": "prop",
+   "sprite": "plant_pot",
+   "pos": [
+    14,
+    2
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_counter",
+   "pos": [
+    4.5,
+    3
+   ],
+   "light": {
+    "color": "#ffb070",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 3.0,
+    "energy": 0.9
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_room",
+   "pos": [
+    11.5,
+    6
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 3.2,
+    "energy": 0.6,
+    "flicker": true
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_exit",
+   "pos": [
+    7.5,
+    9
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -4
+    ],
+    "scale": 1.6,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "table",
+   "pos": [
+    11,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "stool",
+   "pos": [
+    10,
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "stool",
+   "pos": [
+    13,
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "table",
+   "pos": [
+    5,
+    7
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "stool",
+   "pos": [
+    4,
+    7
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "stool",
+   "pos": [
+    7,
+    7
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "jukebox",
+   "pos": [
+    14,
+    4
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -14
+    ],
+    "scale": 1.4,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "screen_menu",
+   "pos": [
+    11.5,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "amina",
+   "pos": [
+    12,
+    7
+   ],
+   "facing": "left"
+  }
+ ],
+ "arrival_lines": [
+  {
+   "who": "hal",
+   "text": "Bar Cráter. Ambiente: tranquilo. Música: aceptable. Batidos: muy recomendados."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ShipStats" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/ship_stats.gd" id="1_stats"]
+
+[resource]
+script = ExtResource("1_stats")
+ship_name = "ASTRA"
+acceleration = 520.0
+max_speed = 420.0
+turn_speed = 3.2
+deceleration = 1.8
+max_energy = 100.0
+thrust_energy_cost = 4.0
+energy_regen = 6.0

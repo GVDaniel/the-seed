@@ -1,0 +1,56 @@
+{
+  "id": "trappist1e",
+  "display_name": "TRAPPIST-1e",
+  "kind": "exoplaneta",
+  "short_description": "Un planeta rocoso en la zona habitable de una estrella enana roja. Quizá tenga agua líquida… La Semilla podría despertar allí.",
+  "scientific_facts": [
+    {
+      "label": "Distancia",
+      "value": "≈ 40 años luz",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_trappist1"
+      ]
+    },
+    {
+      "label": "Tamaño",
+      "value": "≈ 0,92 veces el radio de la Tierra",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_trappist1"
+      ]
+    },
+    {
+      "label": "Su año",
+      "value": "≈ 6,1 días terrestres",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_trappist1"
+      ]
+    },
+    {
+      "label": "Su estrella",
+      "value": "Enana roja ultrafría: más pequeña y fría que el Sol",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_trappist1"
+      ]
+    },
+    {
+      "label": "¿Atmósfera?",
+      "value": "Aún no se sabe con certeza; telescopios como el JWST la estudian",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_trappist1"
+      ]
+    },
+    {
+      "label": "Vegetación oscura",
+      "value": "Plantas que aprovechan la luz roja",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Hipótesis imaginada para el juego, no un dato observado."
+    }
+  ],
+  "arcade_disclaimer": "Los colores del planeta en el juego son imaginados. Nadie ha visto todavía su superficie."
+}

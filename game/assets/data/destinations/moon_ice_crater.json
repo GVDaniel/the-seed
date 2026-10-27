@@ -1,0 +1,41 @@
+{
+  "id": "moon_ice_crater",
+  "display_name": "Cráter Shackleton (zona en sombra)",
+  "kind": "lugar",
+  "short_description": "Un cráter del polo sur lunar cuyo fondo nunca ve el Sol. Es una de las zonas más frías del sistema solar.",
+  "scientific_facts": [
+    {
+      "label": "Diámetro",
+      "value": "≈ 21 km",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_shackleton"
+      ]
+    },
+    {
+      "label": "Sombra permanente",
+      "value": "El fondo no recibe luz solar directa",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_shackleton"
+      ]
+    },
+    {
+      "label": "Temperatura",
+      "value": "Puede bajar de −200 °C",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_lro_diviner"
+      ]
+    },
+    {
+      "label": "Hielo de agua",
+      "value": "Confirmado en zonas polares en sombra (2018)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_moon_ice_2018"
+      ]
+    }
+  ],
+  "arcade_disclaimer": "La base Shackleton y Kai son ficción. El hielo en sombras polares es real y es objetivo del programa Artemis."
+}

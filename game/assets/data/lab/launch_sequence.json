@@ -1,0 +1,51 @@
+{
+  "id": "launch_sequence",
+  "title": "Secuencia de despegue",
+  "theme": "earth",
+  "briefing": "Antes de despegar, la sonda de mantenimiento debe revisar el tanque de combustible (estrella) y enviar «TODO LISTO» desde la antena.",
+  "concepts_text": "SECUENCIA: un programa es una lista de órdenes que se cumplen una tras otra, de arriba abajo.\nEl orden importa: si giras antes de tiempo, la sonda se pierde.",
+  "hint": "Cuenta las casillas hasta la estrella. Después piensa: ¿hacia dónde está la antena desde ahí?",
+  "allow_loops": false,
+  "width": 5,
+  "height": 5,
+  "start": [
+    0,
+    2
+  ],
+  "start_dir": "E",
+  "pois": [
+    [
+      2,
+      2
+    ]
+  ],
+  "transmit": [
+    2,
+    0
+  ],
+  "blocked": [
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "available_ops": [
+    "AVANZAR",
+    "GIRAR_IZQUIERDA",
+    "GIRAR_DERECHA",
+    "ESCANEAR",
+    "TRANSMITIR"
+  ]
+}

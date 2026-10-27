@@ -1,0 +1,9 @@
+{
+  "id": "polar_ice_water",
+  "order": 43,
+  "category": "comida",
+  "display_name": "Agua de hielo polar",
+  "description": "Agua derretida del casquete norte de Marte, filtrada tres veces.",
+  "fact": "Marte tiene hielo de agua en sus casquetes polares y también enterrado bajo el suelo en muchas zonas.",
+  "icon": "res://assets/art/items/polar_ice_water.png"
+}

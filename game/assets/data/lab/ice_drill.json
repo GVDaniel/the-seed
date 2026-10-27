@@ -1,0 +1,72 @@
+{
+  "id": "ice_drill",
+  "title": "Taladro de hielo",
+  "theme": "moon",
+  "briefing": "Hay 4 bloques de hielo en fila. La sonda debe recoger todos y transmitir desde la antena. ¡Pero el taladro solo acepta 7 bloques de programa!",
+  "concepts_text": "BUCLE: REPETIR N hace lo que hay dentro N veces, hasta FIN_REPETIR.\nSi ves que copias lo mismo una y otra vez, es momento de usar un bucle.",
+  "hint": "AVANZAR + RECOGER se repite 4 veces. Mételos dentro de un REPETIR.",
+  "allow_loops": true,
+  "max_blocks": 7,
+  "width": 7,
+  "height": 3,
+  "start": [
+    0,
+    1
+  ],
+  "start_dir": "E",
+  "pois": [],
+  "samples": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "transmit": [
+    5,
+    1
+  ],
+  "blocked": [
+    [
+      3,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "goal": {
+    "scan": false,
+    "collect": true,
+    "transmit": true
+  },
+  "available_ops": [
+    "AVANZAR",
+    "GIRAR_IZQUIERDA",
+    "GIRAR_DERECHA",
+    "RECOGER",
+    "TRANSMITIR",
+    "REPETIR",
+    "FIN_REPETIR"
+  ]
+}

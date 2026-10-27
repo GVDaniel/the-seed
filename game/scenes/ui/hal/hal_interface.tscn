@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://halinterface1"]
+
+[ext_resource type="Script" path="res://scripts/ui/hal/hal_interface.gd" id="1_hal"]
+
+[node name="HalInterface" type="CanvasLayer"]
+layer = 22
+script = ExtResource("1_hal")

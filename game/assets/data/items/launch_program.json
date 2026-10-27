@@ -1,0 +1,13 @@
+{
+  "id": "launch_program",
+  "order": 4,
+  "category": "programa",
+  "display_name": "Programa de despegue",
+  "description": "La secuencia que escribiste para que ASTRA despegue. Cada orden en su sitio.",
+  "fact": "Antes de un lanzamiento real se sigue una lista de comprobación en un orden fijo. Si el orden cambia, el resultado también cambia.",
+  "granted_by": {
+    "type": "solve_challenge",
+    "value": "launch_sequence"
+  },
+  "icon": "res://assets/art/items/launch_program.png"
+}

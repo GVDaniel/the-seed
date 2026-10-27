@@ -1,0 +1,15 @@
+{
+  "id": "kai",
+  "display_name": "Kai Tanaka",
+  "role": "Ingeniero de la base lunar Shackleton",
+  "home": "moon",
+  "portrait": "res://assets/art/portraits/kai.png",
+  "sprite": "res://assets/art/characters/kai.png",
+  "idle_lines": [
+    "En la Luna pesas como una sexta parte que en la Tierra. ¡Ideal para saltar!",
+    "Mis sondas no se cansan, pero sí se pierden si les das mal las órdenes."
+  ],
+  "order": 5,
+  "bio": "Tiene 16 años, inventa de todo y hace bromas incluso a −200 °C. Le encantan las sondas.",
+  "group": "crew"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "mars_delta",
+  "display_name": "Delta del cráter Jezero",
+  "kind": "lugar",
+  "short_description": "Restos de un río que desembocaba en un lago marciano. Sus capas de roca pueden guardar señales de vida antigua.",
+  "scientific_facts": [
+    {
+      "label": "Diámetro del cráter",
+      "value": "≈ 45 km",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    },
+    {
+      "label": "Antiguo lago",
+      "value": "Hace unos 3 500 millones de años",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    },
+    {
+      "label": "Por qué un delta",
+      "value": "Los ríos dejan capas de sedimento que conservan pistas",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    }
+  ],
+  "arcade_disclaimer": "La base Jezero es ficción. El cráter, el delta y su historia de agua son reales."
+}

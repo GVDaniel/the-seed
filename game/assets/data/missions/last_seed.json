@@ -1,0 +1,151 @@
+{
+  "id": "last_seed",
+  "title": "La última semilla",
+  "chapter": 1,
+  "order": 1,
+  "summary": "La abuela Lucía guarda La Semilla. Antes de llevarla, Andrés debe entender por qué la Tierra enfermó.",
+  "start_npc": "lucia",
+  "auto_start": true,
+  "requires": [],
+  "objectives": [
+    {
+      "id": "talk_lucia",
+      "description": "Habla con la abuela Lucía en la Bóveda Semillera.",
+      "hud_hint": "Ve al norte, a la Bóveda Semillera, y habla con la abuela Lucía (E).",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "lucia"
+      },
+      "location": "earth"
+    },
+    {
+      "id": "scan_dead_plant",
+      "description": "Escanea una planta marchita del invernadero.",
+      "hud_hint": "Escanea la planta marchita junto al invernadero (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "earth_dead_plant"
+      },
+      "location": "earth"
+    },
+    {
+      "id": "scan_air",
+      "description": "Mide el aire con el sensor del oeste.",
+      "hud_hint": "Escanea el sensor de aire, al oeste (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "earth_air_sensor"
+      },
+      "location": "earth"
+    },
+    {
+      "id": "report_lucia",
+      "description": "Cuéntale a la abuela lo que descubriste.",
+      "hud_hint": "Vuelve con la abuela Lucía y cuéntale lo que aprendiste.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "lucia"
+      },
+      "location": "earth"
+    },
+    {
+      "id": "collect_seed",
+      "description": "Recoge La Semilla.",
+      "hud_hint": "Recoge el cofre dorado de La Semilla, junto a la bóveda (E).",
+      "condition": {
+        "type": "collect_item",
+        "item_id": "the_seed"
+      },
+      "location": "earth"
+    },
+    {
+      "id": "launch_program",
+      "description": "Programa la secuencia de despegue.",
+      "hud_hint": "Usa la terminal de la plataforma de lanzamiento (E).",
+      "condition": {
+        "type": "solve_challenge",
+        "challenge_id": "launch_sequence"
+      },
+      "location": "earth",
+      "target": "launch_terminal"
+    },
+    {
+      "id": "takeoff",
+      "description": "Despega con ASTRA.",
+      "hud_hint": "¡Sube a ASTRA (E) y despega!",
+      "condition": {
+        "type": "takeoff",
+        "from": "earth"
+      },
+      "location": "earth",
+      "target": "astra"
+    }
+  ],
+  "rewards": {
+    "experience": 80
+  },
+  "dialogues": {
+    "talk_lucia": [
+      {
+        "who": "lucia",
+        "text": "Andrés, llegas justo a tiempo. Hoy el cielo está más ocre que nunca."
+      },
+      {
+        "who": "andres",
+        "text": "Abuela, la Dra. Vega encontró un planeta que podría ser un nuevo hogar."
+      },
+      {
+        "who": "lucia",
+        "text": "Lo sé, por eso te llamé. Pero antes de llevarte La Semilla, quiero que entiendas por qué la Tierra enfermó."
+      },
+      {
+        "who": "lucia",
+        "text": "Ve al invernadero y escanea una planta marchita. Luego mide el aire en el sensor del oeste."
+      },
+      {
+        "who": "hal",
+        "text": "¡Escáner listo! Acércate a un punto con estrella dorada y pulsa F."
+      }
+    ],
+    "report_lucia": [
+      {
+        "who": "andres",
+        "text": "Las plantas ya no pueden hacer fotosíntesis y el aire tiene demasiado CO₂."
+      },
+      {
+        "who": "lucia",
+        "text": "Exacto. Sin plantas se produce menos oxígeno nuevo y nadie absorbe el CO₂. Todo está conectado."
+      },
+      {
+        "who": "lucia",
+        "text": "En esta bóveda guardamos semillas de miles de plantas a −18 °C, como en la bóveda real de Svalbard, en Noruega."
+      },
+      {
+        "who": "lucia",
+        "text": "El cofre dorado es La Semilla. Tómalo. Desde hoy, tú la proteges."
+      }
+    ],
+    "reminder": [
+      {
+        "who": "lucia",
+        "text": "¿Ya terminaste? Mira tu objetivo, arriba a la derecha. La flecha dorada te guía."
+      }
+    ],
+    "after": [
+      {
+        "who": "lucia",
+        "text": "Ve con cuidado, Andrés. Y recuerda: una semilla necesita paciencia."
+      }
+    ]
+  },
+  "objective_complete_messages": {
+    "talk_lucia": "Objetivo cumplido: hablaste con la abuela Lucía.",
+    "scan_dead_plant": "Objetivo cumplido: entiendes la fotosíntesis.",
+    "scan_air": "Objetivo cumplido: mediste el aire de 2187.",
+    "report_lucia": "Objetivo cumplido: la abuela confía en ti.",
+    "collect_seed": "¡Tienes La Semilla!",
+    "launch_program": "Secuencia de despegue programada. ¡ASTRA está lista!",
+    "takeoff": "¡Despegue! Rumbo a la Estación Aurora."
+  },
+  "mission_complete_message": "Capítulo 1 completado: La última semilla."
+}

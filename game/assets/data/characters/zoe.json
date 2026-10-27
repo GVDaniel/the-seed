@@ -1,0 +1,16 @@
+{
+  "id": "zoe",
+  "display_name": "Zoe «Chispa»",
+  "role": "Chatarrera y reparadora",
+  "home": "earth",
+  "group": "local",
+  "order": 13,
+  "portrait": "res://assets/art/portraits/zoe.png",
+  "sprite": "res://assets/art/characters/zoe.png",
+  "bio": "Convierte la chatarra en inventos. Cresta fucsia, implante brillante y manos llenas de grasa.",
+  "idle_lines": [
+    "La chatarra no es basura: es un almacén de piezas. Reparar es mi superpoder.",
+    "Un móvil viejo lleva oro, plata y cobre dentro. Reciclarlo evita abrir más minas.",
+    "Hasta el tinte de mi cresta es reciclado: jugo de remolacha. ¡Mira cómo brilla con el neón!"
+  ]
+}

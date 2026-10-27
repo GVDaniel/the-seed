@@ -1,0 +1,100 @@
+{
+  "intro": {
+    "next": "earth",
+    "spawn": "start",
+    "slides": [
+      {
+        "image": "res://assets/art/story/intro_01_earth.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "Año 2187. La Tierra sigue girando… pero algo va mal."
+          },
+          {
+            "who": "",
+            "text": "Una plaga de hongos y décadas de calor marchitaron casi todas las plantas. La gente lo llama La Marchitez."
+          }
+        ]
+      },
+      {
+        "image": "res://assets/art/story/intro_02_withered.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "Sin plantas, el aire recibe menos oxígeno nuevo y acumula más CO₂."
+          },
+          {
+            "who": "",
+            "text": "Las ciudades sobreviven entre cúpulas, lluvia ácida y letreros de neón que nunca se apagan."
+          },
+          {
+            "who": "",
+            "text": "Corporaciones como AgroNet venden lo que antes era gratis: comida, agua… y hasta aire embotellado."
+          }
+        ]
+      },
+      {
+        "image": "res://assets/art/story/intro_03_vault.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "En el norte resiste la Bóveda Semillera. Allí, la abuela Lucía guarda las últimas semillas sanas: La Semilla."
+          }
+        ]
+      },
+      {
+        "image": "res://assets/art/story/intro_04_launch.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "Desde la Estación Aurora, la Dra. Vega detectó un mundo lejano que podría ser un nuevo hogar."
+          },
+          {
+            "who": "",
+            "text": "Andrés, cadete piloto de la academia, y HAL, la IA de la nave ASTRA, están a punto de recibir la misión más importante de sus vidas."
+          },
+          {
+            "who": "hal",
+            "text": "Buenas noches, Andrés. Soy HAL, de la serie 9000. Te acompañaré en todo el viaje. ¿Empezamos?"
+          }
+        ]
+      }
+    ]
+  },
+  "ending": {
+    "next": "mars",
+    "spawn": "ship",
+    "slides": [
+      {
+        "image": "res://assets/art/story/ending_01_mars.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "El brote de La Semilla crece en Marte, protegido por una cúpula."
+          },
+          {
+            "who": "",
+            "text": "Es una gran noticia… y también una lección: no existe un «planeta B» fácil."
+          }
+        ]
+      },
+      {
+        "image": "res://assets/art/story/ending_02_trappist.png",
+        "lines": [
+          {
+            "who": "",
+            "text": "A unos 40 años luz, siete planetas rocosos giran alrededor de TRAPPIST-1, una estrella enana roja."
+          },
+          {
+            "who": "",
+            "text": "Uno de ellos, TRAPPIST-1e, está en la zona donde podría existir agua líquida. Hacia allí apunta ahora ASTRA."
+          },
+          {
+            "who": "hal",
+            "text": "Fin del demo. Capítulo 4: «Gigante de tormentas»… ¡continuará!"
+          }
+        ]
+      }
+    ]
+  }
+}

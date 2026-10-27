@@ -1,0 +1,34 @@
+{
+  "id": "moon",
+  "display_name": "Luna",
+  "kind": "moon",
+  "short_description": "El único satélite natural de la Tierra. Su gravedad y fases han influido en mareas y en la exploración humana.",
+  "scientific_facts": [
+    {
+      "label": "Diámetro medio",
+      "value": "≈ 3 475 km",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_moon_facts"]
+    },
+    {
+      "label": "Distancia media a la Tierra",
+      "value": "≈ 384 400 km",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_moon_facts"]
+    },
+    {
+      "label": "Gravedad superficial",
+      "value": "≈ 1,62 m/s² (~1/6 de la Tierra)",
+      "is_game_simplification": true,
+      "simplification_note": "La fracción 1/6 es una aproximación didáctica habitual.",
+      "source_ids": ["nasa_moon_facts"]
+    },
+    {
+      "label": "Atmósfera",
+      "value": "Exosfera muy tenue (casi vacío)",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_moon_facts"]
+    }
+  ],
+  "arcade_disclaimer": "En ASTRA la Luna aparece cerca de la Tierra por comodidad de juego. La distancia real Tierra–Luna no se refleja en el mapa arcade."
+}

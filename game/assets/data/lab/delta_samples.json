@@ -1,0 +1,67 @@
+{
+  "id": "delta_samples",
+  "title": "Muestras del delta",
+  "theme": "mars",
+  "briefing": "En el delta hay muestras de roca, pero no en todas las casillas. La sonda debe recoger solo donde haya muestra y transmitir al final. Máximo 8 bloques.",
+  "concepts_text": "CONDICIÓN: SI hay muestra … FIN_SI hace lo de dentro solo cuando la respuesta es SÍ.\nCombínala con un bucle: «repite: avanza y, SI hay muestra, recógela».",
+  "hint": "REPETIR 6 → AVANZAR, SI hay muestra → RECOGER, FIN_SI, FIN_REPETIR. Y luego… ¿qué falta?",
+  "allow_loops": true,
+  "allow_conditions": true,
+  "max_blocks": 8,
+  "width": 7,
+  "height": 3,
+  "start": [
+    0,
+    1
+  ],
+  "start_dir": "E",
+  "pois": [],
+  "samples": [
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "transmit": [
+    6,
+    1
+  ],
+  "blocked": [
+    [
+      1,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "goal": {
+    "scan": false,
+    "collect": true,
+    "transmit": true
+  },
+  "available_ops": [
+    "AVANZAR",
+    "GIRAR_IZQUIERDA",
+    "GIRAR_DERECHA",
+    "RECOGER",
+    "TRANSMITIR",
+    "REPETIR",
+    "FIN_REPETIR",
+    "SI_MUESTRA",
+    "FIN_SI"
+  ]
+}

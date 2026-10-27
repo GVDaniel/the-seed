@@ -1,0 +1,16 @@
+{
+  "id": "yusuf",
+  "display_name": "Yusuf",
+  "role": "Maestro de la escuela de Jezero",
+  "home": "mars",
+  "group": "local",
+  "order": 32,
+  "portrait": "res://assets/art/portraits/yusuf.png",
+  "sprite": "res://assets/art/characters/yusuf.png",
+  "bio": "Enseña ciencias a los primeros niños nacidos en Marte. Siempre lleva tiza en las gafas.",
+  "idle_lines": [
+    "El monte Olimpo, aquí en Marte, mide unos 22 km de alto: más de dos veces el Everest.",
+    "Un año marciano dura unos 687 días terrestres. ¡Los cumpleaños tardan casi el doble en llegar!",
+    "La gravedad de Marte es un 38 % de la terrestre. Mis alumnos saltan como canguros."
+  ]
+}

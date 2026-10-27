@@ -1,0 +1,16 @@
+{
+  "id": "rosa",
+  "display_name": "Rosa",
+  "role": "Dueña de la Cantina Polvo Rojo",
+  "home": "mars",
+  "group": "local",
+  "order": 31,
+  "portrait": "res://assets/art/portraits/rosa.png",
+  "sprite": "res://assets/art/characters/rosa.png",
+  "bio": "Cocina con lo que crece en el invernadero y pone música hasta que se apaga el último foco.",
+  "idle_lines": [
+    "Bienvenida y bienvenido a la Cantina Polvo Rojo. Las papas son de nuestro invernadero, ¡lavadas tres veces!",
+    "El suelo de Marte tiene percloratos, unas sales tóxicas. Hay que limpiarlo antes de cultivar.",
+    "Aquí celebramos cada «sol». Un día marciano dura unas 24 horas y 40 minutos."
+  ]
+}

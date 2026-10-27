@@ -1,0 +1,103 @@
+{
+  "id": "signal_from_moon",
+  "title": "Señal desde la Luna",
+  "chapter": 2,
+  "order": 1,
+  "summary": "La Estación Aurora recibió datos incompletos de una sonda lunar. Hay que recuperar la señal y devolverla.",
+  "start_npc": "vega",
+  "requires": [
+    "last_seed"
+  ],
+  "start_conditions": {
+    "near_destination_id": "station_aurora",
+    "require_talk": true
+  },
+  "objectives": [
+    {
+      "id": "reach_moon_sector",
+      "description": "Viaja hasta la zona de la Luna.",
+      "hud_hint": "Vuela hasta la Luna: sigue la flecha dorada.",
+      "condition": {
+        "type": "near_destination",
+        "destination_id": "moon"
+      },
+      "location": "space"
+    },
+    {
+      "id": "scan_probe_signal",
+      "description": "Escanea el punto de interés de la sonda lunar.",
+      "hud_hint": "Cerca de la Luna: localiza el faro de la sonda y pulsa F.",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "lunar_probe_signal"
+      },
+      "location": "space"
+    },
+    {
+      "id": "report_to_station",
+      "description": "Regresa a la Estación Aurora y entrega los resultados.",
+      "hud_hint": "Vuelve a Aurora y habla con la Dra. Vega (T).",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "vega"
+      },
+      "location": "space"
+    }
+  ],
+  "rewards": {
+    "experience": 60,
+    "unlock_destination_id": "lunar_signal_analysis"
+  },
+  "dialogues": {
+    "offer": [
+      {
+        "who": "vega",
+        "text": "Andrés, ¡te damos la bienvenida a Aurora! Y con La Semilla a bordo. Mucha gente cuenta contigo."
+      },
+      {
+        "who": "vega",
+        "text": "Para llegar a TRAPPIST-1e necesitaremos mucho combustible. Una sonda cerca de la Luna detectó algo, pero perdimos parte de la señal."
+      },
+      {
+        "who": "vega",
+        "text": "La Luna casi no tiene atmósfera: la radio viaja limpia, pero el terreno puede tapar las antenas. Necesitamos un escaneo cercano."
+      },
+      {
+        "who": "vega",
+        "text": "Vuela hasta la Luna, escanea el faro de la sonda y vuelve con los datos. ¿Aceptas?"
+      }
+    ],
+    "reminder": [
+      {
+        "who": "vega",
+        "text": "Aún nos faltan los datos de la sonda. Sigue la flecha dorada."
+      }
+    ],
+    "report_to_station": [
+      {
+        "who": "vega",
+        "text": "¡Excelente! La señal completa dice: «HIELO DE AGUA en el cráter Shackleton, polo sur lunar»."
+      },
+      {
+        "who": "vega",
+        "text": "El agua se puede separar en hidrógeno y oxígeno: ¡combustible para cohetes y aire para respirar!"
+      },
+      {
+        "who": "vega",
+        "text": "Kai Tanaka trabaja en la base Shackleton. Ya tienes permiso para aterrizar en la Luna (E cerca de ella)."
+      }
+    ],
+    "after": [
+      {
+        "who": "vega",
+        "text": "Kai te espera en la Luna. Y recuerda la pregunta de toda científica: ¿qué dicen los datos?"
+      }
+    ]
+  },
+  "objective_complete_messages": {
+    "reach_moon_sector": "Objetivo cumplido: has llegado a la zona lunar.",
+    "scan_probe_signal": "Objetivo cumplido: señal de la sonda registrada.",
+    "report_to_station": "Objetivo cumplido: datos entregados en Aurora."
+  },
+  "mission_complete_message": "Misión completada: Señal desde la Luna. ¡Aterrizaje lunar autorizado!"
+}

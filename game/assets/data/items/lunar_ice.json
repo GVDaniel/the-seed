@@ -1,0 +1,13 @@
+{
+  "id": "lunar_ice",
+  "order": 6,
+  "category": "muestra",
+  "display_name": "Hielo lunar",
+  "description": "Hielo de agua sacado del cráter Shackleton con el taladro de Kai.",
+  "fact": "Con electricidad, el agua se separa en hidrógeno y oxígeno (electrólisis). Así, el hielo puede dar agua, aire y combustible.",
+  "granted_by": {
+    "type": "solve_challenge",
+    "value": "ice_drill"
+  },
+  "icon": "res://assets/art/items/lunar_ice.png"
+}

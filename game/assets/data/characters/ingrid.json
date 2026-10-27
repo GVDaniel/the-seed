@@ -1,0 +1,16 @@
+{
+  "id": "ingrid",
+  "display_name": "Ingrid Larsen",
+  "role": "Mecánica de Repuestos Regolito",
+  "home": "moon",
+  "group": "local",
+  "order": 21,
+  "portrait": "res://assets/art/portraits/ingrid.png",
+  "sprite": "res://assets/art/characters/ingrid.png",
+  "bio": "Arregla cualquier nave con cinta, paciencia y su visor dorado de aumento.",
+  "idle_lines": [
+    "El polvo lunar es como vidrio molido: se mete en todo y raya las juntas. Cambio filtros cada semana.",
+    "Una batería mejor y un escudo Whipple: con eso ASTRA llega más lejos. Pásate por mi mostrador.",
+    "Los astronautas del Apolo contaron que el polvo lunar olía a pólvora quemada."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "andres",
+  "display_name": "Andrés",
+  "role": "Cadete piloto · 13 años",
+  "home": "",
+  "portrait": "res://assets/art/portraits/andres.png",
+  "sprite": "res://assets/art/characters/andres.png",
+  "idle_lines": [
+    "Abuela, te prometo que La Semilla llegará a un lugar seguro."
+  ],
+  "order": 1,
+  "bio": "Curiosidad infinita y un poco de impaciencia: está aprendiendo a planear antes de actuar. Lleva La Semilla a la espalda.",
+  "group": "crew"
+}

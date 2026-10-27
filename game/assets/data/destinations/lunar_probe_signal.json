@@ -1,0 +1,23 @@
+{
+  "id": "lunar_probe_signal",
+  "display_name": "Faro de sonda lunar",
+  "kind": "probe",
+  "short_description": "Baliza de una sonda automática cerca de la Luna. Emite telemetría para localizar el módulo y comprobar antenas.",
+  "scientific_facts": [
+    {
+      "label": "Por qué se usan balizas",
+      "value": "Permiten medir distancia/estado del vehículo cuando la línea de visión con la Tierra es incierta",
+      "is_game_simplification": true,
+      "simplification_note": "En la realidad hay muchos esquemas (DSN, relés, etc.); aquí se resume la idea.",
+      "source_ids": ["nasa_moon_facts"]
+    },
+    {
+      "label": "Radio en la Luna",
+      "value": "Sin atmósfera densa, las ondas de radio no se atenúan como en la Tierra",
+      "is_game_simplification": true,
+      "simplification_note": "Sigue habiendo límites por potencia, antena y geometría; no es 'alcance infinito'.",
+      "source_ids": ["nasa_moon_facts"]
+    }
+  ],
+  "arcade_disclaimer": "La posición del faro en ASTRA es jugable. No representa una sonda real ni distancias auténticas Tierra–Luna."
+}

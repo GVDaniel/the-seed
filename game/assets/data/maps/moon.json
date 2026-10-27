@@ -1,0 +1,771 @@
+{
+ "id": "moon",
+ "display_name": "Base Shackleton · Luna",
+ "tileset": "moon",
+ "void_color": "#05070d",
+ "ambient": "#7a82aa",
+ "weather": "",
+ "dark": true,
+ "music": "mission",
+ "legend": {
+  "0": {
+   "tile": 0
+  },
+  "1": {
+   "tile": 1
+  },
+  "2": {
+   "tile": 2
+  },
+  "3": {
+   "tile": 3
+  },
+  "4": {
+   "tile": 4
+  },
+  "p": {
+   "tile": 11
+  },
+  "~": {
+   "tile": 6
+  },
+  "i": {
+   "tile": 7
+  },
+  "=": {
+   "tile": 8
+  },
+  "|": {
+   "tile": 10
+  },
+  "R": {
+   "tile": 5,
+   "solid": true
+  },
+  "H": {
+   "tile": 9,
+   "solid": true
+  }
+ },
+ "ground": [
+  "43001013103121101134313112232022p202",
+  "11300011323033030p30012331332221p312",
+  "21204212031221p332342022131121433231",
+  "101===========04330202p2103431223p21",
+  "323===========13222211232111~1233313",
+  "103===========p2012013231~~~~~~~3122",
+  "333===========331220400~~~~~~~~~~~10",
+  "30p===========10211p03~~~~~~~~~~~~~4",
+  "222===========12p22034~~~~iiiii~~~~1",
+  "202===========00212024~~~~iiiii~~~~3",
+  "122===========3033221~~~~iiiiiii~~~~",
+  "3211131p1031241p0331p2~~~~iiiii~~~~1",
+  "32002203p0234p22230233~~~~iiiii~~~~2",
+  "4p32101030103000113333~~~~~~~~~~~~~0",
+  "03121312202110410301312~~~~~~~~~~~13",
+  "3233313120001033212022103~~~~~~~3121",
+  "1002300213p1p3|||||||3220303~3310012",
+  "12232230p13103|||||||032001p00011120",
+  "12233223231203|||||||331233140000103",
+  "33301022113041|||||||2001113330203p1",
+  "4p202321233010|||||||010123020212022",
+  "01p0314p323p122320211p10031001003431",
+  "23p2333212p220301||24132223323032131",
+  "022p0310p30303121||1p421223332231112",
+  "02311231022231313||143030p2033230332",
+  "2222==============================20",
+  "2p22==============================30",
+  "1112==============================3p",
+  "3321==============================03",
+  "2000==============================31",
+  "3002==============================11",
+  "2410==============================23",
+  "2432==============================03",
+  "2243==============================10",
+  "3232==============================33",
+  "3001==============================31",
+  "11312142331111131323p241021212100301",
+  "033012302304021003130220240032011224"
+ ],
+ "objects": [
+  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+  "R                                  R",
+  "R  HHHHHHHHHHH                     R",
+  "R                       R          R",
+  "R                 R                R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R               R                  R",
+  "R                                  R",
+  "R  R                               R",
+  "R                                  R",
+  "R     R                            R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                     R            R",
+  "R         R                      R R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "R                                  R",
+  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR"
+ ],
+ "entities": [
+  {
+   "type": "spawn",
+   "id": "ship",
+   "pos": [
+    17,
+    21
+   ]
+  },
+  {
+   "type": "ship",
+   "id": "astra",
+   "pos": [
+    17,
+    19
+   ],
+   "prompt": "Subir a ASTRA y despegar",
+   "radius": 34
+  },
+  {
+   "type": "prop",
+   "sprite": "habitat",
+   "pos": [
+    5.5,
+    6
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "habitat",
+   "pos": [
+    10.5,
+    6
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "antenna",
+   "pos": [
+    13,
+    5
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_panel",
+   "pos": [
+    4,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_panel",
+   "pos": [
+    5,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "kai",
+   "pos": [
+    8,
+    8
+   ],
+   "facing": "right"
+  },
+  {
+   "type": "scan",
+   "id": "moon_ice_crater",
+   "pos": [
+    28,
+    10
+   ],
+   "sprite": "ice",
+   "radius": 40
+  },
+  {
+   "type": "prop",
+   "sprite": "ice",
+   "pos": [
+    26,
+    11
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "ice",
+   "pos": [
+    30,
+    9
+   ]
+  },
+  {
+   "type": "terminal",
+   "id": "drill_terminal",
+   "challenge_id": "ice_drill",
+   "pos": [
+    21,
+    12
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "locked_text": "Terminal del taladro. Kai te dirá cuándo usarla."
+  },
+  {
+   "type": "sign",
+   "id": "sign_apollo",
+   "pos": [
+    15,
+    7
+   ],
+   "sprite": "sensor",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Leer la placa",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Placa: «El 20 de julio de 1969, el Apolo 11 llevó a las primeras personas a la Luna»."
+    },
+    {
+     "who": "hal",
+     "text": "Alunizó en el Mar de la Tranquilidad, lejos de aquí. Nosotros estamos en el polo sur lunar."
+    }
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_moon",
+   "pos": [
+    20,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_moon",
+   "pos": [
+    31,
+    18
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_moon",
+   "pos": [
+    8,
+    17
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rock_moon",
+   "pos": [
+    25,
+    21
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_bar",
+   "pos": [
+    9.5,
+    28
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -39
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_moon_bar",
+   "label": "Bar Cráter",
+   "prompt": "Entrar al Bar Cráter",
+   "target": "moon_bar",
+   "spawn": "entrance",
+   "radius": 26
+  },
+  {
+   "type": "spawn",
+   "id": "bar_door",
+   "pos": [
+    9.5,
+    29
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_shop",
+   "pos": [
+    17.5,
+    28
+   ],
+   "solid": [
+    4,
+    2
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -39
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "door_moon_shop",
+   "label": "Repuestos",
+   "prompt": "Entrar en Repuestos Regolito",
+   "target": "moon_shop",
+   "spawn": "entrance",
+   "radius": 26
+  },
+  {
+   "type": "spawn",
+   "id": "shop_door",
+   "pos": [
+    17.5,
+    29
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_dorm",
+   "pos": [
+    25,
+    28
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -35
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "dorm_a",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Tanaka."
+    },
+    {
+     "who": "hal",
+     "text": "Kai vive aquí. En la puerta: «Si oyes una explosión pequeña, es un experimento. Si es grande, llama»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_dorm",
+   "pos": [
+    30,
+    28
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -35
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "dorm_b",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Diallo."
+    },
+    {
+     "who": "hal",
+     "text": "Dentro se ve un telescopio apuntando a la Tierra."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_dorm",
+   "pos": [
+    8,
+    35
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -35
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "dorm_c",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Larsen."
+    },
+    {
+     "who": "hal",
+     "text": "Huele a aceite de máquina. Ingrid duerme poco."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_moon_dorm",
+   "pos": [
+    14,
+    35
+   ],
+   "solid": [
+    3,
+    2
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -35
+    ],
+    "scale": 2.3,
+    "energy": 0.75
+   },
+   "id": "dorm_d",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Pérez."
+    },
+    {
+     "who": "hal",
+     "text": "Cartel: «Turno de minería. Volvemos con el hielo»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "sign",
+   "id": "holo_air_moon",
+   "pos": [
+    22,
+    33
+   ],
+   "sprite": "holo_air",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Mirar el anuncio",
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.9,
+    "flicker": true
+   },
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Anuncio: «Aire reciclado AgroNet, ahora también en la Luna»."
+    },
+    {
+     "who": "hal",
+     "text": "En las bases espaciales el aire se recicla: se quita el dióxido de carbono y se recupera el oxígeno."
+    }
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_cyan",
+   "pos": [
+    6,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_pink",
+   "pos": [
+    13,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_cyan",
+   "pos": [
+    21,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_pink",
+   "pos": [
+    28,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "crate",
+   "pos": [
+    32,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_rust",
+   "pos": [
+    33,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "tomas",
+   "pos": [
+    24,
+    14
+   ],
+   "facing": "right",
+   "wander": 2
+  },
+  {
+   "type": "light",
+   "id": "light_base",
+   "pos": [
+    8,
+    6
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -8
+    ],
+    "scale": 3.4,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_ship",
+   "pos": [
+    17,
+    19
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 3.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_ice",
+   "pos": [
+    28,
+    10
+   ],
+   "light": {
+    "color": "#9fd8ff",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 4.0,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_drill",
+   "pos": [
+    21,
+    12
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.5,
+    "energy": 0.8
+   }
+  }
+ ],
+ "arrival_lines": [
+  {
+   "who": "hal",
+   "text": "Alunizaje completado. Gravedad: una sexta parte de la terrestre. ¡Cuidado con los saltos!"
+  },
+  {
+   "who": "hal",
+   "text": "No hay aire para respirar: tu traje te protege. Kai está en la base, al oeste."
+  },
+  {
+   "who": "hal",
+   "text": "Al sur está el distrito de la base: el Bar Cráter y una tienda de repuestos para ASTRA."
+  }
+ ]
+}

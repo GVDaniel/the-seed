@@ -1,0 +1,16 @@
+{
+  "id": "lupe",
+  "display_name": "Lupe",
+  "role": "Dueña del Bar Cráter",
+  "home": "moon",
+  "group": "local",
+  "order": 20,
+  "portrait": "res://assets/art/portraits/lupe.png",
+  "sprite": "res://assets/art/characters/lupe.png",
+  "bio": "Sirve batidos a pilotos y mineros desde hace quince años. Lo sabe todo de todos.",
+  "idle_lines": [
+    "En el Bar Cráter servimos batidos y jugos. Aquí todo el mundo vuelve a trabajar con la cabeza clara.",
+    "Las burbujas suben porque el gas pesa menos que el líquido. Con la poca gravedad de la Luna, suben mucho más despacio.",
+    "Si ves a Amina, pregúntale cómo se ve la Tierra desde aquí. ¡Le encanta contarlo!"
+  ]
+}

@@ -1,0 +1,98 @@
+[gd_scene load_steps=11 format=3 uid="uid://surfacelvl01"]
+
+[ext_resource type="Script" path="res://scripts/world/surface_level.gd" id="1_level"]
+[ext_resource type="PackedScene" path="res://scenes/player/andres.tscn" id="2_player"]
+[ext_resource type="Script" path="res://scripts/camera/follow_camera.gd" id="3_cam"]
+[ext_resource type="Script" path="res://scripts/world/interaction_system.gd" id="4_inter"]
+[ext_resource type="Script" path="res://scripts/gameplay/scanner_system.gd" id="5_scan"]
+[ext_resource type="PackedScene" path="res://scenes/ui/surface_hud.tscn" id="6_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_panel.tscn" id="7_dlg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/analysis_panel.tscn" id="8_analysis"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hal/hal_interface.tscn" id="9_hal"]
+[ext_resource type="PackedScene" path="res://scenes/ui/shop/shop_panel.tscn" id="10_shop"]
+
+[sub_resource type="Gradient" id="Gradient_dust"]
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1)
+offsets = PackedFloat32Array(0, 0.2)
+
+[node name="SurfaceLevel" type="Node2D"]
+script = ExtResource("1_level")
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Void" type="ColorRect" parent="Background"]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.043, 0.071, 0.125, 1)
+
+[node name="Ambient" type="CanvasModulate" parent="."]
+unique_name_in_owner = true
+
+[node name="Ground" type="TileMapLayer" parent="."]
+unique_name_in_owner = true
+
+[node name="Objects" type="TileMapLayer" parent="."]
+unique_name_in_owner = true
+
+[node name="Entities" type="Node2D" parent="."]
+unique_name_in_owner = true
+y_sort_enabled = true
+
+[node name="Player" parent="Entities" instance=ExtResource("2_player")]
+unique_name_in_owner = true
+
+[node name="FollowCamera" type="Camera2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_cam")
+follow_speed = 10.0
+
+[node name="InteractionSystem" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_inter")
+player_path = NodePath("../Entities/Player")
+
+[node name="ScannerSystem" type="Node" parent="."]
+script = ExtResource("5_scan")
+ship_path = NodePath("../Entities/Player")
+
+[node name="WeatherLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Weather" type="CPUParticles2D" parent="WeatherLayer"]
+unique_name_in_owner = true
+position = Vector2(1320, 360)
+emitting = false
+amount = 160
+lifetime = 6.0
+preprocess = 6.0
+emission_shape = 3
+emission_rect_extents = Vector2(20, 380)
+direction = Vector2(-1, 0.15)
+spread = 8.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 180.0
+initial_velocity_max = 320.0
+scale_amount_min = 3.0
+scale_amount_max = 6.0
+color_ramp = SubResource("Gradient_dust")
+
+[node name="SurfaceHud" parent="." instance=ExtResource("6_hud")]
+unique_name_in_owner = true
+
+[node name="AnalysisPanel" parent="." instance=ExtResource("8_analysis")]
+unique_name_in_owner = true
+
+[node name="ShopPanel" parent="." instance=ExtResource("10_shop")]
+unique_name_in_owner = true
+
+[node name="HalInterface" parent="." instance=ExtResource("9_hal")]
+unique_name_in_owner = true
+
+[node name="DialoguePanel" parent="." instance=ExtResource("7_dlg")]
+unique_name_in_owner = true

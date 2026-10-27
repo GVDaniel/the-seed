@@ -1,0 +1,14 @@
+{
+  "id": "osei",
+  "display_name": "Cmte. Amara Osei",
+  "role": "Comandante de la base marciana Jezero",
+  "home": "mars",
+  "portrait": "res://assets/art/portraits/osei.png",
+  "sprite": "res://assets/art/characters/osei.png",
+  "idle_lines": [
+    "Antes fui geóloga. Las rocas de Marte cuentan la historia de un planeta que tuvo agua."
+  ],
+  "order": 6,
+  "bio": "Antes fue geóloga: lee las rocas como si fueran libros. Firme, pero siempre protege a su equipo.",
+  "group": "crew"
+}

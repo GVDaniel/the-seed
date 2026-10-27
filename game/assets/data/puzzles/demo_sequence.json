@@ -1,0 +1,8 @@
+{
+  "id": "demo_sequence",
+  "title": "Ordena el despegue",
+  "concept": "secuencia",
+  "prompt": "Ordena los pasos para despegar la nave.",
+  "blocks": ["Encender motores", "Comprobar órbita", "Abrir escotillas", "Confirmar tripulación"],
+  "solution": ["Confirmar tripulación", "Encender motores", "Comprobar órbita", "Abrir escotillas"]
+}

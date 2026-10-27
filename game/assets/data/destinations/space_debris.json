@@ -1,0 +1,33 @@
+{
+  "id": "space_debris",
+  "display_name": "Basura espacial",
+  "kind": "peligro",
+  "short_description": "Restos de cohetes y satélites viejos que siguen en órbita. Un tornillo a esa velocidad golpea como un proyectil.",
+  "scientific_facts": [
+    {
+      "label": "Objetos de más de 10 cm",
+      "value": "≈ 36 500 (estimación ESA, 2023)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "esa_space_debris"
+      ]
+    },
+    {
+      "label": "Velocidad en órbita baja",
+      "value": "≈ 28 000 km/h",
+      "is_game_simplification": false,
+      "source_ids": [
+        "esa_space_debris"
+      ]
+    },
+    {
+      "label": "Por qué importa",
+      "value": "Puede dañar satélites y estaciones",
+      "is_game_simplification": false,
+      "source_ids": [
+        "esa_space_debris"
+      ]
+    }
+  ],
+  "arcade_disclaimer": "En el juego la basura está agrupada en un anillo visible. La real está dispersa en muchas órbitas."
+}

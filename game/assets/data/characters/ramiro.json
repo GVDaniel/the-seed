@@ -1,0 +1,16 @@
+{
+  "id": "ramiro",
+  "display_name": "Don Ramiro",
+  "role": "Tendero de El Último Brote",
+  "home": "earth",
+  "group": "local",
+  "order": 10,
+  "portrait": "res://assets/art/portraits/ramiro.png",
+  "sprite": "res://assets/art/characters/ramiro.png",
+  "bio": "Lleva cuarenta años detrás del mostrador. Su implante verde le avisa cuando una planta necesita agua.",
+  "idle_lines": [
+    "Desde La Marchitez, AgroNet vende hasta el aire embotellado. Yo prefiero vender cosas útiles.",
+    "Con un telescopio pequeño ya se ven los cráteres de la Luna. ¡Pruébalo una noche sin nubes!",
+    "Las plantas sacan casi toda su masa del aire: del dióxido de carbono, no de la tierra."
+  ]
+}

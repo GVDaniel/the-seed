@@ -1,0 +1,40 @@
+{
+  "id": "mars_rover",
+  "display_name": "Rover explorador",
+  "kind": "máquina",
+  "short_description": "Un robot geólogo de seis ruedas. Toma fotos, analiza rocas y guarda muestras para estudiarlas.",
+  "scientific_facts": [
+    {
+      "label": "Inspirado en",
+      "value": "Perseverance (NASA), aterrizó en Jezero el 18/02/2021",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    },
+    {
+      "label": "Masa",
+      "value": "≈ 1 025 kg (como un coche pequeño)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    },
+    {
+      "label": "Energía",
+      "value": "Generador nuclear de radioisótopos, no paneles solares",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_perseverance"
+      ]
+    },
+    {
+      "label": "En el juego",
+      "value": "Este rover es ficticio",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Diseño propio inspirado en rovers reales."
+    }
+  ],
+  "arcade_disclaimer": "El rover del juego es un homenaje; no reproduce el diseño exacto de Perseverance."
+}

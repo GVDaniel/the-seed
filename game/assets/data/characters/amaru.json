@@ -1,0 +1,16 @@
+{
+  "id": "amaru",
+  "display_name": "Amaru Quispe",
+  "role": "Técnica de la cúpula de aire",
+  "home": "earth",
+  "group": "local",
+  "order": 12,
+  "portrait": "res://assets/art/portraits/amaru.png",
+  "sprite": "res://assets/art/characters/amaru.png",
+  "bio": "Mantiene los filtros que dan aire limpio al barrio. Nunca se quita el visor.",
+  "idle_lines": [
+    "Esta lluvia es ácida: el humo de fábricas y motores lleva azufre y nitrógeno, que se mezclan con el agua de las nubes.",
+    "Los árboles limpiaban el aire gratis. Ahora mis filtros trabajan día y noche.",
+    "Un árbol grande da tanta sombra que puede bajar varios grados la temperatura de una calle."
+  ]
+}

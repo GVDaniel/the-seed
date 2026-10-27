@@ -1,0 +1,14 @@
+{
+  "id": "vega",
+  "display_name": "Dra. Elena Vega",
+  "role": "Astrobióloga, jefa de la Estación Aurora",
+  "home": "space",
+  "portrait": "res://assets/art/portraits/vega.png",
+  "sprite": "res://assets/art/characters/vega.png",
+  "idle_lines": [
+    "Una buena científica pregunta siempre: ¿qué dicen los datos?"
+  ],
+  "order": 4,
+  "bio": "Su pregunta favorita: «¿Qué dicen los datos?». Sigue cada señal hasta entenderla.",
+  "group": "crew"
+}

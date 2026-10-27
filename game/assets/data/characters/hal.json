@@ -1,0 +1,16 @@
+{
+  "id": "hal",
+  "display_name": "HAL",
+  "role": "IA de la nave ASTRA · serie HAL 9000",
+  "home": "",
+  "portrait": "res://assets/art/portraits/hal.png",
+  "sprite": "res://assets/art/characters/hal.png",
+  "idle_lines": [
+    "Todos mis circuitos funcionan perfectamente, Andrés. Estoy al cien por cien.",
+    "Pulsa Tab para entrar en mi sistema: allí guardo tu inventario, el mapa y tus notas.",
+    "Ningún ordenador de la serie HAL 9000 ha cometido nunca un error. Bueno… casi nunca."
+  ],
+  "order": 2,
+  "bio": "Habla con calma, lo calcula todo y asegura que nunca ha cometido un error. En su sistema guarda tu inventario, el mapa y tus notas.",
+  "group": "crew"
+}

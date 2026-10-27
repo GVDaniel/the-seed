@@ -1,0 +1,9 @@
+{
+  "id": "the_seed",
+  "order": 3,
+  "category": "clave",
+  "display_name": "La Semilla",
+  "description": "El último cofre de semillas sanas de la Tierra. HAL lo mantiene frío y seco dentro de la mochila.",
+  "fact": "La Bóveda Global de Semillas de Svalbard (Noruega) existe de verdad: guarda más de un millón de muestras de semillas a unos −18 °C.",
+  "icon": "res://assets/art/items/the_seed.png"
+}

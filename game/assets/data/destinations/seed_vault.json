@@ -1,0 +1,33 @@
+{
+  "id": "seed_vault",
+  "display_name": "Bóveda Semillera",
+  "kind": "lugar",
+  "short_description": "Inspirada en la Bóveda Global de Semillas de Svalbard (Noruega), que guarda copias de semillas de todo el mundo por si se pierden.",
+  "scientific_facts": [
+    {
+      "label": "Bóveda real",
+      "value": "Svalbard, Noruega · abrió en 2008",
+      "is_game_simplification": false,
+      "source_ids": [
+        "croptrust_svalbard"
+      ]
+    },
+    {
+      "label": "Temperatura de guardado",
+      "value": "−18 °C",
+      "is_game_simplification": false,
+      "source_ids": [
+        "croptrust_svalbard"
+      ]
+    },
+    {
+      "label": "Capacidad",
+      "value": "Hasta 4,5 millones de muestras de semillas",
+      "is_game_simplification": false,
+      "source_ids": [
+        "croptrust_svalbard"
+      ]
+    }
+  ],
+  "arcade_disclaimer": "La bóveda del juego y la abuela Lucía son ficción, inspiradas en la bóveda real de Svalbard."
+}

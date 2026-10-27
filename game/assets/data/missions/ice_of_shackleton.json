@@ -1,0 +1,104 @@
+{
+  "id": "ice_of_shackleton",
+  "title": "Hielo de Shackleton",
+  "chapter": 2,
+  "order": 2,
+  "summary": "En el fondo oscuro de un cráter lunar hay hielo de agua: el combustible para seguir el viaje.",
+  "start_npc": "kai",
+  "requires": [
+    "signal_from_moon"
+  ],
+  "objectives": [
+    {
+      "id": "scan_ice",
+      "description": "Escanea el hielo del cráter en sombra.",
+      "hud_hint": "Entra en el cráter oscuro (este) y escanea el hielo (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "moon_ice_crater"
+      },
+      "location": "moon"
+    },
+    {
+      "id": "drill_program",
+      "description": "Programa la sonda taladradora.",
+      "hud_hint": "Usa la terminal junto al cráter para programar el taladro (E).",
+      "condition": {
+        "type": "solve_challenge",
+        "challenge_id": "ice_drill"
+      },
+      "location": "moon",
+      "target": "drill_terminal"
+    },
+    {
+      "id": "deliver_kai",
+      "description": "Entrega el hielo a Kai.",
+      "hud_hint": "Vuelve con Kai a la base.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "kai"
+      },
+      "location": "moon"
+    }
+  ],
+  "rewards": {
+    "experience": 80,
+    "unlock_destination_id": "lunar_water_fuel"
+  },
+  "dialogues": {
+    "offer": [
+      {
+        "who": "kai",
+        "text": "¡Hola! Tú debes ser Andrés. La Dra. Vega me avisó. Soy Kai, el ingeniero de Shackleton."
+      },
+      {
+        "who": "kai",
+        "text": "¿Ves ese cráter al este? Su fondo nunca recibe luz del Sol. ¡Está a más de 200 grados bajo cero!"
+      },
+      {
+        "who": "kai",
+        "text": "Ahí el hielo de agua lleva muchísimo tiempo congelado. Escanéalo y luego programa mi sonda taladradora."
+      },
+      {
+        "who": "kai",
+        "text": "Con ese hielo fabricaremos combustible para tu viaje a Marte. ¿Trato hecho?"
+      }
+    ],
+    "reminder": [
+      {
+        "who": "kai",
+        "text": "¡El hielo no se va a mover solo! Sigue la flecha dorada."
+      }
+    ],
+    "deliver_kai": [
+      {
+        "who": "kai",
+        "text": "¡Hielo recibido! Primero lo derretimos y luego usamos electricidad para separar el agua: H₂O → hidrógeno + oxígeno."
+      },
+      {
+        "who": "kai",
+        "text": "Hidrógeno y oxígeno juntos son un combustible muy potente. ¡Tu tanque está lleno!"
+      },
+      {
+        "who": "hal",
+        "text": "Nuevo destino desbloqueado: Marte. Ya podemos aterrizar en el cráter Jezero."
+      },
+      {
+        "who": "kai",
+        "text": "La comandante Osei te espera allí. ¡Buen viaje, y saluda a los marcianos! Es broma: no hay."
+      }
+    ],
+    "after": [
+      {
+        "who": "kai",
+        "text": "Si vuelves, te enseño a saltar en baja gravedad. ¡Aquí pesas como una sexta parte!"
+      }
+    ]
+  },
+  "objective_complete_messages": {
+    "scan_ice": "Objetivo cumplido: hielo de agua confirmado.",
+    "drill_program": "Objetivo cumplido: la sonda extrajo el hielo.",
+    "deliver_kai": "Objetivo cumplido: combustible listo."
+  },
+  "mission_complete_message": "Misión completada: Hielo de Shackleton. ¡Aterrizaje en Marte autorizado!"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "station_aurora",
+  "display_name": "Estación Aurora",
+  "kind": "station",
+  "short_description": "Estación científica orbital de ficción situada cerca de la Tierra en el mapa de ASTRA. Inspirada en laboratorios espaciales reales, no es un objeto existente.",
+  "scientific_facts": [
+    {
+      "label": "Referente real",
+      "value": "Estaciones como la ISS orbitan ~400 km sobre la Tierra",
+      "is_game_simplification": true,
+      "simplification_note": "Aurora es inventada para el juego; la altitud citada es típica de la ISS, no de Aurora.",
+      "source_ids": ["nasa_iss_facts"]
+    },
+    {
+      "label": "Qué estudian las estaciones",
+      "value": "Biología, materiales, observación terrestre y tecnología espacial",
+      "is_game_simplification": true,
+      "simplification_note": "Resumen educativo de líneas de investigación habituales en órbita baja.",
+      "source_ids": ["nasa_iss_facts"]
+    },
+    {
+      "label": "Microgravedad",
+      "value": "En órbita se experimenta caída libre continua (sensación de ingravidez)",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_iss_facts"]
+    }
+  ],
+  "arcade_disclaimer": "La Estación Aurora y su proximidad en pantalla son diseño de juego. No afirma órbitas, periodos ni distancias reales."
+}

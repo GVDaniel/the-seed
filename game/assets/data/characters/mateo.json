@@ -1,0 +1,16 @@
+{
+  "id": "mateo",
+  "display_name": "Mateo",
+  "role": "Vecino de Barrio Semilla · 10 años",
+  "home": "earth",
+  "group": "local",
+  "order": 11,
+  "portrait": "res://assets/art/portraits/mateo.png",
+  "sprite": "res://assets/art/characters/mateo.png",
+  "bio": "Pelo azul, sudadera fucsia y mil preguntas. Quiere ser piloto como Andrés.",
+  "idle_lines": [
+    "¿Vas al espacio? ¡Tráeme una piedra de la Luna! Bueno… una foto también vale.",
+    "Mi abuela dice que antes la lluvia no picaba en los ojos. Ahora hay que llevar capucha.",
+    "Cuando hay apagón se ven un montón de estrellas. La luz de la ciudad tapa las demás: se llama contaminación lumínica."
+  ]
+}

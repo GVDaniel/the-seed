@@ -1,0 +1,9 @@
+{
+  "id": "mars_fries",
+  "order": 42,
+  "category": "comida",
+  "display_name": "Papas fritas marcianas",
+  "description": "Crujientes, de la Cantina Polvo Rojo. Cultivadas en suelo bien lavado.",
+  "fact": "El suelo de Marte tiene percloratos, sales tóxicas para las personas. Para cultivar papas allí habría que lavarlo antes.",
+  "icon": "res://assets/art/items/mars_fries.png"
+}

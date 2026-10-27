@@ -1,0 +1,15 @@
+{
+  "id": "lucia",
+  "display_name": "Abuela Lucía",
+  "role": "Guardiana de la Bóveda Semillera",
+  "home": "earth",
+  "portrait": "res://assets/art/portraits/lucia.png",
+  "sprite": "res://assets/art/characters/lucia.png",
+  "idle_lines": [
+    "Una semilla es una planta dormida que espera agua, luz y tierra.",
+    "Cuida a HAL. Las máquinas también necesitan que alguien confíe en ellas."
+  ],
+  "order": 3,
+  "bio": "Botánica de toda la vida. Conoce el nombre de cada semilla del cofre y recuerda cuando los bosques eran verdes.",
+  "group": "crew"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "lunar_water_fuel",
+  "display_name": "Del hielo al combustible",
+  "kind": "concepto",
+  "short_description": "Con electricidad, el agua se separa en hidrógeno y oxígeno. Así un cráter helado se convierte en una gasolinera espacial.",
+  "scientific_facts": [
+    {
+      "label": "Electrólisis",
+      "value": "2 H₂O → 2 H₂ + O₂ (con electricidad)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_isru"
+      ]
+    },
+    {
+      "label": "Combustible de cohetes",
+      "value": "Hidrógeno + oxígeno líquidos",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_isru"
+      ]
+    },
+    {
+      "label": "ISRU",
+      "value": "Usar los recursos del lugar en vez de traerlo todo desde la Tierra",
+      "is_game_simplification": false,
+      "source_ids": [
+        "nasa_isru"
+      ]
+    }
+  ],
+  "arcade_disclaimer": "En el juego el proceso es instantáneo. En la realidad necesita mucha energía y máquinas grandes."
+}

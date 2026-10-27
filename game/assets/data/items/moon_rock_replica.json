@@ -1,0 +1,9 @@
+{
+  "id": "moon_rock_replica",
+  "order": 33,
+  "category": "recuerdo",
+  "display_name": "Réplica de roca lunar",
+  "description": "Hecha con regolito de Shackleton prensado. Pesa poquito en la Luna… y bastante más en la Tierra.",
+  "fact": "Las misiones Apolo trajeron a la Tierra 382 kg de rocas y polvo lunar.",
+  "icon": "res://assets/art/items/moon_rock_replica.png"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "scanner",
+  "order": 2,
+  "category": "equipo",
+  "starter": true,
+  "display_name": "Escáner de mano",
+  "description": "Pulsa F cerca de algo interesante y el escáner lo analiza. Los resultados van al cuaderno.",
+  "fact": "Los científicos averiguan de qué está hecho algo analizando la luz que refleja o emite. A eso se le llama espectroscopía.",
+  "icon": "res://assets/art/items/scanner.png"
+}

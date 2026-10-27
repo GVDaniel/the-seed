@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://surfacehud01"]
+
+[ext_resource type="Script" path="res://scripts/ui/surface_hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/objective_panel.tscn" id="2_obj"]
+[ext_resource type="Texture2D" path="res://assets/art/portraits/hal.png" id="3_hal"]
+
+[node name="SurfaceHud" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LocationBox" type="PanelContainer" parent="Root"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 12.0
+offset_right = 380.0
+offset_bottom = 80.0
+mouse_filter = 2
+
+[node name="VBox" type="VBoxContainer" parent="Root/LocationBox"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 2
+
+[node name="LocationLabel" type="Label" parent="Root/LocationBox/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 20
+text = "Lugar"
+
+[node name="RankLabel" type="Label" parent="Root/LocationBox/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.239, 0.906, 0.788, 1)
+theme_override_font_sizes/font_size = 15
+text = "Cadete · XP 0"
+
+[node name="HalButton" type="Button" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 14
+offset_top = 88
+offset_right = 200
+offset_bottom = 136
+focus_mode = 0
+tooltip_text = "Entrar en HAL: inventario, mapa, misiones, cuaderno"
+theme_override_font_sizes/font_size = 18
+text = "HAL  (Tab)"
+icon = ExtResource("3_hal")
+expand_icon = true
+
+[node name="ObjectivePanel" parent="Root" instance=ExtResource("2_obj")]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -374.0
+offset_top = 12.0
+offset_right = -14.0
+offset_bottom = 110.0
+grow_horizontal = 0
+
+[node name="ToastBox" type="PanelContainer" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_top = 96.0
+offset_right = 260.0
+offset_bottom = 140.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="ToastLabel" type="Label" parent="Root/ToastBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 18
+text = "Aviso"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PromptBox" type="PanelContainer" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -112.0
+offset_right = 260.0
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="PromptLabel" type="Label" parent="Root/PromptBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 20
+text = "E — Hablar"
+horizontal_alignment = 1
+
+[node name="HelpLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = -44.0
+offset_right = -14.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.75, 0.88, 0.98, 1)
+theme_override_colors/font_outline_color = Color(0.043, 0.071, 0.125, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 16
+text = "WASD — Caminar · E — Interactuar · F — Escanear · Tab — HAL (inventario, mapa, notas)"
+horizontal_alignment = 1

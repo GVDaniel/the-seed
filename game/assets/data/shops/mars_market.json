@@ -1,0 +1,16 @@
+{
+  "id": "mars_market",
+  "display_name": "Mercado de Jezero",
+  "keeper": "chen",
+  "greeting": "Herramientas libres de MarsCorp. Mira sin prisa.",
+  "stock": [
+    {
+      "item": "ion_thruster",
+      "price": 80
+    },
+    {
+      "item": "meteorite_replica",
+      "price": 30
+    }
+  ]
+}

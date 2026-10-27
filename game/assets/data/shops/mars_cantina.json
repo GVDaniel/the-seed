@@ -1,0 +1,16 @@
+{
+  "id": "mars_cantina",
+  "display_name": "Cantina Polvo Rojo",
+  "keeper": "rosa",
+  "greeting": "Siéntate, sacúdete el polvo y pide algo rico.",
+  "stock": [
+    {
+      "item": "mars_fries",
+      "price": 12
+    },
+    {
+      "item": "polar_ice_water",
+      "price": 8
+    }
+  ]
+}

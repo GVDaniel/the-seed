@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://flighthud0001"]
+
+[ext_resource type="Script" path="res://scripts/ui/flight_hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/objective_panel.tscn" id="2_obj"]
+[ext_resource type="Texture2D" path="res://assets/art/portraits/hal.png" id="3_hal"]
+
+[node name="FlightHud" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopBar" type="PanelContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = -12.0
+offset_bottom = 70.0
+grow_horizontal = 2
+
+[node name="TopRow" type="HBoxContainer" parent="Root/TopBar"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="ShipNameLabel" type="Label" parent="Root/TopBar/TopRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 24
+text = "ASTRA"
+
+[node name="ModeLabel" type="Label" parent="Root/TopBar/TopRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.239, 0.906, 0.788, 1)
+theme_override_font_sizes/font_size = 17
+text = "MODO  ÓRBITA"
+
+[node name="XpLabel" type="Label" parent="Root/TopBar/TopRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_font_sizes/font_size = 17
+text = "XP  0"
+
+[node name="SpeedLabel" type="Label" parent="Root/TopBar/TopRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.945, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "VEL  000"
+
+[node name="EnergyBlock" type="VBoxContainer" parent="Root/TopBar/TopRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+
+[node name="EnergyLabel" type="Label" parent="Root/TopBar/TopRow/EnergyBlock"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.945, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "NRG  100"
+
+[node name="EnergyBar" type="ProgressBar" parent="Root/TopBar/TopRow/EnergyBlock"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="HalButton" type="Button" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 12
+offset_top = 84
+offset_right = 198
+offset_bottom = 132
+focus_mode = 0
+tooltip_text = "Entrar en HAL: inventario, mapa, misiones, cuaderno"
+theme_override_font_sizes/font_size = 18
+text = "HAL  (Tab)"
+icon = ExtResource("3_hal")
+expand_icon = true
+
+[node name="ObjectivePanel" parent="Root" instance=ExtResource("2_obj")]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -374.0
+offset_top = 84.0
+offset_right = -14.0
+offset_bottom = 180.0
+grow_horizontal = 0
+
+[node name="ToastLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 84.0
+offset_right = 260.0
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.957, 0.827, 0.369, 1)
+theme_override_colors/font_outline_color = Color(0.043, 0.071, 0.125, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 19
+text = ""
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="LabButton" type="Button" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = -92.0
+offset_right = 200.0
+offset_bottom = -56.0
+grow_vertical = 0
+text = "Laboratorio libre"
+
+[node name="HintLabel" type="Label" parent="Root"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = -48.0
+offset_right = -12.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.7, 0.85, 0.95, 1)
+theme_override_colors/font_outline_color = Color(0.043, 0.071, 0.125, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 16
+text = "…"
+horizontal_alignment = 1
+autowrap_mode = 3

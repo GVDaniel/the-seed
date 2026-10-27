@@ -1,0 +1,33 @@
+{
+  "id": "earth_dead_plant",
+  "display_name": "Planta marchita",
+  "kind": "muestra",
+  "short_description": "Una planta del invernadero que ya no puede hacer fotosíntesis. Sus hojas secas cuentan por qué la Tierra está enfermando.",
+  "scientific_facts": [
+    {
+      "label": "Fotosíntesis",
+      "value": "CO₂ + agua + luz del Sol → azúcar + oxígeno",
+      "is_game_simplification": true,
+      "source_ids": [
+        "nasa_climate"
+      ],
+      "simplification_note": "La ecuación completa es 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂."
+    },
+    {
+      "label": "¿Quién produce el oxígeno?",
+      "value": "Las plantas y el fitoplancton del océano (este último, cerca de la mitad)",
+      "is_game_simplification": false,
+      "source_ids": [
+        "noaa_ocean_oxygen"
+      ]
+    },
+    {
+      "label": "La Marchitez",
+      "value": "Plaga de hongos + calor extremo (año 2187)",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Evento inventado para la historia del juego."
+    }
+  ],
+  "arcade_disclaimer": "La Marchitez es ficción, pero las plagas, las sequías y el calor extremo sí amenazan cultivos reales y se estudian hoy."
+}

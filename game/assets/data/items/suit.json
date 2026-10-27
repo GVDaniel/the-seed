@@ -1,0 +1,10 @@
+{
+  "id": "suit",
+  "order": 1,
+  "category": "equipo",
+  "starter": true,
+  "display_name": "Traje de cadete",
+  "description": "Blanco con franjas cian. Tiene casco con visera y bolsillos para todo.",
+  "fact": "Un traje espacial da oxígeno, mantiene la presión del cuerpo y protege del frío, del calor y, en parte, de la radiación.",
+  "icon": "res://assets/art/items/suit.png"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "battery_pack",
+  "order": 20,
+  "category": "mejora",
+  "display_name": "Batería de iones de litio",
+  "description": "Celdas recicladas por Ingrid. ASTRA aguanta más acelerando y recarga más rápido.",
+  "fact": "Las baterías de iones de litio guardan energía química y la devuelven como electricidad. Las usan los móviles, los coches eléctricos y la Estación Espacial Internacional.",
+  "icon": "res://assets/art/items/battery_pack.png",
+  "effects": {
+    "max_energy": 1.5,
+    "energy_regen": 1.25
+  }
+}

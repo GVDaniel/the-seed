@@ -1,0 +1,9 @@
+{
+  "id": "star_map",
+  "order": 31,
+  "category": "recuerdo",
+  "display_name": "Mapa de estrellas",
+  "description": "Una lámina que brilla en la oscuridad, perfecta para las noches de apagón.",
+  "fact": "La estrella más cercana al Sol es Próxima Centauri, a unos 4,2 años luz.",
+  "icon": "res://assets/art/items/star_map.png"
+}

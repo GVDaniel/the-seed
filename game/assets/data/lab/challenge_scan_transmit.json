@@ -1,0 +1,15 @@
+{
+  "id": "scan_transmit_01",
+  "title": "Recoger y enviar",
+  "briefing": "Programa la sonda: llega al punto de interés (estrella), escanea y ve a la antena para transmitir.",
+  "concepts_text": "SECUENCIA: las órdenes se hacen una tras otra, en el mismo orden de la lista.\nCONDICIÓN: una pregunta sí/no (ej. «¿hay algo que escanear aquí?»). En este laboratorio el intérprete comprueba condiciones por ti al ejecutar ESCANEAR o TRANSMITIR.\nBUCLE: repetir un bloque varias veces (ej. avanzar 3 veces). Se desbloquea en el siguiente reto.",
+  "allow_loops": false,
+  "width": 5,
+  "height": 5,
+  "start": [1, 2],
+  "start_dir": "E",
+  "pois": [[3, 2]],
+  "transmit": [3, 4],
+  "blocked": [],
+  "available_ops": ["AVANZAR", "GIRAR_IZQUIERDA", "GIRAR_DERECHA", "ESCANEAR", "TRANSMITIR"]
+}

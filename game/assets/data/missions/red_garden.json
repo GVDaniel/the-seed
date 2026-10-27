@@ -1,0 +1,139 @@
+{
+  "id": "red_garden",
+  "title": "Un jardín rojo",
+  "chapter": 3,
+  "order": 1,
+  "summary": "En el cráter Jezero, Andrés intentará que un brote de La Semilla crezca fuera de la Tierra.",
+  "start_npc": "osei",
+  "requires": [
+    "ice_of_shackleton"
+  ],
+  "on_complete_event": "ending_teaser",
+  "objectives": [
+    {
+      "id": "scan_delta",
+      "description": "Escanea el antiguo delta del río.",
+      "hud_hint": "Escanea el delta, al sureste (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "mars_delta"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "scan_rover",
+      "description": "Escanea el rover explorador.",
+      "hud_hint": "Busca el rover explorador y escanéalo (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "mars_rover"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "sample_program",
+      "description": "Programa la sonda de muestras.",
+      "hud_hint": "Usa la terminal del delta para recoger muestras (E).",
+      "condition": {
+        "type": "solve_challenge",
+        "challenge_id": "delta_samples"
+      },
+      "location": "mars",
+      "target": "delta_terminal"
+    },
+    {
+      "id": "plant_seed",
+      "description": "Planta un brote en el invernadero.",
+      "hud_hint": "Acércate al invernadero y planta el brote (E).",
+      "condition": {
+        "type": "interact",
+        "target_id": "mars_greenhouse"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "talk_osei",
+      "description": "Habla con la comandante Osei.",
+      "hud_hint": "Cuéntale a la comandante Osei lo que pasó.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "osei"
+      },
+      "location": "mars"
+    }
+  ],
+  "rewards": {
+    "experience": 120,
+    "unlock_destination_id": "trappist1e"
+  },
+  "dialogues": {
+    "offer": [
+      {
+        "who": "osei",
+        "text": "Cadete Andrés, te damos la bienvenida a la base Jezero. Hace unos 3 500 millones de años, aquí había un lago."
+      },
+      {
+        "who": "osei",
+        "text": "Marte es rojo por el óxido de hierro: su suelo está, literalmente, oxidado."
+      },
+      {
+        "who": "osei",
+        "text": "Queremos saber si un brote de La Semilla puede crecer aquí. Primero estudia el delta y el rover."
+      },
+      {
+        "who": "osei",
+        "text": "Después programa la sonda de muestras y planta el brote en el invernadero. ¿Contamos contigo y con HAL?"
+      }
+    ],
+    "reminder": [
+      {
+        "who": "osei",
+        "text": "Sigue la flecha dorada, cadete. En Marte es fácil perderse: todo es rojo."
+      }
+    ],
+    "talk_osei": [
+      {
+        "who": "osei",
+        "text": "El brote crece… pero solo dentro de la cúpula. Afuera, el aire es casi todo CO₂ y la presión es menos del 1 % de la terrestre."
+      },
+      {
+        "who": "osei",
+        "text": "Marte tampoco tiene un campo magnético global que lo proteja de la radiación. Aquí podemos sobrevivir, pero no vivir al aire libre."
+      },
+      {
+        "who": "andres",
+        "text": "Entonces… ¿Marte no puede ser nuestro nuevo hogar?"
+      },
+      {
+        "who": "osei",
+        "text": "Puede ser una parada, un laboratorio. Pero La Semilla necesita un mundo con su propio cielo."
+      },
+      {
+        "who": "hal",
+        "text": "¡Mensaje urgente de la Dra. Vega desde Aurora!"
+      },
+      {
+        "who": "vega",
+        "text": "Andrés, los telescopios apuntan a TRAPPIST-1e: un planeta rocoso en la zona habitable de su estrella."
+      },
+      {
+        "who": "vega",
+        "text": "Está a unos 40 años luz. Será el viaje más largo de la historia… y empieza ahora."
+      }
+    ],
+    "after": [
+      {
+        "who": "osei",
+        "text": "Cuidaremos el brote. Será la prueba de que La Semilla puede despertar lejos de casa."
+      }
+    ]
+  },
+  "objective_complete_messages": {
+    "scan_delta": "Objetivo cumplido: el delta guarda la historia del agua.",
+    "scan_rover": "Objetivo cumplido: datos del rover registrados.",
+    "sample_program": "Objetivo cumplido: muestras recogidas.",
+    "plant_seed": "¡El brote está plantado!",
+    "talk_osei": "Objetivo cumplido: nuevo rumbo, TRAPPIST-1e."
+  },
+  "mission_complete_message": "Capítulo 3 completado: Un jardín rojo."
+}

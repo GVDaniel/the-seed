@@ -1,0 +1,13 @@
+{
+  "id": "delta_samples",
+  "order": 7,
+  "category": "muestra",
+  "display_name": "Muestras del delta",
+  "description": "Rocas del antiguo delta de Jezero, elegidas con un programa que decidía solo.",
+  "fact": "El rover Perseverance guarda muestras de roca en tubos sellados para que una misión futura pueda traerlas a la Tierra.",
+  "granted_by": {
+    "type": "solve_challenge",
+    "value": "delta_samples"
+  },
+  "icon": "res://assets/art/items/delta_samples.png"
+}

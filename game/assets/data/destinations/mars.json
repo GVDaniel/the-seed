@@ -1,0 +1,34 @@
+{
+  "id": "mars",
+  "display_name": "Marte",
+  "kind": "planet",
+  "short_description": "El planeta rojo: mundo frío y desértico, objetivo central de la exploración robótica y de futuros viajes tripulados.",
+  "scientific_facts": [
+    {
+      "label": "Diámetro ecuatorial",
+      "value": "≈ 6 792 km",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_mars_facts"]
+    },
+    {
+      "label": "Distancia media al Sol",
+      "value": "≈ 227,9 millones km",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_mars_facts"]
+    },
+    {
+      "label": "Día marciano (sol)",
+      "value": "≈ 24 h 37 min",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_mars_facts"]
+    },
+    {
+      "label": "Atmósfera",
+      "value": "Muy fina, mayormente CO₂",
+      "is_game_simplification": true,
+      "simplification_note": "Se omite el detalle de trazas (N₂, Ar, etc.) para el nivel educativo ~12 años.",
+      "source_ids": ["nasa_mars_facts"]
+    }
+  ],
+  "arcade_disclaimer": "Marte no está a escala ni a su distancia real respecto a la Tierra en este mapa. El viaje arcade no simula transferencias orbitales reales (p. ej. Hohmann)."
+}
