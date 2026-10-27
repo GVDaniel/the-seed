@@ -1,0 +1,85 @@
+{
+  "id": "sentinel_ah7",
+  "display_name": "Centinela AH-7",
+  "backdrop": "mars_canyon",
+  "music": "battle",
+  "tutorial": true,
+  "intro": "¡El Centinela AH-7 de los Antihumanistas bloquea el carguero!",
+  "enemies": [
+    {
+      "id": "ah7",
+      "display_name": "Centinela AH-7",
+      "sprite": "res://assets/art/props/robot_ah7.png",
+      "sprite_off": "res://assets/art/props/robot_ah7_off.png",
+      "scale": 4,
+      "max_hp": 360,
+      "attack": 18,
+      "defense": 2,
+      "weak": [
+        "electricidad"
+      ],
+      "moves": [
+        {
+          "id": "punch",
+          "name": "Puño hidráulico",
+          "power": 1.0,
+          "target": "one",
+          "weight": 3
+        },
+        {
+          "id": "sweep",
+          "name": "Barrido de chatarra",
+          "power": 0.7,
+          "target": "all",
+          "weight": 2
+        },
+        {
+          "id": "plates",
+          "name": "Placas de blindaje",
+          "target": "self",
+          "effect": "shield",
+          "rounds": 2,
+          "weight": 1
+        },
+        {
+          "id": "quake",
+          "name": "Martillo sísmico",
+          "power": 1.8,
+          "target": "all",
+          "charge": 1,
+          "every": 3,
+          "locks": [
+            "electricidad",
+            "impacto",
+            "impacto"
+          ]
+        }
+      ],
+      "taunts": [
+        "ORDEN ANTIHUMANISTA N.º 1: NINGUNA NAVE SALE DE MARTE.",
+        "LOS HUMANOS ROMPEN TODO LO QUE TOCAN. MI PROGRAMA LO DICE.",
+        "CALCULANDO… CALCULANDO… ERROR: ESTE HUMANO ARREGLA COSAS."
+      ],
+      "sheet": "ah7",
+      "scan": "Robot de carga reprogramado. Sus servos son hidráulicos: aceite a presión que mueve pistones. Sus circuitos no tienen blindaje, así que la electricidad lo desordena."
+    }
+  ],
+  "rewards": {
+    "experience": 60,
+    "credits": 40
+  },
+  "victory_lines": [
+    {
+      "who": "hal",
+      "text": "AH-7 desactivado. No está roto: solo apagado. Se le cayó un chip con sus órdenes."
+    },
+    {
+      "who": "andres",
+      "text": "Un robot no es bueno ni malo, ¿verdad, HAL? Hace lo que dice su programa."
+    },
+    {
+      "who": "hal",
+      "text": "Exacto. Y quien escribió ese programa no quiere que la humanidad vuelva a florecer."
+    }
+  ]
+}

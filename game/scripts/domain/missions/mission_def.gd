@@ -19,6 +19,8 @@ var start_npc: String = ""
 var auto_start: bool = false
 ## Evento narrativo al completar (p. ej. cinemática final).
 var on_complete_event: String = ""
+## "main" = historia principal (una activa a la vez); "side" = secundaria (en paralelo).
+var kind: String = "main"
 
 
 static func from_dict(data: Dictionary) -> MissionDef:
@@ -45,11 +47,16 @@ static func from_dict(data: Dictionary) -> MissionDef:
 	def.start_npc = str(data.get("start_npc", ""))
 	def.auto_start = bool(data.get("auto_start", false))
 	def.on_complete_event = str(data.get("on_complete_event", ""))
+	def.kind = str(data.get("kind", "main"))
 	var objs: Array = data.get("objectives", [])
 	for item in objs:
 		if typeof(item) == TYPE_DICTIONARY:
 			def.objectives.append(MissionObjectiveDef.from_dict(item))
 	return def
+
+
+func is_side() -> bool:
+	return kind == "side"
 
 
 func get_objective(objective_id: String) -> MissionObjectiveDef:

@@ -1,0 +1,9 @@
+{
+  "id": "methane_engine",
+  "order": 8,
+  "category": "clave",
+  "display_name": "Motor de metano «Corazón Rojo»",
+  "description": "Rescatado del carguero estrellado de MarsCorp. Bruno puede adaptarlo a ASTRA en su taller.",
+  "fact": "El metano (CH₄) arde con oxígeno y empuja mucho. Algunos cohetes modernos ya usan metano y oxígeno líquidos.",
+  "icon": "res://assets/art/items/methane_engine.png"
+}

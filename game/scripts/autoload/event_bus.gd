@@ -50,3 +50,11 @@ signal world_interacted(target_id: String)
 signal story_event(event_id: String)
 signal chapter_changed(chapter: int)
 signal nav_target_changed(target_id: String)
+
+# Nave, héroe y combate
+signal ship_state_changed
+signal hero_changed
+signal level_up(level: int, points: int)
+signal item_used(item_id: String)
+## result = "victory" | "defeat" | "retreat"
+signal battle_finished(encounter_id: String, result: String)

@@ -1,0 +1,13 @@
+{
+  "id": "orders_chip",
+  "order": 9,
+  "category": "clave",
+  "display_name": "Chip de órdenes AH-7",
+  "description": "Se le cayó al Centinela AH-7. Contiene las órdenes que le dieron los Antihumanistas.",
+  "fact": "Un robot sigue su programa paso a paso, como la sonda del laboratorio. Si cambias el programa, cambias lo que hace.",
+  "granted_by": {
+    "type": "win_battle",
+    "value": "sentinel_ah7"
+  },
+  "icon": "res://assets/art/items/orders_chip.png"
+}

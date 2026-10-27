@@ -38,7 +38,11 @@
         "type": "talk_to",
         "npc_id": "kai"
       },
-      "location": "moon"
+      "location": "moon",
+      "effects": {
+        "refuel": true,
+        "set_flag": "lunar_fuel_depot"
+      }
     }
   ],
   "rewards": {
@@ -86,6 +90,10 @@
       {
         "who": "kai",
         "text": "La comandante Osei te espera allí. ¡Buen viaje, y saluda a los marcianos! Es broma: no hay."
+      },
+      {
+        "who": "kai",
+        "text": "Desde hoy, la estación de servicio de Shackleton te llena el tanque gratis. ¡Usa el surtidor junto a tu nave!"
       }
     ],
     "after": [

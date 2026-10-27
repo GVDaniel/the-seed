@@ -1,0 +1,26 @@
+{
+  "engines": [
+    {
+      "id": "old_chemical",
+      "display_name": "Motor químico CX-50",
+      "fuel_name": "hidracina",
+      "fuel_capacity": 60,
+      "fuel_use": 1.6,
+      "speed_factor": 0.62,
+      "accel_factor": 0.6,
+      "description": "El motor original de ASTRA, fabricado en 2150. Lento, gastón y con un tanque pequeño.",
+      "fact": "Muchos satélites y sondas usan hidracina en sus propulsores pequeños: al tocar un catalizador se descompone en gas caliente que empuja la nave."
+    },
+    {
+      "id": "methane_engine",
+      "display_name": "Motor de metano «Corazón Rojo»",
+      "fuel_name": "metano y oxígeno",
+      "fuel_capacity": 140,
+      "fuel_use": 1.05,
+      "speed_factor": 1.12,
+      "accel_factor": 1.25,
+      "description": "Rescatado de un carguero de MarsCorp y adaptado por Bruno. Empuja fuerte y gasta poco.",
+      "fact": "El metano (CH₄) y el oxígeno líquidos son un buen combustible para cohetes. En Marte se pueden fabricar con el CO₂ del aire y el agua del hielo."
+    }
+  ]
+}

@@ -15,6 +15,14 @@
     {
       "item": "moon_rock_replica",
       "price": 20
+    },
+    {
+      "item": "aux_tank",
+      "price": 50
+    },
+    {
+      "item": "repair_kit",
+      "price": 20
     }
   ]
 }

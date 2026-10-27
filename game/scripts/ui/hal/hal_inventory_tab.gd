@@ -13,6 +13,7 @@ var _fact: Label
 var _fact_box: PanelContainer
 var _selected: String = ""
 var _header: Label
+var _use: Button
 
 
 func _ready() -> void:
@@ -42,7 +43,11 @@ func _ready() -> void:
 	_fact = HalUi.label("", 16, HalUi.TEXT, true)
 	fact_col.add_child(_fact)
 	_fact_box.add_child(fact_col)
-	for c in [_icon, _name, _category, _description, _fact_box]:
+	_use = Button.new()
+	_use.custom_minimum_size = Vector2(0, 44)
+	_use.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+	_use.pressed.connect(_on_use)
+	for c in [_icon, _name, _category, _description, _fact_box, _use]:
 		detail.add_child(c)
 	add_child(detail)
 
@@ -82,6 +87,7 @@ func _select(item_id: String) -> void:
 func _show_detail() -> void:
 	var def: ItemDef = App.inventory().catalog().get_def(_selected)
 	_fact_box.visible = def != null and not def.fact.is_empty()
+	_use.visible = def != null and def.is_consumable()
 	if def == null:
 		_icon.texture = null
 		_name.text = "Inventario vacío"
@@ -93,6 +99,18 @@ func _show_detail() -> void:
 	_category.text = def.category_name().to_upper()
 	_description.text = def.description
 	_fact.text = def.fact
+	if def.is_consumable():
+		var reason: String = App.inventory().use_block_reason(def.id)
+		_use.text = def.use_text() if reason.is_empty() else reason
+		_use.disabled = not reason.is_empty()
+
+
+func _on_use() -> void:
+	if App.inventory().use(_selected):
+		App.sfx().play("pickup")
+	else:
+		App.sfx().play("error")
+	refresh()
 
 
 func hal_line() -> String:

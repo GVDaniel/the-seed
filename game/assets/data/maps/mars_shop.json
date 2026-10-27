@@ -64,24 +64,78 @@
   "B": {
    "tile": 15,
    "solid": true
+  },
+  "a": {
+   "tile": 16
+  },
+  "b": {
+   "tile": 17
+  },
+  "e": {
+   "tile": 18
+  },
+  "u": {
+   "tile": 19
+  },
+  "g": {
+   "tile": 20
+  },
+  "l": {
+   "tile": 21
+  },
+  "y": {
+   "tile": 22
+  },
+  "z": {
+   "tile": 23
+  },
+  "h": {
+   "tile": 24
+  },
+  "d": {
+   "tile": 25
+  },
+  "P": {
+   "tile": 26,
+   "solid": true
+  },
+  "N": {
+   "tile": 27,
+   "solid": true
+  },
+  "O": {
+   "tile": 28,
+   "solid": true
+  },
+  "Q": {
+   "tile": 29,
+   "solid": true
+  },
+  "V": {
+   "tile": 30,
+   "solid": true
+  },
+  "K": {
+   "tile": 31,
+   "solid": true
   }
  },
  "ground": [
   ";;;;;;;;;;;;;;;;",
   ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
+  ";eeeeeeeeeeeeee;",
+  ";;;z;;;;;;;;;z;;",
+  ";;;;;z;;;;zz;;z;",
+  ";;;;;;;;z;rrrr;;",
+  ";;;;;;;;;zrrrr;;",
   ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;;;;;;;",
+  ";;;;;;;;;;;z;;;;",
   ";;;;;;;xx;;;;;;;",
   ";;;;;;;;;;;;;;;;"
  ],
  "objects": [
   "################",
-  "#SSSSSSSSmsmmsm#",
+  "#SSSSSSSSOsmmQK#",
   "#              #",
   "#CCCCCCCC      #",
   "#              #",
@@ -122,8 +176,8 @@
     2
    ],
    "facing": "down",
-   "shop": "mars_market",
-   "radius": 46
+   "radius": 46,
+   "shop": "mars_market"
   },
   {
    "type": "prop",
@@ -232,12 +286,90 @@
     11.5,
     1
    ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydro_rack",
+   "pos": [
+    1.5,
+    6
+   ],
+   "solid": [
+    2,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -12
+    ],
+    "scale": 1.4,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_marscorp",
+   "pos": [
+    13,
+    4
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_boxes_mars",
+   "pos": [
+    14,
+    4
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_fruit_crate",
+   "pos": [
+    10,
+    7
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tank_o2",
+   "pos": [
+    14,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_rug_orange",
+   "pos": [
+    4,
+    8
+   ],
+   "z": -1
   }
  ],
  "arrival_lines": [
   {
    "who": "hal",
-   "text": "Mercado de Jezero. Chen vende un motor iónico que haría volar a ASTRA."
+   "text": "Mercado de Jezero. Chen vende un propulsor iónico que ahorra combustible y botiquines."
   }
  ]
 }

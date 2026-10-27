@@ -75,6 +75,10 @@
           {
             "who": "",
             "text": "Es una gran noticia… y también una lección: no existe un «planeta B» fácil."
+          },
+          {
+            "who": "",
+            "text": "Y ASTRA tiene un corazón nuevo: un motor de metano fabricado con el aire, el hielo y una roca de Marte."
           }
         ]
       },
@@ -90,8 +94,12 @@
             "text": "Uno de ellos, TRAPPIST-1e, está en la zona donde podría existir agua líquida. Hacia allí apunta ahora ASTRA."
           },
           {
+            "who": "",
+            "text": "Pero en algún lugar, los Antihumanistas leen el mismo mapa estelar. Y no quieren que La Semilla llegue."
+          },
+          {
             "who": "hal",
-            "text": "Fin del demo. Capítulo 4: «Gigante de tormentas»… ¡continuará!"
+            "text": "Fin del demo. Próxima parada: Júpiter y su luna Europa… ¡continuará!"
           }
         ]
       }

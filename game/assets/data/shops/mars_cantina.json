@@ -11,6 +11,10 @@
     {
       "item": "polar_ice_water",
       "price": 8
+    },
+    {
+      "item": "space_tortilla",
+      "price": 10
     }
   ]
 }

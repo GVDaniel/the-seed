@@ -10,11 +10,15 @@ Pistas:
   mission  «Paso a paso»       112 BPM, la menor. Melodía de pulso, bajo triangular, batería.
   title    «La Semilla»         66 BPM, mi menor. Piano suave y cuerdas (menú y cinemáticas).
   cantina  «Neón de cantina»   100 BPM, do mayor. Piano eléctrico, bajo caminante, vibráfono (bares y tiendas).
+  battle   «Llave y chispa»    144 BPM, mi menor. Pulso rápido, bajo en octavas, melodía heroica (combates).
+
+Una sola pista:  python3 tools/audio/music.py battle
 """
 from __future__ import annotations
 
 import os
 import subprocess
+import sys
 import tempfile
 import wave
 
@@ -431,7 +435,51 @@ def track_cantina() -> np.ndarray:
                        "drums": (0.0, 0.05)})
 
 
-TRACKS = {"space": track_space, "mission": track_mission, "title": track_title, "cantina": track_cantina}
+def track_battle() -> np.ndarray:
+    """Combate por turnos: enérgico y heroico (Mi menor, 144 bpm), sin tono amenazante."""
+    mix = Mix(144, 16)
+    rng = np.random.default_rng(23)
+    prog = [("E2", "m"), ("C2", "M"), ("D2", "M"), ("B1", "M")] * 2 + \
+           [("A1", "m"), ("C2", "M"), ("D2", "M"), ("E2", "m"), ("A1", "m"), ("B1", "M"), ("C2", "M"), ("D2", "M")]
+    for bar, (root, kind) in enumerate(prog):
+        b0 = bar * 4
+        tones = chord_tones(root, kind)
+        r = midi(root)
+        for s, off in enumerate([0, 12, 0, 12, 0, 12, 7, 12]):
+            mix.add("bass", inst_bass_tri(freq(r + off), mix.beat * 0.42), b0 + s * 0.5, 0.4)
+        for s in range(16):
+            n = tones[[0, 1, 2, 1, 2, 0, 1, 2][s % 8]] + 36
+            t = t_axis(mix.beat * 0.2)
+            sig = osc_pulse(freq(n), t, 0.25) * np.exp(-t * 16)
+            mix.add("arp", sig, b0 + s * 0.25, 0.05, pan=0.35 if s % 2 else -0.35)
+        for n in tones:
+            mix.add("pad", inst_strings(freq(n + 24), 4 * mix.beat), b0, 0.04, pan=-0.2)
+        for beat in range(4):
+            mix.add("drums", drum_kick(0.25), b0 + beat, 0.5 if beat in (0, 2) else 0.32)
+            if beat in (1, 3):
+                mix.add("drums", drum_snare(rng), b0 + beat, 0.3)
+            for q in (0, 0.5):
+                mix.add("hats", drum_hat(rng), b0 + beat + q, 0.2, pan=0.4)
+        if bar % 4 == 3:
+            for q in (3.25, 3.5, 3.75):
+                mix.add("drums", drum_snare(rng, 0.12), b0 + q, 0.2)
+    lead = [
+        ("E5", 1), ("G5", .5), ("B5", 1.5), ("A5", 1), ("G5", 1), ("E5", 1), ("G5", 1), ("A5", 1),
+        ("F#5", 1.5), ("E5", .5), ("D5", 1), ("F#5", 1), ("D#5", 3), (None, 1),
+        ("E5", 1), ("G5", .5), ("B5", 1.5), ("E6", 1), ("D6", 1), ("C6", 1), ("B5", 1), ("A5", 1),
+        ("B5", 1.5), ("A5", .5), ("F#5", 1), ("D#5", 1), ("E5", 3), (None, 1),
+        ("C5", 1), ("E5", 1), ("A5", 2), ("G5", 1), ("E5", 1), ("C5", 2),
+        ("D5", 1), ("F#5", 1), ("A5", 2), ("B5", 3), (None, 1),
+        ("A5", 1), ("C6", 1), ("E6", 2), ("D#6", 1), ("B5", 1), ("F#5", 2),
+        ("G5", 1), ("A5", 1), ("B5", 1), ("C6", 1), ("D6", 4),
+    ]
+    mix.notes("lead", inst_lead, lead, 0, 0.13, pan=0.05, legato=0.9)
+    return mix.render({"lead": (0.15, 0.12), "arp": (0.35, 0.1), "pad": (0.0, 0.35), "drums": (0.0, 0.06),
+                       "hats": (0.0, 0.0), "bass": (0.0, 0.0)})
+
+
+TRACKS = {"space": track_space, "mission": track_mission, "title": track_title, "cantina": track_cantina,
+          "battle": track_battle}
 
 
 def write_ogg(name: str, data: np.ndarray) -> str:
@@ -454,7 +502,9 @@ def write_ogg(name: str, data: np.ndarray) -> str:
 
 
 def main() -> None:
-    for name, fn in TRACKS.items():
+    """Sin argumentos genera todas las pistas; con nombres (p. ej. «battle»), solo esas."""
+    wanted = sys.argv[1:] or list(TRACKS)
+    for name, fn in ((n, TRACKS[n]) for n in wanted):
         data = fn()
         path = write_ogg(name, data)
         print(f"{name}: {len(data) / SR:.1f} s → {os.path.relpath(path)} ({os.path.getsize(path) // 1024} KB)")

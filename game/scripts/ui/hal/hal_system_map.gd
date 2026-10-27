@@ -15,7 +15,8 @@ const STOPS := [
 	{"id": "trappist1e", "name": "TRAPPIST-1e", "texture": "res://assets/art/planets/trappist1e.png", "chapter": 8},
 ]
 ## Personaje → parada donde se le encuentra.
-const NPC_STOPS := {"lucia": "earth", "vega": "station_aurora", "kai": "moon", "osei": "mars"}
+const NPC_STOPS := {"lucia": "earth", "vega": "station_aurora", "kai": "moon", "osei": "mars", "bruno": "mars",
+	"yusuf": "mars", "nia": "mars", "ada": "mars"}
 
 var _textures: Dictionary = {}
 var _t: float = 0.0
@@ -50,8 +51,8 @@ func objective_stop() -> String:
 	for key in ["target", "location"]:
 		var v := str(summary.get(key, ""))
 		for stop in STOPS:
-			if stop["id"] == v:
-				return v
+			if stop["id"] == v or v.begins_with(str(stop["id"]) + "_"):
+				return str(stop["id"])
 	return ""
 
 

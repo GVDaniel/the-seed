@@ -1,0 +1,112 @@
+{
+  "id": "drones_meteorite",
+  "display_name": "Drones vigía AH-D",
+  "backdrop": "mars_crater",
+  "music": "battle",
+  "intro": "¡Dos drones vigía de los Antihumanistas vigilan el meteorito!",
+  "enemies": [
+    {
+      "id": "drone_a",
+      "display_name": "Dron vigía AH-D1",
+      "sprite": "res://assets/art/props/drone_ah.png",
+      "sprite_off": "res://assets/art/props/drone_ah_off.png",
+      "scale": 4,
+      "max_hp": 125,
+      "attack": 14,
+      "defense": 1,
+      "weak": [
+        "luz"
+      ],
+      "moves": [
+        {
+          "id": "beam",
+          "name": "Rayo de vigilancia",
+          "power": 1.0,
+          "target": "one",
+          "weight": 3
+        },
+        {
+          "id": "static",
+          "name": "Estática",
+          "power": 0.6,
+          "target": "one",
+          "effect": "drain",
+          "drain": 2,
+          "weight": 1
+        },
+        {
+          "id": "buzz",
+          "name": "Zumbido sónico",
+          "power": 1.4,
+          "target": "all",
+          "charge": 2,
+          "every": 3,
+          "locks": [
+            "luz",
+            "impacto",
+            "luz"
+          ]
+        }
+      ],
+      "taunts": [
+        "BZZZ. ZONA RESTRINGIDA POR ORDEN ANTIHUMANISTA."
+      ],
+      "sheet": "drone",
+      "flying": true,
+      "scan": "Dron de cuatro hélices. Navega con una cámara: un destello fuerte la ciega unos segundos. Las hélices empujan aire hacia abajo y el aire empuja al dron hacia arriba."
+    },
+    {
+      "id": "drone_b",
+      "display_name": "Dron vigía AH-D2",
+      "sprite": "res://assets/art/props/drone_ah.png",
+      "sprite_off": "res://assets/art/props/drone_ah_off.png",
+      "scale": 4,
+      "max_hp": 125,
+      "attack": 14,
+      "defense": 1,
+      "weak": [
+        "luz"
+      ],
+      "moves": [
+        {
+          "id": "beam",
+          "name": "Rayo de vigilancia",
+          "power": 1.0,
+          "target": "one",
+          "weight": 3
+        },
+        {
+          "id": "dive",
+          "name": "Picado",
+          "power": 1.2,
+          "target": "one",
+          "weight": 1
+        },
+        {
+          "id": "fold_armor",
+          "name": "Blindaje plegable",
+          "target": "self",
+          "effect": "shield",
+          "rounds": 2,
+          "weight": 1
+        }
+      ],
+      "taunts": [
+        "BZZZ. EL NÍQUEL ES DE LOS ANTIHUMANISTAS."
+      ],
+      "sheet": "drone",
+      "flying": true,
+      "scan": "Dron de cuatro hélices. Navega con una cámara: un destello fuerte la ciega unos segundos. Las hélices empujan aire hacia abajo y el aire empuja al dron hacia arriba."
+    }
+  ],
+  "rewards": {
+    "experience": 45,
+    "credits": 25
+  },
+  "victory_lines": [
+    {
+      "who": "hal",
+      "text": "Drones desactivados. Ya podemos tomar una muestra del meteorito."
+    }
+  ]
+}

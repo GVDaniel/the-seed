@@ -4,10 +4,14 @@ extends SceneTree
 
 const MAPS := {
 	"earth": ["lucia", "the_seed", "earth_dead_plant", "earth_air_sensor", "launch_terminal", "astra",
-		"door_earth_shop", "zoe", "mateo", "amaru"],
-	"moon": ["kai", "moon_ice_crater", "drill_terminal", "astra", "door_moon_bar", "door_moon_shop", "tomas"],
+		"door_earth_shop", "zoe", "mateo", "amaru", "service_earth", "holo_antihuman_earth"],
+	"moon": ["kai", "moon_ice_crater", "drill_terminal", "astra", "door_moon_bar", "door_moon_shop", "tomas",
+		"service_moon"],
 	"mars": ["osei", "mars_delta", "mars_rover", "delta_terminal", "mars_greenhouse", "astra",
-		"door_mars_bar", "door_mars_shop", "yusuf", "bruno"],
+		"door_mars_bar", "door_mars_shop", "door_mars_garage", "yusuf", "ada", "service_mars", "co2_compressor",
+		"ah7_sentinel", "methane_engine", "mars_buried_ice", "mars_ice_core", "mars_iron_meteorite", "ah_drones",
+		"nickel_catalyst"],
+	"mars_garage": ["bruno", "mars_workbench", "methane_distiller", "exit"],
 	"earth_shop": ["ramiro", "exit"],
 	"moon_bar": ["lupe", "amina", "exit"],
 	"moon_shop": ["ingrid", "exit"],
@@ -29,6 +33,7 @@ func _run() -> void:
 	_check_challenges()
 	_check_map_links()
 	_check_people_and_shops()
+	_check_combat_data()
 	for map_id in MAPS.keys():
 		await _check_map(map_id, MAPS[map_id])
 	await _check_scene("res://scenes/story/cutscene.tscn")
@@ -107,6 +112,32 @@ func _check_people_and_shops() -> void:
 			var item := items.get_def(str(row["item"]))
 			_check(item != null and ResourceLoader.exists(item.icon_path) and not item.fact.is_empty(), "%s vende %s" % [shop_id, row["item"]])
 			_check(int(row["price"]) > 0, "%s: precio de %s" % [shop_id, row["item"]])
+
+
+## Encuentros con sprites; enemigos del mapa con encuentro válido; técnicas con dato real.
+func _check_combat_data() -> void:
+	for id in EncounterCatalog.all_ids():
+		var enc := EncounterCatalog.load_encounter(id)
+		_check(not enc.get("enemies", []).is_empty() and not BattleSheets.backdrop(str(enc.get("backdrop", ""))).is_empty(), "encuentro %s" % id)
+		for enemy in enc.get("enemies", []):
+			_check(ResourceLoader.exists(str(enemy.get("sprite", ""))) and ResourceLoader.exists(str(enemy.get("sprite_off", ""))), "%s: sprites de %s" % [id, enemy.get("id", "")])
+	for map_id in MAPS.keys():
+		for e in JsonDir.load_dict("res://assets/data/maps/%s.json" % map_id).get("entities", []):
+			if str(e.get("type", "")) == "enemy":
+				_check(not EncounterCatalog.load_encounter(str(e.get("encounter", ""))).is_empty(), "%s: %s lleva a un encuentro" % [map_id, e.get("id", "")])
+				_check(ResourceLoader.exists(PROPS_DIR + str(e.get("sprite_done", "")) + ".png"), "%s: sprite apagado de %s" % [map_id, e.get("id", "")])
+	var skills := SkillCatalog.new()
+	skills.load_all()
+	for skill in skills.all():
+		_check(not skill.fact.is_empty() and not skill.description.is_empty(), "técnica %s con dato real" % skill.id)
+	var missions: Node = root.get_node("MissionLog")
+	for mission_id in missions.all_mission_ids():
+		for obj in missions.get_def(mission_id).objectives:
+			if obj.condition_type() == "win_battle":
+				_check(not EncounterCatalog.load_encounter(obj.condition_value()).is_empty(), "%s: encuentro %s existe" % [mission_id, obj.condition_value()])
+			if obj.condition_type() == "have_items":
+				for item_id in obj.item_ids():
+					_check(root.get_node("Inventory").catalog().get_def(item_id) != null, "%s: objeto %s existe" % [mission_id, item_id])
 
 
 func _check_catalog_links() -> void:

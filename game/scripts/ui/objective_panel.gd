@@ -1,6 +1,6 @@
 class_name ObjectivePanel
 extends PanelContainer
-## Caja de objetivo: capítulo, misión y siguiente paso. Lee StoryDirector.
+## Caja de objetivo: capítulo, misión, siguiente paso y misiones secundarias activas. Lee StoryDirector.
 
 @onready var _chapter: Label = %ChapterLabel
 @onready var _title: Label = %ObjectiveTitle
@@ -13,6 +13,7 @@ func _ready() -> void:
 	bus.mission_started.connect(func(_id: String) -> void: refresh())
 	bus.mission_completed.connect(func(_id: String) -> void: refresh())
 	bus.chapter_changed.connect(func(_c: int) -> void: refresh())
+	bus.item_collected.connect(func(_id: String) -> void: refresh())
 	refresh()
 
 
@@ -27,5 +28,10 @@ func refresh() -> void:
 	if title.is_empty():
 		title = "SIN MISIÓN ACTIVA"
 		hint = "Explora y escanea con F."
+	var sides: Array[Dictionary] = story.side_summaries()
+	if not sides.is_empty():
+		hint += "\n◆ Secundaria: %s — %s" % [str(sides[0]["title"]), str(sides[0]["hint"])]
+		if sides.size() > 1:
+			hint += "  (+%d más en HAL)" % (sides.size() - 1)
 	_title.text = title
 	_hint.text = hint

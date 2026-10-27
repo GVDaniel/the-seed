@@ -25,6 +25,10 @@ Las posiciones, tamaños en pantalla y tiempos de viaje de ASTRA **no representa
 | `nasa_perseverance` | NASA Science — Mars 2020 Perseverance | Jezero ~45 km, lago hace ~3 500 Ma, aterrizaje 18/02/2021, ~1 025 kg, MMRTG |
 | `esa_space_debris` | ESA — Space Debris / Space debris by the numbers | ~36 500 objetos > 10 cm, ~28 000 km/h en LEO |
 | `nasa_trappist1` | NASA Science — Exoplanet Catalog: TRAPPIST-1 e | ~40 años luz, órbita de 6,1 días, anunciado en 2017, ~0,92 radios terrestres |
+| `nasa_phoenix` | NASA — Phoenix Mars Lander (2008) | Hielo de agua excavado a pocos centímetros, cerca del polo norte |
+| `nasa_opportunity_meteorite` | NASA/JPL — Opportunity: «Heat Shield Rock» (2005) | Primer meteorito (hierro y níquel) identificado en otro planeta |
+| `nasa_moxie` | NASA — Mars 2020 MOXIE | Oxígeno producido a partir del CO₂ marciano (2021–2023) |
+| `nobel_sabatier` | NobelPrize.org — Paul Sabatier, Química 1912 | Hidrogenación con metales finamente divididos (níquel); reacción CO₂ + 4 H₂ → CH₄ + 2 H₂O |
 
 URLs de consulta (revisar periódicamente; NASA puede reorganizar rutas):
 
@@ -42,6 +46,10 @@ URLs de consulta (revisar periódicamente; NASA puede reorganizar rutas):
 - Perseverance: https://science.nasa.gov/mission/mars-2020-perseverance/
 - Basura espacial (ESA): https://www.esa.int/Space_Safety/Space_Debris
 - TRAPPIST-1 e: https://science.nasa.gov/exoplanet-catalog/trappist-1-e/
+- Phoenix: https://science.nasa.gov/mission/phoenix/
+- Opportunity (Heat Shield Rock): https://science.nasa.gov/mission/mer-opportunity/
+- MOXIE: https://science.nasa.gov/mission/mars-2020-perseverance/
+- Sabatier (Nobel 1912): https://www.nobelprize.org/prizes/chemistry/1912/sabatier/facts/
 
 ## Qué es ficción del juego
 
@@ -54,3 +62,6 @@ URLs de consulta (revisar periódicamente; NASA puede reorganizar rutas):
 - **Rover explorador**: homenaje a Perseverance, no una réplica.
 - **Colores y vegetación de TRAPPIST-1e**: imaginados; su superficie no se ha observado.
 - **Anillo de basura espacial**: agrupado para el juego; la basura real está dispersa en muchas órbitas.
+- **Antihumanistas, robots AH-7 y drones AH-D, Barranco de Óxido, carguero de MarsCorp**: ficción del capítulo 4.
+- **Combustible de ASTRA** (unidades, consumo, tanques): números de juego, no físicos. El metano y la reacción de Sabatier sí son reales.
+- **Hielo junto a Jezero**: Jezero está cerca del ecuador; el hielo superficial abunda a latitudes más altas.

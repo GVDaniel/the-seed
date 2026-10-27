@@ -5,5 +5,8 @@
   "display_name": "Tortilla espacial",
   "description": "Rellena de verduras del invernadero lunar. Sin migas, ¡por favor!",
   "fact": "En el espacio se usan tortillas en vez de pan porque no sueltan migas, que flotarían y podrían meterse en los equipos.",
-  "icon": "res://assets/art/items/space_tortilla.png"
+  "icon": "res://assets/art/items/space_tortilla.png",
+  "use": {
+    "heal": 20
+  }
 }

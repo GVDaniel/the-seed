@@ -1,0 +1,12 @@
+{
+  "id": "aux_tank",
+  "order": 23,
+  "category": "mejora",
+  "display_name": "Tanque auxiliar",
+  "description": "Un depósito extra que Ingrid suelda bajo ASTRA. Cabe un 50 % más de combustible.",
+  "fact": "Algunos cohetes llevan tanques que sueltan cuando se vacían: así la nave pesa menos y gasta menos combustible.",
+  "effects": {
+    "fuel_capacity": 1.5
+  },
+  "icon": "res://assets/art/items/aux_tank.png"
+}

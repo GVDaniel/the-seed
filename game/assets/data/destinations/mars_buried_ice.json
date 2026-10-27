@@ -1,0 +1,34 @@
+{
+  "id": "mars_buried_ice",
+  "display_name": "Hielo bajo el polvo",
+  "kind": "recurso",
+  "short_description": "Bajo unos centímetros de polvo rojo hay hielo de agua. Es el tesoro más útil de Marte: agua para beber, oxígeno para respirar e hidrógeno para combustible.",
+  "scientific_facts": [
+    {
+      "label": "Descubrimiento",
+      "value": "La sonda Phoenix (NASA) excavó hielo de agua cerca del polo norte en 2008",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_phoenix"]
+    },
+    {
+      "label": "Dónde hay más",
+      "value": "Casquetes polares y suelo de latitudes medias y altas",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_mars_facts"]
+    },
+    {
+      "label": "Para qué sirve",
+      "value": "Con electrólisis: 2 H₂O → 2 H₂ + O₂",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_isru"]
+    },
+    {
+      "label": "En el juego",
+      "value": "Hay hielo junto a la colonia de Jezero",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Jezero está cerca del ecuador, donde el hielo superficial es raro. Lo colocamos aquí para el juego."
+    }
+  ],
+  "arcade_disclaimer": "La perforación del juego dura un instante; en la realidad haría falta una máquina pesada y mucha energía."
+}

@@ -61,12 +61,37 @@ func requirements_met(mission_id: String) -> bool:
 	return true
 
 
+## Misión principal activa (las secundarias van aparte).
 func get_active_mission_id() -> String:
-	for id in _states.keys():
+	for id in ordered_mission_ids():
 		var st: MissionState = _states[id]
-		if st.status == MissionState.Status.ACTIVE:
+		if st.status == MissionState.Status.ACTIVE and not get_def(id).is_side():
 			return id
 	return ""
+
+
+func active_side_mission_ids() -> PackedStringArray:
+	var out := PackedStringArray()
+	for id in ordered_mission_ids():
+		var st: MissionState = _states[id]
+		if st.status == MissionState.Status.ACTIVE and get_def(id).is_side():
+			out.append(id)
+	return out
+
+
+## Todas las activas: la principal primero.
+func active_mission_ids() -> PackedStringArray:
+	var out := PackedStringArray()
+	var main := get_active_mission_id()
+	if not main.is_empty():
+		out.append(main)
+	out.append_array(active_side_mission_ids())
+	return out
+
+
+func is_active(mission_id: String) -> bool:
+	var state := get_state(mission_id)
+	return state != null and state.status == MissionState.Status.ACTIVE
 
 
 func get_current_objective(mission_id: String) -> MissionObjectiveDef:
@@ -88,8 +113,8 @@ func can_start(mission_id: String) -> bool:
 func start_mission(mission_id: String) -> bool:
 	if not can_start(mission_id):
 		return false
-	# Solo una misión activa a la vez en este hito.
-	if not get_active_mission_id().is_empty():
+	# Una sola principal a la vez; las secundarias corren en paralelo.
+	if not get_def(mission_id).is_side() and not get_active_mission_id().is_empty():
 		return false
 	var state := get_state(mission_id)
 	state.status = MissionState.Status.ACTIVE

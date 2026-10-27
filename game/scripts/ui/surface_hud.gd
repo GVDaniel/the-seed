@@ -1,6 +1,6 @@
 class_name SurfaceHud
 extends CanvasLayer
-## HUD a pie: lugar, rango/XP, objetivo, texto de interacción y avisos.
+## HUD a pie: lugar, nivel/salud/XP, objetivo, texto de interacción y avisos.
 
 @onready var _location: Label = %LocationLabel
 @onready var _rank: Label = %RankLabel
@@ -21,6 +21,7 @@ func _ready() -> void:
 	bus.mission_status_message.connect(show_toast)
 	bus.experience_changed.connect(func(_xp: int) -> void: _refresh_rank())
 	bus.credits_changed.connect(func(_c: int) -> void: _refresh_rank())
+	bus.hero_changed.connect(_refresh_rank)
 	bus.scan_focus_changed.connect(_on_scan_focus)
 	_prompt_box.visible = false
 	_toast_box.visible = false
@@ -38,7 +39,10 @@ func set_help(text: String) -> void:
 
 func _refresh_rank() -> void:
 	var gs := App.game_state()
-	_rank.text = "%s · XP %d · %d créditos" % [gs.rank_name(), int(gs.experience), int(gs.credits)]
+	var hero := App.hero()
+	var points := "  ·  ¡%d punto(s) de mejora!" % int(hero.unspent) if int(hero.unspent) > 0 else ""
+	_rank.text = "Andrés Nv %d · Salud %d/%d · XP %d · %d créditos%s" % [int(hero.level()), int(hero.hp),
+		int(hero.max_hp()), int(gs.experience), int(gs.credits), points]
 
 
 func _on_prompt(text: String) -> void:

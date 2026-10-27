@@ -1,0 +1,128 @@
+{
+  "id": "methane_heart",
+  "title": "Corazón de metano",
+  "chapter": 4,
+  "order": 1,
+  "kind": "main",
+  "summary": "ASTRA es demasiado lenta para ir a Júpiter. En el Barranco de Óxido hay un motor de metano… y un robot de los Antihumanistas que no quiere que lo tengas.",
+  "start_npc": "bruno",
+  "requires": [
+    "red_garden"
+  ],
+  "on_complete_event": "ending_teaser",
+  "objectives": [
+    {
+      "id": "win_sentinel",
+      "description": "Vence al Centinela AH-7 en el Barranco de Óxido.",
+      "hud_hint": "Ve al Barranco de Óxido (este) y enfréntate al robot (E).",
+      "condition": {
+        "type": "win_battle",
+        "encounter_id": "sentinel_ah7"
+      },
+      "target": "ah7_sentinel",
+      "location": "mars"
+    },
+    {
+      "id": "take_engine",
+      "description": "Recoge el motor de metano del carguero.",
+      "hud_hint": "Recoge el motor junto al carguero estrellado (E).",
+      "condition": {
+        "type": "collect_item",
+        "item_id": "methane_engine"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "install_engine",
+      "description": "Instala el motor en el taller de Bruno.",
+      "hud_hint": "Lleva el motor al Taller de la colonia y úsalo en el banco (E).",
+      "condition": {
+        "type": "interact",
+        "target_id": "mars_workbench"
+      },
+      "location": "mars_garage",
+      "effects": {
+        "install_engine": "methane_engine",
+        "set_flag": "engine_installed"
+      }
+    },
+    {
+      "id": "gather_ingredients",
+      "description": "Reúne hielo, CO₂ y níquel (misiones secundarias).",
+      "hud_hint": "Faltan ingredientes del combustible: ayuda a Yusuf, Nia y Ada.",
+      "condition": {
+        "type": "have_items",
+        "item_ids": [
+          "mars_ice_core",
+          "co2_tank",
+          "nickel_catalyst"
+        ]
+      },
+      "location": "mars"
+    },
+    {
+      "id": "distill_fuel",
+      "description": "Destila el metano en el taller.",
+      "hud_hint": "Usa el destilador del Taller para fabricar metano (E).",
+      "condition": {
+        "type": "interact",
+        "target_id": "methane_distiller"
+      },
+      "location": "mars_garage",
+      "effects": {
+        "refuel": true,
+        "repair": true,
+        "set_flag": "methane_distilled",
+        "consume_items": ["mars_ice_core", "co2_tank", "nickel_catalyst"]
+      }
+    },
+    {
+      "id": "talk_osei",
+      "description": "Cuéntaselo a la comandante Osei.",
+      "hud_hint": "Habla con la comandante Osei en la base (noroeste).",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "osei"
+      },
+      "location": "mars"
+    }
+  ],
+  "rewards": {
+    "experience": 150,
+    "credits": 80,
+    "unlock_destination_id": "sabatier_methane"
+  },
+  "dialogues": {
+    "offer": [
+      {"who": "bruno", "text": "¡Ey, piloto! He mirado a ASTRA. Ese motor químico CX-50 es más viejo que mi abuela… y mi abuela nació en 2120."},
+      {"who": "bruno", "text": "Con él no llegarías a Júpiter ni en sueños: gasta mucha hidracina y el tanque es diminuto."},
+      {"who": "bruno", "text": "Pero hace una semana se estrelló un carguero de MarsCorp en el Barranco de Óxido, al este. Llevaba un motor de metano nuevecito."},
+      {"who": "bruno", "text": "El problema: allí patrulla un robot de los Antihumanistas. Esa gente cree que la humanidad no merece reconstruirse."},
+      {"who": "hal", "text": "Los Antihumanistas: un clan de humanos y máquinas. Sabotean invernaderos, naves y cualquier cosa que ayude a la gente a empezar de nuevo."},
+      {"who": "andres", "text": "Pues vamos a por ese motor. HAL, ¿preparada?"},
+      {"who": "hal", "text": "Preparada. En combate, pulsa en el momento justo para golpear más fuerte o para bloquear. Yo te avisaré."}
+    ],
+    "reminder": [
+      {"who": "bruno", "text": "Motor, taller, combustible. En ese orden, piloto. Y cuidado con los Antihumanistas."}
+    ],
+    "talk_osei": [
+      {"who": "osei", "text": "Cadete… ¿has fabricado combustible con el aire, el hielo y una roca del espacio? Eso es exactamente lo que soñábamos hacer en Marte."},
+      {"who": "osei", "text": "Y el chip del robot confirma lo que temíamos: los Antihumanistas quieren detener a ASTRA antes de que salga del sistema solar."},
+      {"who": "hal", "text": "Mensaje de la Dra. Vega desde Aurora."},
+      {"who": "vega", "text": "Andrés, con ese motor ya podéis llegar a Júpiter. Allí, la luna Europa esconde un océano bajo el hielo."},
+      {"who": "vega", "text": "Será nuestra base antes del gran salto a TRAPPIST-1e. Preparad provisiones… y no bajéis la guardia."}
+    ],
+    "after": [
+      {"who": "bruno", "text": "¿Oyes ese ronroneo? Es el Corazón Rojo. ¡El mejor motor que he montado nunca!"}
+    ]
+  },
+  "objective_complete_messages": {
+    "win_sentinel": "¡Primera batalla ganada! AH-7 desactivado.",
+    "take_engine": "Motor de metano recogido. ¡Pesa muchísimo!",
+    "install_engine": "Motor instalado. Pero el tanque de metano está vacío…",
+    "gather_ingredients": "¡Tienes los tres ingredientes del combustible!",
+    "distill_fuel": "Tanque lleno de metano. ASTRA ruge como nunca.",
+    "talk_osei": "Objetivo cumplido: rumbo a Júpiter."
+  },
+  "mission_complete_message": "Capítulo 4 · Parte 1 completada: Corazón de metano."
+}

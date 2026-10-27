@@ -41,3 +41,11 @@ static func inventory() -> Node:
 
 static func economy() -> Node:
 	return Engine.get_main_loop().root.get_node("Economy")
+
+
+static func ship() -> Node:
+	return Engine.get_main_loop().root.get_node("ShipState")
+
+
+static func hero() -> Node:
+	return Engine.get_main_loop().root.get_node("Hero")

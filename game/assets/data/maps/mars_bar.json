@@ -64,24 +64,78 @@
   "B": {
    "tile": 15,
    "solid": true
+  },
+  "a": {
+   "tile": 16
+  },
+  "b": {
+   "tile": 17
+  },
+  "e": {
+   "tile": 18
+  },
+  "u": {
+   "tile": 19
+  },
+  "g": {
+   "tile": 20
+  },
+  "l": {
+   "tile": 21
+  },
+  "y": {
+   "tile": 22
+  },
+  "z": {
+   "tile": 23
+  },
+  "h": {
+   "tile": 24
+  },
+  "d": {
+   "tile": 25
+  },
+  "P": {
+   "tile": 26,
+   "solid": true
+  },
+  "N": {
+   "tile": 27,
+   "solid": true
+  },
+  "O": {
+   "tile": 28,
+   "solid": true
+  },
+  "Q": {
+   "tile": 29,
+   "solid": true
+  },
+  "V": {
+   "tile": 30,
+   "solid": true
+  },
+  "K": {
+   "tile": 31,
+   "solid": true
   }
  },
  "ground": [
   ";;;;;;;;;;;;;;;;",
   ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;rrrr;;",
-  ";;;;;;;;;;;;;;;;",
-  ";;;;;;;xx;;;;;;;",
+  ";eeeeeeeeeeeeee;",
+  ";;;;z;z;;;;;;zz;",
+  ";;z;;z;z;;;;;;;;",
+  ";;;;;;;;;;rrrrz;",
+  ";;;;z;;z;;rrrr;;",
+  ";z;;;;;;;;rrrr;;",
+  ";;;;;;;;;;;;;z;;",
+  ";zzz;;;xxz;;;;;;",
   ";;;;;;;;;;;;;;;;"
  ],
  "objects": [
   "################",
-  "#BBBBBBBBmsmmsm#",
+  "#BBBBBBBBOsmmKO#",
   "#              #",
   "#CCCCCCCC      #",
   "#              #",
@@ -122,8 +176,8 @@
     2
    ],
    "facing": "down",
-   "shop": "mars_cantina",
-   "radius": 46
+   "radius": 46,
+   "shop": "mars_cantina"
   },
   {
    "type": "prop",
@@ -274,6 +328,103 @@
     7
    ],
    "facing": "right"
+  },
+  {
+   "type": "prop",
+   "sprite": "arcade",
+   "pos": [
+    1,
+    5
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 1.0,
+    "energy": 0.7,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "arcade",
+   "pos": [
+    1,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "smoothie_machine",
+   "pos": [
+    9,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -16
+    ],
+    "scale": 1.0,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "in_plant_b",
+   "pos": [
+    14,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_chair_metal_side",
+   "pos": [
+    3,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_rug_orange",
+   "pos": [
+    11,
+    8
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_trash",
+   "pos": [
+    2,
+    8
+   ],
+   "z": -1
   }
  ],
  "arrival_lines": [

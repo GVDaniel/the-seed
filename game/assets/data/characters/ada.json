@@ -1,0 +1,16 @@
+{
+  "id": "ada",
+  "display_name": "Ada Okonkwo",
+  "role": "Geóloga de la colonia",
+  "home": "mars",
+  "group": "local",
+  "order": 35,
+  "portrait": "res://assets/art/portraits/ada.png",
+  "sprite": "res://assets/art/characters/ada.png",
+  "bio": "Estudia rocas y meteoritos en el borde del Barranco de Óxido. Lleva lupa, martillo de geóloga y gafas cian.",
+  "idle_lines": [
+    "Las rocas son libros: cada capa cuenta lo que pasó en Marte hace millones de años.",
+    "Un meteorito es una roca del espacio que llegó al suelo. Si se quema en el aire antes de llegar, se llama meteoro.",
+    "Los Antihumanistas dicen que las personas solo rompemos planetas. Yo los estudio para aprender a cuidarlos."
+  ]
+}

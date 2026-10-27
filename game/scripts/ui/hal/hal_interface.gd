@@ -1,13 +1,13 @@
 class_name HalInterface
 extends CanvasLayer
-## «Entrar en HAL»: pantalla completa con el ojo de HAL y seis pestañas
-## (inventario, mapa, misiones, cuaderno, tripulación, sistema).
-## Tab/I abre y cierra; N abre el cuaderno; M, el mapa. Dentro: Q/E o 1–6 cambian de pestaña.
+## «Entrar en HAL»: pantalla completa con el ojo de HAL y siete pestañas
+## (inventario, Andrés y ASTRA, mapa, misiones, cuaderno, tripulación, sistema).
+## Tab/I abre y cierra; N abre el cuaderno; M, el mapa. Dentro: Q/E o 1–7 cambian de pestaña.
 
 const EYE_TEXTURE := "res://assets/art/ui/hal_eye.png"
 const GLOW_TEXTURE := "res://assets/art/ui/hal_glow.png"
-const TAB_IDS := ["inventory", "map", "missions", "notes", "crew", "system"]
-const TAB_NAMES := ["Inventario", "Mapa", "Misiones", "Cuaderno", "Tripulación", "Sistema"]
+const TAB_IDS := ["inventory", "status", "map", "missions", "notes", "crew", "system"]
+const TAB_NAMES := ["Inventario", "Andrés", "Mapa", "Misiones", "Cuaderno", "Tripulación", "Sistema"]
 const TYPE_SPEED := 45.0
 
 ## La escena anfitriona puede desactivarla (p. ej. durante una cinemática).
@@ -297,6 +297,8 @@ func _make_tab(id: String) -> Control:
 	match id:
 		"inventory":
 			return HalInventoryTab.new()
+		"status":
+			return HalStatusTab.new()
 		"map":
 			return HalMapTab.new()
 		"missions":

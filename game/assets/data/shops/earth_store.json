@@ -15,6 +15,14 @@
     {
       "item": "hydro_kit",
       "price": 35
+    },
+    {
+      "item": "medkit",
+      "price": 25
+    },
+    {
+      "item": "repair_kit",
+      "price": 20
     }
   ]
 }

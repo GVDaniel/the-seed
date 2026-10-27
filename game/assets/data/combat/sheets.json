@@ -1,0 +1,290 @@
+{
+  "sheets": {
+    "andres": {
+      "texture": "res://assets/art/battle/andres_battle.png",
+      "frame": [
+        40,
+        48
+      ],
+      "feet": [
+        20,
+        46
+      ],
+      "anims": {
+        "idle": {
+          "row": 0,
+          "frames": 4,
+          "fps": 6,
+          "loop": true
+        },
+        "run": {
+          "row": 1,
+          "frames": 4,
+          "fps": 10,
+          "loop": true
+        },
+        "attack": {
+          "row": 2,
+          "frames": 4,
+          "fps": 12,
+          "loop": false
+        },
+        "cast": {
+          "row": 3,
+          "frames": 3,
+          "fps": 8,
+          "loop": false
+        },
+        "hurt": {
+          "row": 4,
+          "frames": 2,
+          "fps": 8,
+          "loop": false
+        },
+        "block": {
+          "row": 5,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        },
+        "ko": {
+          "row": 6,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        },
+        "victory": {
+          "row": 7,
+          "frames": 3,
+          "fps": 6,
+          "loop": true
+        }
+      }
+    },
+    "hal": {
+      "texture": "res://assets/art/battle/hal_battle.png",
+      "frame": [
+        32,
+        40
+      ],
+      "feet": [
+        16,
+        39
+      ],
+      "anims": {
+        "idle": {
+          "row": 0,
+          "frames": 4,
+          "fps": 6,
+          "loop": true
+        },
+        "attack": {
+          "row": 1,
+          "frames": 3,
+          "fps": 10,
+          "loop": false
+        },
+        "cast": {
+          "row": 2,
+          "frames": 3,
+          "fps": 8,
+          "loop": false
+        },
+        "hurt": {
+          "row": 3,
+          "frames": 2,
+          "fps": 8,
+          "loop": false
+        },
+        "block": {
+          "row": 4,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        },
+        "ko": {
+          "row": 5,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        },
+        "victory": {
+          "row": 6,
+          "frames": 2,
+          "fps": 5,
+          "loop": true
+        }
+      }
+    },
+    "ah7": {
+      "texture": "res://assets/art/battle/ah7_battle.png",
+      "frame": [
+        72,
+        80
+      ],
+      "feet": [
+        37,
+        78
+      ],
+      "anims": {
+        "idle": {
+          "row": 0,
+          "frames": 4,
+          "fps": 5,
+          "loop": true
+        },
+        "windup": {
+          "row": 1,
+          "frames": 2,
+          "fps": 6,
+          "loop": false
+        },
+        "attack": {
+          "row": 2,
+          "frames": 3,
+          "fps": 12,
+          "loop": false
+        },
+        "charge": {
+          "row": 3,
+          "frames": 2,
+          "fps": 6,
+          "loop": true
+        },
+        "hurt": {
+          "row": 4,
+          "frames": 2,
+          "fps": 8,
+          "loop": false
+        },
+        "off": {
+          "row": 5,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        }
+      }
+    },
+    "drone": {
+      "texture": "res://assets/art/battle/drone_battle.png",
+      "frame": [
+        40,
+        32
+      ],
+      "feet": [
+        20,
+        31
+      ],
+      "anims": {
+        "idle": {
+          "row": 0,
+          "frames": 4,
+          "fps": 10,
+          "loop": true
+        },
+        "windup": {
+          "row": 1,
+          "frames": 2,
+          "fps": 6,
+          "loop": false
+        },
+        "attack": {
+          "row": 2,
+          "frames": 3,
+          "fps": 12,
+          "loop": false
+        },
+        "charge": {
+          "row": 3,
+          "frames": 2,
+          "fps": 8,
+          "loop": true
+        },
+        "hurt": {
+          "row": 4,
+          "frames": 2,
+          "fps": 8,
+          "loop": false
+        },
+        "off": {
+          "row": 5,
+          "frames": 1,
+          "fps": 1,
+          "loop": false
+        }
+      }
+    }
+  },
+  "fx": {
+    "hit": {
+      "texture": "res://assets/art/battle/fx_hit.png",
+      "frame": [
+        32,
+        32
+      ],
+      "frames": 5,
+      "fps": 18
+    },
+    "zap": {
+      "texture": "res://assets/art/battle/fx_zap.png",
+      "frame": [
+        32,
+        32
+      ],
+      "frames": 5,
+      "fps": 18
+    },
+    "light": {
+      "texture": "res://assets/art/battle/fx_light.png",
+      "frame": [
+        32,
+        32
+      ],
+      "frames": 5,
+      "fps": 16
+    },
+    "heal": {
+      "texture": "res://assets/art/battle/fx_heal.png",
+      "frame": [
+        32,
+        32
+      ],
+      "frames": 5,
+      "fps": 12
+    },
+    "orb": {
+      "texture": "res://assets/art/battle/fx_orb.png",
+      "frame": [
+        12,
+        12
+      ],
+      "frames": 4,
+      "fps": 8
+    },
+    "shadow": {
+      "texture": "res://assets/art/battle/shadow.png",
+      "frame": [
+        32,
+        8
+      ],
+      "frames": 1,
+      "fps": 1
+    }
+  },
+  "backdrops": {
+    "mars_canyon": {
+      "sky": "res://assets/art/battle/mars_canyon_sky.png",
+      "far": "res://assets/art/battle/mars_canyon_far.png",
+      "ground": "res://assets/art/battle/mars_canyon_ground.png",
+      "fg": "res://assets/art/battle/mars_canyon_fg.png",
+      "flat": "res://assets/art/battle/mars_canyon.png"
+    },
+    "mars_crater": {
+      "sky": "res://assets/art/battle/mars_crater_sky.png",
+      "far": "res://assets/art/battle/mars_crater_far.png",
+      "ground": "res://assets/art/battle/mars_crater_ground.png",
+      "fg": "res://assets/art/battle/mars_crater_fg.png",
+      "flat": "res://assets/art/battle/mars_crater.png"
+    }
+  }
+}

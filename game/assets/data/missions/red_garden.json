@@ -8,7 +8,6 @@
   "requires": [
     "ice_of_shackleton"
   ],
-  "on_complete_event": "ending_teaser",
   "objectives": [
     {
       "id": "scan_delta",
@@ -119,6 +118,14 @@
       {
         "who": "vega",
         "text": "Está a unos 40 años luz. Será el viaje más largo de la historia… y empieza ahora."
+      },
+      {
+        "who": "hal",
+        "text": "Andrés, un dato incómodo: con nuestro motor viejo y este tanque, TRAPPIST-1e queda… muy lejos."
+      },
+      {
+        "who": "osei",
+        "text": "Habla con Bruno, en el Taller de la colonia. Si alguien puede darle un corazón nuevo a ASTRA, es él."
       }
     ],
     "after": [
@@ -133,7 +140,7 @@
     "scan_rover": "Objetivo cumplido: datos del rover registrados.",
     "sample_program": "Objetivo cumplido: muestras recogidas.",
     "plant_seed": "¡El brote está plantado!",
-    "talk_osei": "Objetivo cumplido: nuevo rumbo, TRAPPIST-1e."
+    "talk_osei": "Objetivo cumplido: nuevo rumbo, TRAPPIST-1e. Habla con Bruno en el Taller."
   },
   "mission_complete_message": "Capítulo 3 completado: Un jardín rojo."
 }

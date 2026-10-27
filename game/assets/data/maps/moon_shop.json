@@ -64,24 +64,78 @@
   "B": {
    "tile": 15,
    "solid": true
+  },
+  "a": {
+   "tile": 16
+  },
+  "b": {
+   "tile": 17
+  },
+  "e": {
+   "tile": 18
+  },
+  "u": {
+   "tile": 19
+  },
+  "g": {
+   "tile": 20
+  },
+  "l": {
+   "tile": 21
+  },
+  "y": {
+   "tile": 22
+  },
+  "z": {
+   "tile": 23
+  },
+  "h": {
+   "tile": 24
+  },
+  "d": {
+   "tile": 25
+  },
+  "P": {
+   "tile": 26,
+   "solid": true
+  },
+  "N": {
+   "tile": 27,
+   "solid": true
+  },
+  "O": {
+   "tile": 28,
+   "solid": true
+  },
+  "Q": {
+   "tile": 29,
+   "solid": true
+  },
+  "V": {
+   "tile": 30,
+   "solid": true
+  },
+  "K": {
+   "tile": 31,
+   "solid": true
   }
  },
  "ground": [
   "................",
   "................",
-  "................",
-  "................",
-  "................",
+  ".aaaaaaaaaaaaaa.",
+  "...u.........u..",
+  ".....u....uu..u.",
+  "...gg...u.rrrr..",
+  "......l..lrrrr..",
   "..........rrrr..",
-  "..........rrrr..",
-  "..........rrrr..",
-  "................",
+  "...........u....",
   ".......xx.......",
   "................"
  ],
  "objects": [
   "################",
-  "#SSSSSSSSwswwsw#",
+  "#SSSSSSSSPswwVN#",
   "#              #",
   "#CCCCCCCC      #",
   "#              #",
@@ -122,8 +176,8 @@
     2
    ],
    "facing": "down",
-   "shop": "moon_parts",
-   "radius": 46
+   "radius": 46,
+   "shop": "moon_parts"
   },
   {
    "type": "prop",
@@ -232,6 +286,95 @@
     11.5,
     1
    ]
+  },
+  {
+   "type": "prop",
+   "sprite": "server_rack",
+   "pos": [
+    1,
+    5
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -16
+    ],
+    "scale": 0.9,
+    "energy": 0.5,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "server_rack",
+   "pos": [
+    1,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -16
+    ],
+    "scale": 0.9,
+    "energy": 0.5,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "tank_o2",
+   "pos": [
+    14,
+    7
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "cable_spool",
+   "pos": [
+    10,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_boxes_moon",
+   "pos": [
+    14,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    5,
+    7
+   ],
+   "z": -1
   }
  ],
  "arrival_lines": [

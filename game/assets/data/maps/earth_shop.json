@@ -64,24 +64,78 @@
   "B": {
    "tile": 15,
    "solid": true
+  },
+  "a": {
+   "tile": 16
+  },
+  "b": {
+   "tile": 17
+  },
+  "e": {
+   "tile": 18
+  },
+  "u": {
+   "tile": 19
+  },
+  "g": {
+   "tile": 20
+  },
+  "l": {
+   "tile": 21
+  },
+  "y": {
+   "tile": 22
+  },
+  "z": {
+   "tile": 23
+  },
+  "h": {
+   "tile": 24
+  },
+  "d": {
+   "tile": 25
+  },
+  "P": {
+   "tile": 26,
+   "solid": true
+  },
+  "N": {
+   "tile": 27,
+   "solid": true
+  },
+  "O": {
+   "tile": 28,
+   "solid": true
+  },
+  "Q": {
+   "tile": 29,
+   "solid": true
+  },
+  "V": {
+   "tile": 30,
+   "solid": true
+  },
+  "K": {
+   "tile": 31,
+   "solid": true
   }
  },
  "ground": [
   ",,,,,,,,,,,,,,,,",
   ",,,,,,,,,,,,,,,,",
-  ",,,,,,,,,,,,,,,,",
-  ",,,,,,,,,,,,,,,,",
-  ",,,,,,,,,,,,,,,,",
-  ",,,,,,,,,,rrrr,,",
-  ",,,,,,,,,,rrrr,,",
-  ",,,,,,,,,,rrrr,,",
-  ",,,,,,,,,,,,,,,,",
+  ",bbbbbbbbbbbbbb,",
+  ",,,,,,,y,,,,yy,,",
+  ",,,,y,,,,,,,,,,,",
+  ",y,,,,,,,,rrrr,,",
+  ",y,,,d,,,,rrrr,,",
+  ",,yy,,,,,,rrrr,,",
+  ",,,,y,,,,,,,,,,,",
   ",,,,,,,xx,,,,,,,",
   ",,,,,,,,,,,,,,,,"
  ],
  "objects": [
   "################",
-  "#SSSSSSSScsccsc#",
+  "#SSSSSSSSQKccVK#",
   "#              #",
   "#CCCCCCCC      #",
   "#              #",
@@ -122,8 +176,8 @@
     2
    ],
    "facing": "down",
-   "shop": "earth_store",
-   "radius": 46
+   "radius": 46,
+   "shop": "earth_store"
   },
   {
    "type": "prop",
@@ -244,6 +298,108 @@
      "text": "La lluvia ácida daña hojas, suelos y edificios. Se reduce quemando menos carbón y petróleo."
     }
    ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_fruit_crate",
+   "pos": [
+    11,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_fruit_crate",
+   "pos": [
+    12,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_planter",
+   "pos": [
+    13,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_agronet",
+   "pos": [
+    14,
+    4
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_counter_juice",
+   "pos": [
+    9,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_plant",
+   "pos": [
+    1,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_boxes",
+   "pos": [
+    14,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "in_rug_green",
+   "pos": [
+    4,
+    8
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    11,
+    8
+   ],
+   "z": -1
   }
  ],
  "arrival_lines": [

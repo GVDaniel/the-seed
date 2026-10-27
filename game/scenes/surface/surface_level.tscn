@@ -36,9 +36,11 @@ unique_name_in_owner = true
 
 [node name="Ground" type="TileMapLayer" parent="."]
 unique_name_in_owner = true
+z_index = -10
 
 [node name="Objects" type="TileMapLayer" parent="."]
 unique_name_in_owner = true
+z_index = -10
 
 [node name="Entities" type="Node2D" parent="."]
 unique_name_in_owner = true

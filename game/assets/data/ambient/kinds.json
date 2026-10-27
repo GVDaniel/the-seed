@@ -1,0 +1,346 @@
+{
+  "hover_taxi": {
+    "texture": "res://assets/art/ambient/hover_taxi.png",
+    "frame": [
+      32,
+      20
+    ],
+    "frames": 2,
+    "fps": 6,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "shadow": [
+      24,
+      6
+    ],
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 1.2,
+      "energy": 0.7
+    }
+  },
+  "hover_van": {
+    "texture": "res://assets/art/ambient/hover_van.png",
+    "frame": [
+      36,
+      22
+    ],
+    "frames": 2,
+    "fps": 6,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "shadow": [
+      28,
+      6
+    ],
+    "light": {
+      "color": "#ff3ea5",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 1.2,
+      "energy": 0.7
+    }
+  },
+  "hover_bus": {
+    "texture": "res://assets/art/ambient/hover_bus.png",
+    "frame": [
+      64,
+      24
+    ],
+    "frames": 2,
+    "fps": 5,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "shadow": [
+      52,
+      8
+    ],
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 1.8,
+      "energy": 0.8
+    }
+  },
+  "patrol_drone": {
+    "texture": "res://assets/art/ambient/patrol_drone.png",
+    "frame": [
+      20,
+      16
+    ],
+    "frames": 4,
+    "fps": 8,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      12,
+      4
+    ],
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.9,
+      "energy": 0.7
+    }
+  },
+  "cargo_drone": {
+    "texture": "res://assets/art/ambient/cargo_drone.png",
+    "frame": [
+      24,
+      20
+    ],
+    "frames": 4,
+    "fps": 14,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      16,
+      5
+    ],
+    "light": {
+      "color": "#f4d35e",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.8,
+      "energy": 0.6
+    }
+  },
+  "delivery_drone": {
+    "texture": "res://assets/art/ambient/delivery_drone.png",
+    "frame": [
+      16,
+      14
+    ],
+    "frames": 4,
+    "fps": 14,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      10,
+      3
+    ],
+    "light": {
+      "color": "#ff3ea5",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.6,
+      "energy": 0.5
+    }
+  },
+  "bot_cleaner": {
+    "texture": "res://assets/art/ambient/bot_cleaner.png",
+    "frame": [
+      16,
+      16
+    ],
+    "frames": 2,
+    "fps": 6,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.7,
+      "energy": 0.5
+    }
+  },
+  "bot_courier": {
+    "texture": "res://assets/art/ambient/bot_courier.png",
+    "frame": [
+      16,
+      20
+    ],
+    "frames": 2,
+    "fps": 4,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "shadow": [
+      10,
+      3
+    ],
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.7,
+      "energy": 0.5
+    }
+  },
+  "bot_worker": {
+    "texture": "res://assets/art/ambient/bot_worker.png",
+    "frame": [
+      20,
+      24
+    ],
+    "frames": 2,
+    "fps": 4,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "light": {
+      "color": "#ffb070",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 0.7,
+      "energy": 0.5
+    }
+  },
+  "rover_moon": {
+    "texture": "res://assets/art/ambient/rover_moon.png",
+    "frame": [
+      32,
+      20
+    ],
+    "frames": 2,
+    "fps": 4,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "light": {
+      "color": "#f4d35e",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 1.0,
+      "energy": 0.6
+    }
+  },
+  "rover_mars": {
+    "texture": "res://assets/art/ambient/rover_mars.png",
+    "frame": [
+      32,
+      24
+    ],
+    "frames": 2,
+    "fps": 4,
+    "rows": {
+      "right": 0,
+      "down": 1,
+      "up": 2
+    },
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -8
+      ],
+      "scale": 1.0,
+      "energy": 0.6
+    }
+  },
+  "maglev_tram": {
+    "texture": "res://assets/art/ambient/maglev_tram.png",
+    "frame": [
+      112,
+      28
+    ],
+    "frames": 2,
+    "fps": 6,
+    "rows": {
+      "right": 0
+    },
+    "light": {
+      "color": "#3de7c9",
+      "offset": [
+        0,
+        -4
+      ],
+      "scale": 3.0,
+      "energy": 0.7
+    }
+  },
+  "sky_hopper": {
+    "texture": "res://assets/art/ambient/sky_hopper.png",
+    "frame": [
+      48,
+      24
+    ],
+    "frames": 2,
+    "fps": 8,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      30,
+      6
+    ]
+  },
+  "sky_shuttle": {
+    "texture": "res://assets/art/ambient/sky_shuttle.png",
+    "frame": [
+      96,
+      36
+    ],
+    "frames": 2,
+    "fps": 8,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      64,
+      10
+    ]
+  },
+  "sky_freighter": {
+    "texture": "res://assets/art/ambient/sky_freighter.png",
+    "frame": [
+      160,
+      52
+    ],
+    "frames": 2,
+    "fps": 6,
+    "rows": {
+      "right": 0
+    },
+    "shadow": [
+      110,
+      14
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "bld_e_apt_4a": {
+    "w": 4,
+    "d": 3,
+    "wall": 64,
+    "planet": "earth",
+    "kind": "apt",
+    "door_dx": 0
+  },
+  "bld_e_apt_4b": {
+    "w": 4,
+    "d": 3,
+    "wall": 48,
+    "planet": "earth",
+    "kind": "apt",
+    "door_dx": 0
+  },
+  "bld_e_apt_5a": {
+    "w": 5,
+    "d": 3,
+    "wall": 80,
+    "planet": "earth",
+    "kind": "apt",
+    "door_dx": 0
+  },
+  "bld_e_apt_5b": {
+    "w": 5,
+    "d": 3,
+    "wall": 64,
+    "planet": "earth",
+    "kind": "apt",
+    "door_dx": 0
+  },
+  "bld_e_apt_6a": {
+    "w": 6,
+    "d": 4,
+    "wall": 80,
+    "planet": "earth",
+    "kind": "apt",
+    "door_dx": 0
+  },
+  "bld_e_house_3a": {
+    "w": 3,
+    "d": 2,
+    "wall": 32,
+    "planet": "earth",
+    "kind": "house",
+    "door_dx": 0
+  },
+  "bld_e_house_3b": {
+    "w": 3,
+    "d": 2,
+    "wall": 32,
+    "planet": "earth",
+    "kind": "house",
+    "door_dx": 0
+  },
+  "bld_e_house_4a": {
+    "w": 4,
+    "d": 3,
+    "wall": 32,
+    "planet": "earth",
+    "kind": "house",
+    "door_dx": 0
+  },
+  "bld_e_home_andres": {
+    "w": 4,
+    "d": 3,
+    "wall": 32,
+    "planet": "earth",
+    "kind": "house",
+    "door_dx": 0
+  },
+  "bld_e_ruin_4": {
+    "w": 4,
+    "d": 3,
+    "wall": 48,
+    "planet": "earth",
+    "kind": "ruin",
+    "door_dx": 0
+  },
+  "bld_e_ruin_3": {
+    "w": 3,
+    "d": 2,
+    "wall": 40,
+    "planet": "earth",
+    "kind": "ruin",
+    "door_dx": 0
+  },
+  "bld_e_tower_6": {
+    "w": 6,
+    "d": 4,
+    "wall": 112,
+    "planet": "earth",
+    "kind": "tower",
+    "door_dx": 0
+  },
+  "bld_e_kiosk_2": {
+    "w": 2,
+    "d": 1,
+    "wall": 24,
+    "planet": "earth",
+    "kind": "kiosk",
+    "door_dx": 0
+  },
+  "bld_e_vault": {
+    "w": 10,
+    "d": 3,
+    "wall": 48,
+    "planet": "earth",
+    "kind": "vault",
+    "door_dx": 0
+  },
+  "bld_e_greenhouse_4": {
+    "w": 4,
+    "d": 3,
+    "wall": 24,
+    "planet": "earth",
+    "kind": "greenhouse",
+    "door_dx": 0
+  },
+  "bld_e_shop": {
+    "w": 5,
+    "d": 3,
+    "wall": 48,
+    "planet": "earth",
+    "kind": "shop",
+    "door_dx": 0
+  },
+  "bld_m_hab_3": {
+    "w": 3,
+    "d": 2,
+    "wall": 32,
+    "planet": "moon",
+    "kind": "hab",
+    "door_dx": 0
+  },
+  "bld_m_hab_4": {
+    "w": 4,
+    "d": 3,
+    "wall": 32,
+    "planet": "moon",
+    "kind": "hab",
+    "door_dx": 0
+  },
+  "bld_m_hab_5": {
+    "w": 5,
+    "d": 3,
+    "wall": 40,
+    "planet": "moon",
+    "kind": "hab",
+    "door_dx": 0
+  },
+  "bld_m_dome_6": {
+    "w": 6,
+    "d": 4,
+    "wall": 24,
+    "planet": "moon",
+    "kind": "dome",
+    "door_dx": 0
+  },
+  "bld_m_lab_5": {
+    "w": 5,
+    "d": 3,
+    "wall": 40,
+    "planet": "moon",
+    "kind": "lab",
+    "door_dx": 0
+  },
+  "bld_m_hangar_6": {
+    "w": 6,
+    "d": 4,
+    "wall": 48,
+    "planet": "moon",
+    "kind": "hangar",
+    "door_dx": 0
+  },
+  "bld_m_bar": {
+    "w": 5,
+    "d": 3,
+    "wall": 40,
+    "planet": "moon",
+    "kind": "bar",
+    "door_dx": 0
+  },
+  "bld_m_shop": {
+    "w": 5,
+    "d": 3,
+    "wall": 40,
+    "planet": "moon",
+    "kind": "shop",
+    "door_dx": 0
+  },
+  "bld_m_dorm": {
+    "w": 4,
+    "d": 3,
+    "wall": 32,
+    "planet": "moon",
+    "kind": "dorm",
+    "door_dx": 0
+  },
+  "bld_r_block_4": {
+    "w": 4,
+    "d": 3,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "block",
+    "door_dx": 0
+  },
+  "bld_r_block_5": {
+    "w": 5,
+    "d": 3,
+    "wall": 56,
+    "planet": "mars",
+    "kind": "block",
+    "door_dx": 0
+  },
+  "bld_r_dome_5": {
+    "w": 5,
+    "d": 4,
+    "wall": 24,
+    "planet": "mars",
+    "kind": "dome",
+    "door_dx": 0
+  },
+  "bld_r_tower_4": {
+    "w": 4,
+    "d": 3,
+    "wall": 96,
+    "planet": "mars",
+    "kind": "tower",
+    "door_dx": 0
+  },
+  "bld_r_silo_2": {
+    "w": 2,
+    "d": 2,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "silo",
+    "door_dx": 0
+  },
+  "bld_r_lab_5": {
+    "w": 5,
+    "d": 3,
+    "wall": 40,
+    "planet": "mars",
+    "kind": "lab",
+    "door_dx": 0
+  },
+  "bld_r_bar": {
+    "w": 5,
+    "d": 3,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "bar",
+    "door_dx": 0
+  },
+  "bld_r_shop": {
+    "w": 5,
+    "d": 3,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "shop",
+    "door_dx": 0
+  },
+  "bld_r_school": {
+    "w": 5,
+    "d": 3,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "school",
+    "door_dx": 0
+  },
+  "bld_r_garage": {
+    "w": 5,
+    "d": 3,
+    "wall": 48,
+    "planet": "mars",
+    "kind": "garage",
+    "door_dx": 0
+  },
+  "bld_r_house": {
+    "w": 4,
+    "d": 3,
+    "wall": 32,
+    "planet": "mars",
+    "kind": "house",
+    "door_dx": 0
+  },
+  "bld_r_greenhouse": {
+    "w": 4,
+    "d": 3,
+    "wall": 24,
+    "planet": "mars",
+    "kind": "greenhouse",
+    "door_dx": 0
+  },
+  "bld_r_greenhouse_alive": {
+    "w": 4,
+    "d": 3,
+    "wall": 24,
+    "planet": "mars",
+    "kind": "greenhouse",
+    "door_dx": 0
+  }
+}

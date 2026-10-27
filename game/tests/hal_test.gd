@@ -47,7 +47,7 @@ func _run() -> void:
 	_check(crew.filter(func(c: CharacterDef) -> bool: return c.group == "crew").size() == 6, "equipo de 6 + vecinos")
 
 	# --- Música y audio
-	for track in ["space", "mission", "title"]:
+	for track in ["space", "mission", "title", "battle"]:
 		var stream := MusicPlayerScript().load_track(track) as AudioStreamOggVorbis
 		_check(stream != null and stream.loop, "pista %s en bucle" % track)
 		if stream != null:
@@ -81,7 +81,9 @@ func _run() -> void:
 	_press(KEY_Q)
 	_check(hal.current_tab() == "crew", "Q vuelve a la pestaña anterior")
 	_press(KEY_2)
-	_check(hal.current_tab() == "map", "2 abre el mapa")
+	_check(hal.current_tab() == "status", "2 abre la ficha de Andrés y ASTRA")
+	_press(KEY_3)
+	_check(hal.current_tab() == "map", "3 abre el mapa")
 	var map_tab := hal._tabs["map"] as HalMapTab
 	_check(map_tab._minimap.has_map() and map_tab._minimap.visible, "mapa «Aquí» de la Tierra")
 	_check(map_tab._route.objective_stop() == "earth", "la ruta marca la Tierra como objetivo")

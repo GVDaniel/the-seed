@@ -1,0 +1,33 @@
+{
+  "id": "sabatier_methane",
+  "display_name": "Combustible hecho en Marte",
+  "kind": "concepto",
+  "short_description": "Con CO₂ del aire, hidrógeno del hielo y un catalizador de níquel se fabrica metano: combustible para volver a casa… o para ir más lejos.",
+  "scientific_facts": [
+    {
+      "label": "Reacción de Sabatier",
+      "value": "CO₂ + 4 H₂ → CH₄ + 2 H₂O (con catalizador)",
+      "is_game_simplification": false,
+      "source_ids": ["nobel_sabatier", "nasa_isru"]
+    },
+    {
+      "label": "Premio Nobel",
+      "value": "Paul Sabatier, Química, 1912",
+      "is_game_simplification": false,
+      "source_ids": ["nobel_sabatier"]
+    },
+    {
+      "label": "Oxígeno marciano",
+      "value": "MOXIE (Perseverance) fabricó oxígeno a partir del CO₂ de Marte entre 2021 y 2023",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_moxie"]
+    },
+    {
+      "label": "Agua de vuelta",
+      "value": "La reacción devuelve agua, que se puede volver a separar en hidrógeno y oxígeno",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_isru"]
+    }
+  ],
+  "arcade_disclaimer": "El destilador de Bruno llena el tanque en segundos. Una planta real tardaría meses en producir el combustible de una nave."
+}

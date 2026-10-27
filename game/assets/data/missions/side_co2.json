@@ -1,0 +1,60 @@
+{
+  "id": "side_co2",
+  "title": "El aire que sobra",
+  "chapter": 4,
+  "order": 11,
+  "kind": "side",
+  "summary": "Nia construyó un compresor para su proyecto de ciencias, pero no arranca. Si funciona, llenará una bombona con aire de Marte.",
+  "start_npc": "nia",
+  "requires": [
+    "red_garden"
+  ],
+  "objectives": [
+    {
+      "id": "start_compressor",
+      "description": "Enciende el compresor de Nia.",
+      "hud_hint": "Enciende el compresor, al sur de la colonia (E).",
+      "condition": {
+        "type": "interact",
+        "target_id": "co2_compressor"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "talk_nia",
+      "description": "Cuéntale a Nia que funciona.",
+      "hud_hint": "Vuelve con Nia, en la Cantina Polvo Rojo.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "nia"
+      },
+      "location": "mars_bar"
+    }
+  ],
+  "rewards": {
+    "experience": 35,
+    "credits": 25
+  },
+  "dialogues": {
+    "offer": [
+      {"who": "nia", "text": "¿Sabías que el aire de Marte es casi todo dióxido de carbono? ¡Un 95 %!"},
+      {"who": "nia", "text": "Hice un compresor para guardar ese aire en una bombona, pero el interruptor se atascó. ¿Lo pruebas tú?"},
+      {"who": "hal", "text": "El CO₂ es el segundo ingrediente del metano. Aporta el carbono: la «C» de CH₄."}
+    ],
+    "reminder": [
+      {"who": "nia", "text": "El compresor está fuera, al sur de la colonia, entre las casas."}
+    ],
+    "talk_nia": [
+      {"who": "nia", "text": "¡¿Funciona?! ¡Voy a sacar un diez en ciencias!"},
+      {"who": "nia", "text": "Quédate la bombona. Mi profe dice que las plantas también usan CO₂: lo convierten en azúcar y oxígeno con la luz."}
+    ],
+    "after": [
+      {"who": "nia", "text": "Cuando sea mayor quiero fabricar aire para toda la colonia. Gratis, no como MarsCorp."}
+    ]
+  },
+  "objective_complete_messages": {
+    "start_compressor": "El compresor llena una bombona de CO₂.",
+    "talk_nia": "Misión secundaria completada: El aire que sobra."
+  },
+  "mission_complete_message": "Secundaria completada: El aire que sobra."
+}

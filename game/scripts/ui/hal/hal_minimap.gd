@@ -154,7 +154,7 @@ static func _legend_colors(map: Dictionary) -> Dictionary:
 	var atlas := str(map.get("tileset", "earth"))
 	if not TileCatalog.has_atlas(atlas):
 		return {}
-	var tex := load(str(TileCatalog.ATLASES[atlas]["path"])) as Texture2D
+	var tex := load(str(TileCatalog.info(atlas)["path"])) as Texture2D
 	var img := tex.get_image() if tex != null else null
 	if img == null:
 		return {}

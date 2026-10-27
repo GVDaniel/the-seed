@@ -26,6 +26,8 @@ const CAMERA_ZOOM := 3.0
 
 var map: Dictionary = {}
 var spawner: SurfaceEntitySpawner = SurfaceEntitySpawner.new()
+## Tráfico, máquinas, naves y peatones de fondo (clave "ambient_life" del mapa).
+var ambient: AmbientLife
 var _hal: HalFollower
 
 
@@ -45,6 +47,7 @@ func _ready() -> void:
 	App.music().play(str(map.get("music", "mission")))
 	App.bus().interaction_requested.connect(_on_interaction)
 	App.bus().story_event.connect(_on_story_event)
+	App.bus().dialogue_finished.connect(_on_dialogue_finished)
 	call_deferred("_on_arrival", str(router.pending_spawn))
 
 
@@ -57,6 +60,10 @@ func _build_world() -> void:
 		if npc != null:
 			npc.set_player(_player)
 	var px := size * TileCatalog.TILE
+	ambient = AmbientLife.new()
+	ambient.name = "AmbientLife"
+	add_child(ambient)
+	ambient.setup(map, _entities, _player, Vector2(px))
 	_camera.zoom = Vector2(CAMERA_ZOOM, CAMERA_ZOOM)
 	_camera.limit_left = 0
 	_camera.limit_top = 0
@@ -66,8 +73,8 @@ func _build_world() -> void:
 
 func _place_player(spawn: String) -> void:
 	var pos: Vector2 = spawner.spawns.get("ship", spawner.spawns.get("entrance", Vector2(64, 64)))
-	if spawn == "return" and App.router().lab_return_position != Vector2.ZERO:
-		pos = App.router().lab_return_position
+	if spawn == "return" and App.router().return_position != Vector2.ZERO:
+		pos = App.router().return_position
 	elif spawner.spawns.has(spawn):
 		pos = spawner.spawns[spawn]
 	_player.activate_at(pos)
@@ -91,7 +98,7 @@ func _setup_presentation() -> void:
 		_player.add_child(NeonLight.from_data({"color": "#cfe8ff", "energy": 0.55, "scale": 2.6, "offset": [0, -10]}))
 	_hud.set_location_name(str(map.get("display_name", location_id)))
 	_void.color = Color(str(map.get("void_color", "#0b1220")))
-	_ambient.color = Color(str(map.get("ambient", "#ffffff")))
+	_ambient.color = Color(AmbientLife.tint_of(map))
 	match str(map.get("weather", "")):
 		"dust":
 			_weather.emitting = true
@@ -160,6 +167,10 @@ func _on_interaction(target_id: String, kind: String) -> void:
 			_use_object(target_id, data)
 		"sign":
 			App.story().play_lines(data.get("lines", []))
+		"enemy":
+			_approach_enemy(target_id, data)
+		"service":
+			_use_service(data)
 
 
 func _collect(item_id: String, data: Dictionary) -> void:
@@ -188,7 +199,7 @@ func _use_terminal(_terminal_id: String, data: Dictionary) -> void:
 		App.sfx().play("error")
 		return
 	App.sfx().play("confirm")
-	App.router().lab_return_position = _player.global_position
+	App.router().return_position = _player.global_position
 	App.router().open_lab(challenge_id)
 
 
@@ -212,6 +223,52 @@ func _use_object(object_id: String, data: Dictionary) -> void:
 	var lines: Array = data.get("use_lines", [])
 	if not lines.is_empty():
 		story.play_lines(lines)
+
+
+func _approach_enemy(enemy_id: String, data: Dictionary) -> void:
+	var story := App.story()
+	var encounter := str(data.get("encounter", ""))
+	var flag := str(data.get("done_flag", ""))
+	if not flag.is_empty() and App.game_state().has_flag(flag):
+		story.play_lines(data.get("done_lines", []))
+		return
+	if not story.can_battle(encounter):
+		story.hal_says(str(data.get("locked_text", "Mejor no acercarse todavía.")))
+		App.sfx().play("error")
+		return
+	App.router().return_position = _player.global_position + Vector2(-20, 6)
+	var intro: Array = data.get("intro_lines", [])
+	if intro.is_empty():
+		App.router().start_battle(encounter)
+		return
+	story.play_lines(intro, "battle:%s:%s" % [encounter, enemy_id])
+
+
+func _on_dialogue_finished(context: String) -> void:
+	if not context.begins_with("battle:"):
+		return
+	var parts := context.split(":")
+	if parts.size() >= 2:
+		App.sfx().play("confirm")
+		App.router().start_battle(parts[1])
+
+
+func _use_service(data: Dictionary) -> void:
+	var free_flag := str(data.get("free_flag", ""))
+	var free: bool = not free_flag.is_empty() and App.game_state().has_flag(free_flag)
+	var ship := App.ship()
+	var quote: Dictionary = ship.service_quote(float(data.get("rate", 0.5)))
+	var msg: String = ship.service(float(data.get("rate", 0.5)), free)
+	var lines: Array = []
+	if free:
+		lines.append({"who": "hal", "text": str(data.get("free_text", "Servicio gratuito."))})
+	elif int(quote["cost"]) > 0:
+		lines.append({"who": "hal", "text": "Presupuesto: %d créditos por llenar el tanque y reparar el casco." % int(quote["cost"])})
+	lines.append({"who": "hal", "text": msg})
+	lines.append({"who": "hal", "text": "ASTRA: combustible %d/%d · casco %d %%." % [
+		int(round(ship.fuel)), int(round(ship.capacity())), int(round(ship.hull))]})
+	App.sfx().play("pickup")
+	App.story().play_lines(lines)
 
 
 func _use_door(data: Dictionary) -> void:

@@ -1,6 +1,7 @@
 class_name SurfaceEntitySpawner
 extends RefCounted
-## Crea NPCs, puntos de escaneo, objetos, puertas, luces y props a partir de la lista "entities" del mapa.
+## Crea NPCs, puntos de escaneo, objetos, puertas, enemigos, surtidores, luces y props
+## a partir de la lista "entities" del mapa.
 ## Cualquier entidad puede llevar "light": {color, offset, scale, energy, flicker}.
 
 const PROPS_DIR := "res://assets/art/props/"
@@ -37,7 +38,7 @@ func _spawn(data: Dictionary, container: Node2D) -> void:
 			node = _make_npc(data)
 		"scan":
 			node = _make_scan(data)
-		"item", "terminal", "ship", "object", "sign", "door":
+		"item", "terminal", "ship", "object", "sign", "door", "enemy", "service":
 			node = _make_interactable(type, data)
 		_:
 			node = Node2D.new()
@@ -85,6 +86,8 @@ func _make_interactable(type: String, data: Dictionary) -> Node2D:
 	it.prompt = str(data.get("prompt", _default_prompt(type)))
 	if type == "item" and App.game_state().has_item(it.target_id):
 		it.visible = false
+	if type == "door":
+		NavAlias.attach(it, str(data.get("target", "")))
 	return it
 
 
@@ -100,6 +103,10 @@ func _default_prompt(type: String) -> String:
 			return "Leer"
 		"door":
 			return "Entrar"
+		"enemy":
+			return "Enfrentarte"
+		"service":
+			return "Estación de servicio"
 	return "Usar"
 
 
@@ -109,7 +116,7 @@ func _add_sprite(node: Node2D, data: Dictionary, type: String) -> void:
 		sprite_name = "astra"
 	elif type == "terminal" and sprite_name.is_empty():
 		sprite_name = "terminal"
-	if type == "object":
+	if type == "object" or type == "enemy":
 		var flag := str(data.get("done_flag", ""))
 		if not flag.is_empty() and App.game_state().has_flag(flag):
 			sprite_name = str(data.get("sprite_done", sprite_name))

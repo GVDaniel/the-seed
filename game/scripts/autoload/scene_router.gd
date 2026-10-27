@@ -1,11 +1,12 @@
 extends Node
-## Navegación entre escenas con fundido. Guarda el "a dónde volver" (lab, despegue).
+## Navegación entre escenas con fundido. Guarda el "a dónde volver" (lab, combate, despegue).
 
 const SURFACE_SCENE := "res://scenes/surface/surface_level.tscn"
 const SPACE_SCENE := "res://scenes/space/space_main.tscn"
 const LAB_SCENE := "res://scenes/lab/probe_lab.tscn"
 const MENU_SCENE := "res://scenes/ui/main_menu.tscn"
 const CUTSCENE_SCENE := "res://scenes/story/cutscene.tscn"
+const BATTLE_SCENE := "res://scenes/battle/battle.tscn"
 
 ## Superficie a cargar ("earth", "moon", "mars").
 var pending_surface: String = ""
@@ -15,10 +16,14 @@ var pending_spawn: String = "ship"
 var space_spawn_near: String = ""
 var lab_challenge_id: String = ""
 var lab_return_location: String = ""
-## Posición del jugador al abrir el laboratorio desde una terminal.
-var lab_return_position: Vector2 = Vector2.ZERO
+## Posición del jugador al dejar la superficie por una terminal o un combate.
+var return_position: Vector2 = Vector2.ZERO
 ## La próxima escena espacial debe avisar de un despegue (objetivo "takeoff").
 var took_off_pending: bool = false
+var battle_id: String = ""
+var battle_return_location: String = ""
+## Pruebas headless: el combate elige acciones y pulsa a tiempo él solo.
+var battle_autoplay: bool = false
 var cutscene_id: String = ""
 var cutscene_next_location: String = ""
 
@@ -82,6 +87,23 @@ func return_from_lab() -> void:
 		go_space(space_spawn_near)
 	else:
 		go_surface(back, "return")
+
+
+## La superficie guarda return_position antes de llamar.
+func start_battle(encounter_id: String) -> void:
+	battle_id = encounter_id
+	battle_return_location = str(App.game_state().location)
+	_change(BATTLE_SCENE)
+
+
+## result = "victory" | "defeat" | "retreat".
+func return_from_battle(result: String) -> void:
+	var id := battle_id
+	var back := battle_return_location
+	battle_id = ""
+	battle_return_location = ""
+	App.bus().battle_finished.emit(id, result)
+	go_surface(back if not back.is_empty() else str(App.game_state().region), "return")
 
 
 func play_cutscene(id: String, next_location: String) -> void:

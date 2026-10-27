@@ -1,0 +1,9 @@
+{
+  "id": "nickel_catalyst",
+  "order": 12,
+  "category": "muestra",
+  "display_name": "Catalizador de níquel",
+  "description": "Virutas del meteorito de hierro y níquel. Ayudan a que el CO₂ y el hidrógeno se conviertan en metano.",
+  "fact": "Un catalizador acelera una reacción química sin gastarse. Paul Sabatier ganó el Nobel de Química en 1912 por reacciones con níquel como esta.",
+  "icon": "res://assets/art/items/nickel_catalyst.png"
+}

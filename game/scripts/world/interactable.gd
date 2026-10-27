@@ -6,7 +6,7 @@ const GROUP := "interactables"
 const NAV_GROUP := "nav_targets"
 
 @export var target_id: String = ""
-## npc | item | terminal | ship | object
+## npc | item | terminal | ship | object | sign | door | enemy | service
 @export var kind: String = "object"
 @export var prompt: String = "Interactuar"
 @export var radius: float = 26.0

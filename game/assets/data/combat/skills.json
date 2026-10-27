@@ -1,0 +1,182 @@
+{
+  "skills": [
+    {
+      "id": "basic_andres",
+      "user": "andres",
+      "kind": "basic",
+      "display_name": "Golpe de llave",
+      "element": "impacto",
+      "power": 1.0,
+      "hits": 1,
+      "target": "enemy",
+      "description": "Ataque básico con la llave magnética. Recupera 1 de energía.",
+      "fact": "Una llave es una palanca: cuanto más largo el mango, menos fuerza necesitas para girar un tornillo.",
+      "qte": "tap",
+      "anim": "attack",
+      "fx": "hit",
+      "melee": true
+    },
+    {
+      "id": "basic_hal",
+      "user": "hal",
+      "kind": "basic",
+      "display_name": "Láser de escaneo",
+      "element": "luz",
+      "power": 0.85,
+      "hits": 1,
+      "target": "enemy",
+      "description": "Ataque básico: un destello del escáner de HAL. Recupera 1 de energía.",
+      "fact": "La palabra láser viene del inglés: «amplificación de luz por emisión estimulada de radiación».",
+      "qte": "tap",
+      "anim": "attack",
+      "fx": "light",
+      "melee": false
+    },
+    {
+      "id": "wrench_spin",
+      "user": "andres",
+      "kind": "attack",
+      "display_name": "Llave giratoria",
+      "cost": 2,
+      "element": "impacto",
+      "power": 0.8,
+      "hits": 2,
+      "target": "enemy",
+      "description": "Dos golpes rápidos: pulsa en cada uno. Cada golpe puede romper una cerradura de impacto.",
+      "fact": "Un objeto que gira guarda energía; por eso una peonza sigue de pie mientras da vueltas.",
+      "qte": "multi",
+      "anim": "attack",
+      "fx": "hit",
+      "melee": true
+    },
+    {
+      "id": "hal_pulse",
+      "user": "hal",
+      "kind": "attack",
+      "display_name": "Pulso eléctrico",
+      "cost": 2,
+      "element": "electricidad",
+      "power": 1.3,
+      "hits": 1,
+      "target": "enemy",
+      "description": "Una descarga que desordena los circuitos de un robot.",
+      "fact": "Los circuitos funcionan con corrientes muy pequeñas; una descarga fuerte los desordena. Por eso las naves blindan su electrónica.",
+      "qte": "tap",
+      "anim": "cast",
+      "fx": "zap",
+      "melee": false
+    },
+    {
+      "id": "hal_repair",
+      "user": "hal",
+      "kind": "heal",
+      "display_name": "Reparación de campo",
+      "cost": 3,
+      "amount": 30,
+      "target": "ally",
+      "description": "HAL cura a un compañero o levanta a quien esté fuera de combate.",
+      "fact": "Los astronautas de la Estación Espacial aprenden primeros auxilios: en el espacio no hay ambulancias.",
+      "qte": "tap",
+      "anim": "cast",
+      "fx": "heal",
+      "melee": false
+    },
+    {
+      "id": "solar_flash",
+      "user": "andres",
+      "kind": "attack",
+      "display_name": "Destello solar",
+      "cost": 3,
+      "element": "luz",
+      "power": 1.0,
+      "hits": 1,
+      "target": "all_enemies",
+      "requires": {
+        "conocimientos": 1
+      },
+      "description": "Mantén pulsado y suelta en la zona dorada: Andrés refleja la luz con un espejo del traje y deslumbra a todos los enemigos.",
+      "fact": "La luz del Sol tarda unos 8 minutos y 20 segundos en llegar a la Tierra.",
+      "qte": "hold",
+      "anim": "cast",
+      "fx": "light",
+      "melee": false
+    },
+    {
+      "id": "scrap_shield",
+      "user": "hal",
+      "kind": "guard",
+      "display_name": "Escudo de chatarra",
+      "cost": 2,
+      "target": "party",
+      "requires": {
+        "aptitudes": 2
+      },
+      "description": "HAL despliega placas: el grupo recibe la mitad de daño en el turno enemigo. Con chispas, aún menos.",
+      "fact": "El escudo Whipple de las naves usa capas finas separadas para frenar micrometeoritos.",
+      "qte": "none",
+      "anim": "cast",
+      "fx": "heal",
+      "melee": false
+    },
+    {
+      "id": "comet_dash",
+      "user": "andres",
+      "kind": "attack",
+      "display_name": "Carrera de cometa",
+      "cost": 3,
+      "element": "impacto",
+      "power": 1.8,
+      "hits": 1,
+      "target": "enemy",
+      "requires": {
+        "destrezas": 2
+      },
+      "description": "Mantén pulsado para cargar los propulsores del traje y suelta en la zona dorada: un golpe muy fuerte.",
+      "fact": "Los cometas son bolas de hielo y polvo. Su cola de gas apunta siempre lejos del Sol.",
+      "qte": "hold",
+      "anim": "attack",
+      "fx": "hit",
+      "melee": true
+    },
+    {
+      "id": "combo_double_spark",
+      "user": "team",
+      "kind": "combo",
+      "display_name": "Combo: Chispa doble",
+      "combo_cost": 3,
+      "elements": [
+        "impacto",
+        "electricidad"
+      ],
+      "power": 1.1,
+      "hits": 2,
+      "target": "enemy",
+      "description": "Andrés golpea y HAL electrifica la llave a la vez: dos golpes, pulsa en cada uno. Rompen cerraduras de impacto y eléctricas.",
+      "fact": "Un rayo calienta el aire a unos 30 000 °C: unas cinco veces más que la superficie del Sol.",
+      "qte": "multi",
+      "anim": "attack",
+      "fx": "zap",
+      "melee": true
+    },
+    {
+      "id": "combo_eclipse",
+      "user": "team",
+      "kind": "combo",
+      "display_name": "Combo: Eclipse",
+      "combo_cost": 5,
+      "elements": [
+        "luz",
+        "impacto"
+      ],
+      "power": 1.6,
+      "hits": 1,
+      "target": "all_enemies",
+      "qte": "hold",
+      "anim": "cast",
+      "fx": "light",
+      "melee": false,
+      "description": "HAL tapa el destello de Andrés y lo suelta de golpe sobre todos los enemigos. Mantén y suelta en la zona dorada.",
+      "fact": "En un eclipse total de Sol, la Luna tapa el disco solar y se ve la corona: la atmósfera exterior del Sol, a más de un millón de grados."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 class_name HalMissionsTab
 extends VBoxContainer
-## Pestaña Misiones: capítulo actual y bitácora de misiones (hechas, en curso, por venir).
+## Pestaña Misiones: capítulo actual, historia principal y misiones secundarias.
 
 var _chapter: Label
 var _subtitle: Label
@@ -24,13 +24,21 @@ func refresh() -> void:
 	_chapter.text = "Capítulo %d · %s" % [int(info.get("chapter", 1)), str(info.get("title", ""))]
 	_subtitle.text = str(info.get("subtitle", ""))
 	HalUi.clear(_list)
+	_list.add_child(HalUi.label("HISTORIA PRINCIPAL", 14, HalUi.CYAN))
+	_add_cards(false)
+	_list.add_child(HalUi.label("MISIONES SECUNDARIAS · consiguen materiales y experiencia", 14, HalUi.CYAN))
+	_add_cards(true)
+
+
+func _add_cards(side: bool) -> void:
 	var missions := App.missions()
-	var active := str(missions.get_active_mission_id())
 	for id in missions.ordered_mission_ids():
 		var def: MissionDef = missions.get_def(id)
+		if def.is_side() != side:
+			continue
 		if missions.is_completed(id):
 			_list.add_child(_card(def, "COMPLETADA", HalUi.CYAN, false))
-		elif id == active:
+		elif missions.is_active(id):
 			_list.add_child(_card(def, "EN CURSO", HalUi.GOLD, true))
 		elif missions.requirements_met(id):
 			_list.add_child(_card(def, "DISPONIBLE", HalUi.GOLD, false))
@@ -68,7 +76,8 @@ func _card(def: MissionDef, status: String, color: Color, detailed: bool) -> Pan
 func _locked_card(def: MissionDef) -> PanelContainer:
 	var card := HalUi.panel(HalUi.LOCKED, 12)
 	var head := HBoxContainer.new()
-	head.add_child(HalUi.label("Capítulo %d · ???" % def.chapter, 18, HalUi.LOCKED, true))
+	var label := "Secundaria · capítulo %d · ???" if def.is_side() else "Capítulo %d · ???"
+	head.add_child(HalUi.label(label % def.chapter, 18, HalUi.LOCKED, true))
 	head.add_child(HalUi.label("BLOQUEADA", 13, HalUi.LOCKED))
 	card.add_child(head)
 	return card
@@ -82,4 +91,7 @@ func hal_line() -> String:
 			done += 1
 	if done == ids.size():
 		return "Todas las misiones completadas. Calculando rumbo a TRAPPIST-1e…"
+	var sides: Array = App.story().side_offers()
+	if not sides.is_empty():
+		return "Hay misiones secundarias disponibles. Ayudar a la gente también nos da materiales y experiencia."
 	return "Misiones completadas: %d de %d. Vamos paso a paso, como en un programa." % [done, ids.size()]

@@ -3,7 +3,7 @@
   "order": 21,
   "category": "mejora",
   "display_name": "Escudo Whipple",
-  "description": "Placas finas separadas por huecos. Los choques con basura espacial quitan la mitad de energía.",
+  "description": "Placas finas separadas por huecos. Los choques con basura espacial dañan la mitad el casco.",
   "fact": "El escudo Whipple usa capas finas separadas: la primera rompe el fragmento y las siguientes frenan los trozos. Lo ideó el astrónomo Fred Whipple en los años 40.",
   "icon": "res://assets/art/items/whipple_shield.png",
   "effects": {

@@ -1,0 +1,12 @@
+{
+  "id": "repair_kit",
+  "order": 24,
+  "category": "repuesto",
+  "display_name": "Kit de reparación de casco",
+  "description": "Parches de aluminio y sellador. Repara el casco de ASTRA.",
+  "fact": "Los astronautas de la Estación Espacial han reparado fugas de aire con cinta y sellador especial, desde dentro de la nave.",
+  "use": {
+    "repair": 40
+  },
+  "icon": "res://assets/art/items/repair_kit.png"
+}

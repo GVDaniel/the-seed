@@ -2,7 +2,7 @@
   "id": "nia",
   "display_name": "Nia",
   "role": "Alumna de la escuela de Jezero",
-  "home": "mars",
+  "home": "mars_bar",
   "group": "local",
   "order": 33,
   "portrait": "res://assets/art/portraits/nia.png",

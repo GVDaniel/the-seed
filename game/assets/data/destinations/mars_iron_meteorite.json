@@ -1,0 +1,35 @@
+{
+  "id": "mars_iron_meteorite",
+  "display_name": "Meteorito de hierro y níquel",
+  "kind": "roca",
+  "short_description": "Una roca metálica que cayó del espacio. Está hecha sobre todo de hierro y níquel, como el núcleo de un pequeño asteroide roto.",
+  "scientific_facts": [
+    {
+      "label": "Caso real",
+      "value": "El rover Opportunity encontró «Heat Shield Rock», un meteorito de hierro y níquel, en 2005",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_opportunity_meteorite"]
+    },
+    {
+      "label": "Récord",
+      "value": "Fue el primer meteorito identificado en otro planeta",
+      "is_game_simplification": false,
+      "source_ids": ["nasa_opportunity_meteorite"]
+    },
+    {
+      "label": "Composición",
+      "value": "Hierro con un 5–30 % de níquel",
+      "is_game_simplification": true,
+      "source_ids": ["nasa_opportunity_meteorite"],
+      "simplification_note": "Rango típico de los meteoritos metálicos; cada uno es distinto."
+    },
+    {
+      "label": "En el juego",
+      "value": "Del meteorito se sacan virutas de níquel para el catalizador",
+      "is_game_simplification": true,
+      "source_ids": [],
+      "simplification_note": "Purificar níquel de verdad requiere un proceso industrial."
+    }
+  ],
+  "arcade_disclaimer": "El meteorito del juego está en el Barranco de Óxido, inventado; Heat Shield Rock está en Meridiani Planum."
+}

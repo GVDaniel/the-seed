@@ -25,6 +25,7 @@ var _near_planet: PlanetZone
 var _scan_focus_name: String = ""
 var _scan_focus_id: String = ""
 var _ui_busy: bool = false
+var _base_stats: ShipStats
 
 
 func _ready() -> void:
@@ -44,8 +45,11 @@ func _ready() -> void:
 	_ship.add_child(arrow)
 
 	App.music().play("space")
-	_ship.stats = ShipUpgrades.apply(_ship.stats)
+	_base_stats = ShipUpgrades.apply(_ship.stats)
+	_apply_ship_state()
 	_ship.energy = _ship.stats.max_energy
+	_ship.fuel_source = App.ship()
+	App.bus().ship_state_changed.connect(_apply_ship_state)
 	var router := App.router()
 	_spawn_near(str(router.space_spawn_near))
 	_camera.set_follow_target(_ship, true)
@@ -55,6 +59,15 @@ func _ready() -> void:
 		router.took_off_pending = false
 		var from := str(router.space_spawn_near)
 		App.bus().took_off.emit.call_deferred(from)
+
+
+## Motor instalado y estado del casco sobre las estadísticas (con mejoras de tienda).
+func _apply_ship_state() -> void:
+	if _base_stats == null:
+		return
+	var energy := _ship.energy
+	_ship.stats = App.ship().apply_to(_base_stats)
+	_ship.energy = minf(energy, _ship.stats.max_energy)
 
 
 func _spawn_near(destination_id: String) -> void:

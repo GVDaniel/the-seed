@@ -30,6 +30,8 @@ Sfx="*res://scripts/autoload/sfx_player.gd"
 Music="*res://scripts/autoload/music_player.gd"
 Inventory="*res://scripts/autoload/inventory.gd"
 Economy="*res://scripts/autoload/economy.gd"
+ShipState="*res://scripts/autoload/ship_state.gd"
+Hero="*res://scripts/autoload/hero.gd"
 
 [display]
 

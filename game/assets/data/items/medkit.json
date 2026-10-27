@@ -1,0 +1,12 @@
+{
+  "id": "medkit",
+  "order": 44,
+  "category": "medicina",
+  "display_name": "Botiquín de la colonia",
+  "description": "Vendas, gel frío y vitaminas. Recupera mucha salud de Andrés.",
+  "fact": "En la Estación Espacial Internacional hay botiquines médicos y siempre viaja alguien entrenado en primeros auxilios.",
+  "use": {
+    "heal": 45
+  },
+  "icon": "res://assets/art/items/medkit.png"
+}

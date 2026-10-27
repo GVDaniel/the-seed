@@ -1,0 +1,85 @@
+{
+  "id": "side_catalyst",
+  "title": "La roca que cayó del cielo",
+  "chapter": 4,
+  "order": 12,
+  "kind": "side",
+  "summary": "La geóloga Ada encontró un meteorito de hierro y níquel en el barranco, pero dos drones antihumanistas lo vigilan.",
+  "start_npc": "ada",
+  "requires": [
+    "red_garden"
+  ],
+  "objectives": [
+    {
+      "id": "scan_meteorite",
+      "description": "Escanea el meteorito del barranco.",
+      "hud_hint": "Escanea el meteorito, al sureste del barranco (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "mars_iron_meteorite"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "beat_drones",
+      "description": "Desactiva a los drones vigía.",
+      "hud_hint": "Enfréntate a los drones que vigilan el meteorito (E).",
+      "condition": {
+        "type": "win_battle",
+        "encounter_id": "drones_meteorite"
+      },
+      "target": "ah_drones",
+      "location": "mars"
+    },
+    {
+      "id": "take_nickel",
+      "description": "Recoge virutas de níquel.",
+      "hud_hint": "Recoge las virutas de níquel junto al meteorito (E).",
+      "condition": {
+        "type": "collect_item",
+        "item_id": "nickel_catalyst"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "talk_ada",
+      "description": "Vuelve con Ada.",
+      "hud_hint": "Lleva la muestra a Ada, en el borde del barranco.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "ada"
+      },
+      "location": "mars"
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "credits": 30
+  },
+  "dialogues": {
+    "offer": [
+      {"who": "ada", "text": "Hola, soy Ada, geóloga. En el barranco hay una roca oscura y brillante: ¡un meteorito de hierro y níquel!"},
+      {"who": "ada", "text": "El níquel sirve de catalizador: ayuda a que el CO₂ y el hidrógeno se conviertan en metano, sin gastarse."},
+      {"who": "ada", "text": "Pero los Antihumanistas pusieron dos drones a vigilarlo. Ten cuidado: son débiles a la luz."},
+      {"who": "hal", "text": "Mi láser de escaneo es de luz. Ya tenemos plan."}
+    ],
+    "reminder": [
+      {"who": "ada", "text": "El meteorito está al sureste del barranco. Primero escanéalo; luego, ojo con los drones."}
+    ],
+    "talk_ada": [
+      {"who": "ada", "text": "¡Mira qué brillo! Este meteorito viene del núcleo de un asteroide que se rompió hace muchísimo tiempo."},
+      {"who": "ada", "text": "En 2005 el rover Opportunity encontró uno parecido: fue el primer meteorito descubierto en otro planeta."},
+      {"who": "ada", "text": "Quédate las virutas para el combustible. Y gracias por plantar cara a esos drones."}
+    ],
+    "after": [
+      {"who": "ada", "text": "Sigo estudiando el meteorito. Cada capa de óxido cuenta cuánto tiempo lleva aquí."}
+    ]
+  },
+  "objective_complete_messages": {
+    "scan_meteorite": "Meteorito de hierro y níquel registrado.",
+    "beat_drones": "¡Drones desactivados!",
+    "take_nickel": "Catalizador de níquel guardado.",
+    "talk_ada": "Misión secundaria completada: La roca que cayó del cielo."
+  },
+  "mission_complete_message": "Secundaria completada: La roca que cayó del cielo."
+}

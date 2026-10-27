@@ -1,10 +1,10 @@
 class_name DebrisField
 extends Node2D
-## Anillo de basura espacial alrededor de un planeta. Al chocar: rebote y −energía.
+## Anillo de basura espacial alrededor de un planeta. Al chocar: rebote y daño al casco.
 
 const TEXTURE := "res://assets/art/planets/debris.png"
 const HIT_RADIUS := 22.0
-const HIT_ENERGY := 12.0
+const HIT_HULL := 10.0
 const HIT_COOLDOWN := 1.0
 
 @export var ship_path: NodePath
@@ -55,11 +55,13 @@ func _hit(at: Vector2) -> void:
 	_cooldown = HIT_COOLDOWN
 	var away := (_ship.global_position - at).normalized()
 	_ship.velocity = away * maxf(160.0, _ship.velocity.length() * 0.6)
-	var damage := HIT_ENERGY * ShipUpgrades.multiplier("debris_damage")
-	_ship.energy = maxf(0.0, _ship.energy - damage)
+	var damage := HIT_HULL * ShipUpgrades.multiplier("debris_damage")
+	App.ship().damage_hull(damage)
 	App.sfx().play("bump")
 	var first: bool = App.notebook().record_discovery("space_debris")
-	var msg := "¡Choque con basura espacial! −%d de energía." % int(damage)
+	var msg := "¡Choque con basura espacial! Casco −%d %%." % int(round(damage))
+	if App.ship().hull_ratio() < 0.35:
+		msg += " Repara ASTRA en una estación o con un kit."
 	if first:
 		msg += " Nueva ficha en el cuaderno."
 	App.bus().mission_status_message.emit(msg)

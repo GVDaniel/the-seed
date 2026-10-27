@@ -11,6 +11,10 @@
     {
       "item": "meteorite_replica",
       "price": 30
+    },
+    {
+      "item": "medkit",
+      "price": 25
     }
   ]
 }

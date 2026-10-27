@@ -1,0 +1,72 @@
+{
+  "id": "side_ice_core",
+  "title": "Hielo bajo el polvo",
+  "chapter": 4,
+  "order": 10,
+  "kind": "side",
+  "summary": "El profesor Yusuf quiere enseñar a sus alumnos que en Marte hay agua escondida. Ayúdale a sacar un testigo de hielo.",
+  "start_npc": "yusuf",
+  "requires": [
+    "red_garden"
+  ],
+  "objectives": [
+    {
+      "id": "scan_ice",
+      "description": "Escanea la perforadora junto al barranco.",
+      "hud_hint": "Escanea la perforadora del sureste (F).",
+      "condition": {
+        "type": "scan_destination",
+        "destination_id": "mars_buried_ice"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "take_core",
+      "description": "Recoge el testigo de hielo.",
+      "hud_hint": "Recoge el testigo de hielo junto a la perforadora (E).",
+      "condition": {
+        "type": "collect_item",
+        "item_id": "mars_ice_core"
+      },
+      "location": "mars"
+    },
+    {
+      "id": "talk_yusuf",
+      "description": "Enséñale el hielo a Yusuf.",
+      "hud_hint": "Vuelve con el profesor Yusuf, frente a la escuela.",
+      "condition": {
+        "type": "talk_to",
+        "npc_id": "yusuf"
+      },
+      "location": "mars"
+    }
+  ],
+  "rewards": {
+    "experience": 40,
+    "credits": 30
+  },
+  "dialogues": {
+    "offer": [
+      {"who": "yusuf", "text": "¡Cadete! Mis alumnos no se creen que en Marte haya agua. Dicen que todo es polvo."},
+      {"who": "yusuf", "text": "Junto al barranco dejamos una perforadora. Bajo el polvo debería haber hielo. ¿Me traes una muestra?"},
+      {"who": "hal", "text": "Además, el hielo nos sirve: con electricidad se separa en hidrógeno y oxígeno. El hidrógeno es un ingrediente del metano."}
+    ],
+    "reminder": [
+      {"who": "yusuf", "text": "La perforadora está al sureste, cerca del Barranco de Óxido."}
+    ],
+    "talk_yusuf": [
+      {"who": "yusuf", "text": "¡Hielo de verdad! Mirad, niños: agua congelada que lleva aquí millones de años."},
+      {"who": "yusuf", "text": "En 2008 la sonda Phoenix rascó el suelo de Marte y vio cómo unos trocitos blancos desaparecían al sol. ¡Era hielo!"},
+      {"who": "yusuf", "text": "Quédatelo para el combustible, cadete. La clase ya tiene su foto."}
+    ],
+    "after": [
+      {"who": "yusuf", "text": "Ahora mis alumnos quieren excavar todo el patio. Gracias… creo."}
+    ]
+  },
+  "objective_complete_messages": {
+    "scan_ice": "Hielo detectado bajo el polvo.",
+    "take_core": "Testigo de hielo guardado.",
+    "talk_yusuf": "Misión secundaria completada: Hielo bajo el polvo."
+  },
+  "mission_complete_message": "Secundaria completada: Hielo bajo el polvo."
+}

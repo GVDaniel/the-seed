@@ -1,181 +1,539 @@
 {
  "id": "mars",
  "display_name": "Base Jezero · Marte",
- "tileset": "mars",
+ "tileset": "city_mars",
  "void_color": "#2a120a",
  "ambient": "#9a7a80",
  "weather": "dust",
  "dark": true,
  "music": "mission",
  "legend": {
-  "0": {
-   "tile": 0
+  "a": {
+   "tile": [
+    0,
+    1,
+    2,
+    3
+   ]
   },
-  "1": {
-   "tile": 1
+  "b": {
+   "tile": [
+    6,
+    7,
+    8
+   ]
   },
-  "2": {
-   "tile": 2
+  "c": {
+   "tile": [
+    4,
+    5
+   ]
   },
-  "3": {
-   "tile": 3
+  "d": {
+   "tile": [
+    48,
+    49
+   ]
   },
-  "4": {
-   "tile": 4
+  "e": {
+   "tile": 50
   },
-  "p": {
-   "tile": 11
+  "f": {
+   "tile": 52
   },
-  "~": {
-   "tile": 6
+  "g": {
+   "tile": 51
+  },
+  "h": {
+   "tile": [
+    9,
+    10,
+    11,
+    12
+   ]
   },
   "i": {
-   "tile": 7
+   "tile": 36
   },
-  "=": {
-   "tile": 8
+  "j": {
+   "tile": 35
   },
-  "|": {
-   "tile": 10
+  "k": {
+   "tile": 37
   },
-  "R": {
-   "tile": 5,
+  "l": {
+   "tile": 14
+  },
+  "m": {
+   "tile": 20
+  },
+  "n": {
+   "tile": [
+    21,
+    22,
+    23
+   ]
+  },
+  "o": {
+   "tile": 16
+  },
+  "p": {
+   "tile": 24
+  },
+  "q": {
+   "tile": 13
+  },
+  "r": {
+   "tile": 18
+  },
+  "s": {
+   "tile": [
+    29,
+    30
+   ]
+  },
+  "t": {
+   "tile": [
+    40,
+    41,
+    42
+   ],
    "solid": true
   },
-  "H": {
-   "tile": 9,
+  "u": {
+   "tile": [
+    53,
+    54
+   ],
    "solid": true
   }
  },
  "ground": [
-  "00203230pp23201042p0101222110001p20012",
-  "120300012pp133201220322201024020121100",
-  "1p213001031011310031304012123301200331",
-  "133============22221322p33001010314211",
-  "311============p2023232013202032033333",
-  "p31============12222203303012p13023003",
-  "p32============20423p012032230103003p1",
-  "33p============3023p101000p31022343131",
-  "220============02323232003311002222311",
-  "020============22423421102211142101130",
-  "030121200p001230013021p03311p211201021",
-  "1134223p332231120041042233334332301210",
-  "300001213p3031003310p1223p022213013130",
-  "02110p3322302p310p1231iiiiiiiiiii03213",
-  "314220332122224101p101iiiiiiiiiii01211",
-  "0233002111100p12020002iiiiiiiiiii31331",
-  "1303130021010123p02110iiiiiiiiiii11p02",
-  "1333||||||31203p320031iiiiiiiiiip13230",
-  "2123||||||1pp12330121piiiiiiiiii232330",
-  "3330||||||212112022323iiiiiiiii1p12003",
-  "2222||||||21003322p313iiiiiiii12001302",
-  "p221||||||030200012322iiiiiii21p232103",
-  "113111||11002002120133iiiiii2110024310",
-  "2p2110||00021132331201iiii200031243330",
-  "032120||412020132321010321323103111031",
-  "320003||2041133p2331133013332p13301142",
-  "403=================================11",
-  "220=================================21",
-  "242=================================02",
-  "331=================================34",
-  "220=================================10",
-  "312=================================32",
-  "201=================================31",
-  "313=================================10",
-  "113=================================p1",
-  "211=================================12",
-  "10p141040300003p032310223103210214133p",
-  "32332132113pp032310312120200031211p223"
+  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "abbaaaabbbbbbbbbbbbbbaaaaaaaaacaaabbbbbbbbadddaddddddddddbbbbbbaaaaaabba",
+  "aaabbbbbbbbbbbbbbbbbbbbaaaaaaaaaabbbbbaaaaaaaaaddddddddddbbbbbbaaccaaaba",
+  "aaabbbbbbbbbbbaabbbbbbbbaaaaaaaaabbbbaaaaaadadddddddaddddbbbbbbbcccaaaaa",
+  "aaabbbbbbbbbbbaaabbbbbbbbbbaaaaaabbbbaaaaaadadddadddaaaddbbbbbbbbcbaaaaa",
+  "aaabbbbbbbbbbaaacbbbbbbbbbbaaaaaabbbbaaaaaadddddaddddddddbbbbbccbbbaaaaa",
+  "aaabbbbbbbbbbaacccbbbbbbbbbaaaaaabbbbaaaaaadddaaadddddddbbbbbbcccbbaaaaa",
+  "aaaabbbbbbbaaaacccbbbbbbbbbbbaaaaaaaaaaaaaaddddaadddddadabccbcccccccccca",
+  "abccaaaaaaaaaaaccaaaaaaaaabbbbbbbaaaaaaaaaadeeeeedddddaafbccccccccccccca",
+  "abbcaaaaacaaaaaccaaaaaaaaaabbbbbbaaaaaaaaccdddddgdddddaaccacccccbbbaaaaa",
+  "abbaaaaaacaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaddddgdddddaaacacccbbbbbaaaaa",
+  "abiiiiiiiiiiahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaadddgdddbbaaaaabccbbbbbbaaaa",
+  "abjjjjkkjjjjahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaadddgddbbcccaaabbbbbbcccccaa",
+  "abjjjjkkjjjjahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddgbbbaaaaaabbbbbgbcccccba",
+  "abjjjjkkjjjjabbbbbbbbbaaaaaaaaaaaaaaaaaaahhabbbbgbbbaaaaaabbfbbgcccbbbba",
+  "aajjjjkkjjjjabbbbbbbbbbaaaaaaaaaaaaaaaaaahhabbbbgbbbaaaaaabbbbbgcccbbbba",
+  "aajjjjkkjjjjabbbbbbbbbbaaaaaaaaaaaaaaaaaahhabbbbgbbbaaaafabbbbbgbcbbbbba",
+  "aajjjjkkjjjjaabbbbbbbbbaaaaaaaaaaaaacaaaahhaaafagaaaaaaaaacccccgbbbbbbba",
+  "aajjjjkkjjjjcccaaabbbbbbbbbcccaaaaaacaaaahhaaaaagaaaaaaaaccccccgaaccbbba",
+  "aajjjjkkjjjjccaaaaabbbbbbbbbcccaaaaacaaaahhaaaaaaaaaaaaaaaabcccgaacaabba",
+  "aajjjjkkjjjjaaaaaaabbbbbbbbbacccaaaaaaaaahhaaaaaaaaaaaaaaaaabacgaaaaabba",
+  "aajjjjkkjjjjaaaaaaaabbbbbbbbaccccccaaaaaahhaacaafaaaaaaaaaaabacgcafccbba",
+  "aaaabbbaaaaaaaaaaaaaaabbbbbaaaccccaaaaaaahhaaaaaaaaaaaaaaaaaaacgccccccca",
+  "ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaaaaaaaaaaaaaaaaaaacgccccccca",
+  "alllllllllllllllllllllllllllllllllllllllllmaaaaaaaacaaaafacaaaagccccccba",
+  "annnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnoafaaaaaaaaaaaaccccaagaaaccbba",
+  "apppppppppppppppppppppppppppppppppppppppppoeeeeeeeeeeeeeeeeeeeeeeeeeeeba",
+  "annnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnocbbbaaaaaafaaaccabaagaaaaabca",
+  "aqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrbbbbbaaaaaaaaaccbbbbgaaaaabca",
+  "ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhbbbbbbbacaaaaacbbbbbgbaaaaaaa",
+  "abbbaaaabbbbbsssssssssssssssssssssssssssshhbbbbbbbbcaaaaacbbbbbgbccccaaa",
+  "abbaaaaabbbbbsssssssssssssssssssssssssssshhbbbbbbbbaaaaaaabbbbbgccccaaaa",
+  "aaaaaaaaabbbbsssssssssssssssssssssssssssshhabbbbaaaaaaaaaacbbbfgccfbaaaa",
+  "aaaaaacaaabbbbbbbbbbbcaaaaaaaaaaacccccaaahhaaaaaaaaaaaaabbfbbbcgcccaaaaa",
+  "aaaaaaaaaaabbbbbbbbbbbaaaaaaaabaaaccccaaahhaaaaaaaaaabbbbbbccccccccaaaaa",
+  "aaaaaaaaaaabbbbbbbbbbbbaaaaaabbbaaaacaaabhhaacaaaaaaabbbbbbcccccaaaaaaba",
+  "aaaaaaaaaabbbbbbbbbbbbbaaaaaabbaaaaaaaaaahhaccaaaaaaabbbbbfccccccaaaabba",
+  "aaaaaaaaabbbbbbbbbbbbbaaaaaaaacaaaaaaaaaahhaccaaaaaaaabbbaaaaaccccccccba",
+  "aaaaaaaabbbbbbbbbbbbbaaaaaaaaccaaaaaaaacahhaaaaaaaaaaaabaaaaaaccccccccba",
+  "abbaaaaabbbbbbbbbbaaaaaaaacccccaaaaaaaacchhaaaaaaaaaaaaaaaaaccccaaaccbba",
+  "ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaaaaaaaaaaaaaaaacccccaaaccbba",
+  "ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaaaaacaaaaaaaaaacccfaaaabcbba",
+  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
  ],
  "objects": [
-  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
-  "R                                    R",
-  "R  HHHHHHHHHHHH                      R",
-  "R                             R      R",
-  "R                 R                  R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                R   R",
-  "R                                    R",
-  "R                                    R",
-  "R R                                  R",
-  "R                                    R",
-  "R                                    R",
-  "R           R                        R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R               R                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "R                                    R",
-  "RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR"
+  "tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
+  "t                                                        ttu           t",
+  "t                                                       utu            t",
+  "t                                                       uttu           t",
+  "t                                                        tu   u        t",
+  "t                                                        tuu           t",
+  "t                                                       utt            t",
+  "t                                                        tt         u  t",
+  "t                                                       utt            t",
+  "t                                                        tt            t",
+  "t                                                        tu            t",
+  "t                                                                      t",
+  "t                                                                      t",
+  "t                                                                      t",
+  "t                                                        tu            t",
+  "t                                                        tu            t",
+  "t                                                       uttu         u t",
+  "t                                                       utu            t",
+  "t                                                        tt u          t",
+  "t                                                       utu            t",
+  "t                                                        tuu           t",
+  "t                                                       uttu    u      t",
+  "t                                                       utu            t",
+  "t                                                        tt            t",
+  "t                                                        tu            t",
+  "t                                                                      t",
+  "t                                                                      t",
+  "t                                                                      t",
+  "t                                                                      t",
+  "t                                                        tt            t",
+  "t                                                        ttu           t",
+  "t                                                       utu            t",
+  "t                                                        ttu           t",
+  "t                                                       utt          u t",
+  "t                                                        tt            t",
+  "t                                                        ttu u         t",
+  "t                                                       utu            t",
+  "t                                                       uttu           t",
+  "t                                                       uttu           t",
+  "t                                                        tu       u    t",
+  "t                                                       utu            t",
+  "t                                                       utu            t",
+  "tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt"
  ],
  "entities": [
   {
-   "type": "spawn",
-   "id": "ship",
+   "type": "scan",
+   "id": "mars_rover",
    "pos": [
-    6.5,
-    21
-   ]
-  },
-  {
-   "type": "ship",
-   "id": "astra",
-   "pos": [
-    6.5,
-    20
+    48.5,
+    7
    ],
-   "prompt": "Subir a ASTRA y despegar",
-   "radius": 34
-  },
-  {
-   "type": "prop",
-   "sprite": "habitat",
-   "pos": [
-    5.5,
-    5
-   ],
+   "sprite": "rover",
    "solid": [
     2,
     1
-   ]
+   ],
+   "radius": 40
   },
   {
-   "type": "prop",
-   "sprite": "habitat",
+   "type": "scan",
+   "id": "mars_delta",
    "pos": [
-    10.5,
-    5
+    51,
+    16
+   ],
+   "sprite": "sample",
+   "radius": 40
+  },
+  {
+   "type": "terminal",
+   "id": "delta_terminal",
+   "challenge_id": "delta_samples",
+   "pos": [
+    45,
+    19
    ],
    "solid": [
-    2,
+    1,
     1
+   ],
+   "locked_text": "Terminal de muestras. Primero escanea el delta y el rover."
+  },
+  {
+   "type": "light",
+   "id": "light_delta_terminal",
+   "pos": [
+    45,
+    19
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.5,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "sign",
+   "id": "sign_canyon",
+   "pos": [
+    56,
+    10
+   ],
+   "sprite": "holo_antihuman",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Mirar el cartel",
+   "light": {
+    "color": "#e0283c",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.9,
+    "flicker": true
+   },
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Pintada holográfica: «MARTE SIN HUMANOS. FIRMADO: LOS ANTIHUMANISTAS»."
+    },
+    {
+     "who": "andres",
+     "text": "¿Por qué alguien querría que la gente no pueda empezar de nuevo?"
+    },
+    {
+     "who": "hal",
+     "text": "Creen que las personas solo rompemos planetas. Nosotros vamos a demostrar que también sabemos repararlos."
+    }
    ]
   },
   {
    "type": "prop",
-   "sprite": "antenna",
+   "sprite": "wreck_marscorp",
    "pos": [
-    14,
-    5
+    65,
+    9
+   ],
+   "solid": [
+    3,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -12
+    ],
+    "scale": 2.0,
+    "energy": 0.6,
+    "flicker": true
+   }
+  },
+  {
+   "type": "enemy",
+   "id": "ah7_sentinel",
+   "encounter": "sentinel_ah7",
+   "pos": [
+    61,
+    12
+   ],
+   "sprite": "robot_ah7",
+   "sprite_done": "robot_ah7_off",
+   "done_flag": "won_sentinel_ah7",
+   "radius": 34,
+   "prompt": "Enfrentarte al Centinela AH-7",
+   "light": {
+    "color": "#e0283c",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.6,
+    "energy": 0.8,
+    "flicker": true
+   },
+   "locked_text": "Un robot enorme vigila el carguero. Mejor no acercarse sin un plan. (Habla con Bruno, en el Taller.)",
+   "intro_lines": [
+    {
+     "who": "",
+     "speaker": "Centinela AH-7",
+     "text": "HUMANO DETECTADO. ORDEN ANTIHUMANISTA: PROTEGER EL CARGUERO."
+    },
+    {
+     "who": "andres",
+     "text": "Ese motor es para La Semilla. ¡Apártate!"
+    },
+    {
+     "who": "hal",
+     "text": "Pulsa cuando el anillo dorado toque el círculo: golpearás más fuerte. Cuando ataque, pulsa a tiempo para bloquear."
+    }
+   ],
+   "done_lines": [
+    {
+     "who": "hal",
+     "text": "AH-7 sigue apagado. Su luz roja ya no parpadea."
+    }
+   ]
+  },
+  {
+   "type": "item",
+   "id": "methane_engine",
+   "pos": [
+    66,
+    12
+   ],
+   "sprite": "engine_part",
+   "prompt": "Recoger el motor de metano",
+   "locked_text": "Un motor de metano entre los restos. El Centinela no te deja acercarte.",
+   "collect_lines": [
+    {
+     "who": "andres",
+     "text": "¡Uf! Pesa como un rover entero."
+    },
+    {
+     "who": "hal",
+     "text": "Activo los propulsores del traje para ayudarte. Llevémoslo al Taller de Bruno, en la colonia."
+    }
+   ]
+  },
+  {
+   "type": "scan",
+   "id": "mars_buried_ice",
+   "pos": [
+    63,
+    33
+   ],
+   "sprite": "drill_rig",
+   "solid": [
+    1,
+    1
+   ],
+   "radius": 40
+  },
+  {
+   "type": "item",
+   "id": "mars_ice_core",
+   "pos": [
+    64.5,
+    34
+   ],
+   "sprite": "ice",
+   "prompt": "Recoger el testigo de hielo",
+   "locked_text": "La perforadora del profesor Yusuf. Él te dirá qué hacer.",
+   "collect_lines": [
+    {
+     "who": "hal",
+     "text": "Testigo de hielo guardado en frío. ¡Que no se derrita!"
+    }
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_ice",
+   "pos": [
+    63,
+    33
+   ],
+   "light": {
+    "color": "#9fd8ff",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 2.4,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "scan",
+   "id": "mars_iron_meteorite",
+   "pos": [
+    67,
+    24
+   ],
+   "sprite": "meteorite",
+   "solid": [
+    1,
+    1
+   ],
+   "radius": 40
+  },
+  {
+   "type": "enemy",
+   "id": "ah_drones",
+   "encounter": "drones_meteorite",
+   "pos": [
+    64,
+    22
+   ],
+   "sprite": "drone_ah",
+   "sprite_done": "drone_ah_off",
+   "done_flag": "won_drones_meteorite",
+   "radius": 32,
+   "prompt": "Enfrentarte a los drones vigía",
+   "light": {
+    "color": "#e0283c",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.2,
+    "energy": 0.8,
+    "flicker": true
+   },
+   "locked_text": "Drones zumbando sobre el meteorito. Primero escanea la roca.",
+   "intro_lines": [
+    {
+     "who": "",
+     "speaker": "Dron vigía",
+     "text": "BZZZ. ZONA RESTRINGIDA. ALÉJESE DEL METEORITO."
+    },
+    {
+     "who": "hal",
+     "text": "Son débiles a la luz: mi láser de escaneo les hará daño extra."
+    }
+   ],
+   "done_lines": [
+    {
+     "who": "hal",
+     "text": "Los drones descansan en la arena, apagados."
+    }
+   ]
+  },
+  {
+   "type": "item",
+   "id": "nickel_catalyst",
+   "pos": [
+    68.5,
+    26
+   ],
+   "sprite": "sample",
+   "prompt": "Recoger virutas de níquel",
+   "locked_text": "Virutas brillantes del meteorito. Los drones no te dejan acercarte.",
+   "collect_lines": [
+    {
+     "who": "hal",
+     "text": "Virutas de níquel guardadas. Brillan como monedas nuevas."
+    }
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_meteorite",
+   "pos": [
+    67,
+    24
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 1.6,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "npc",
+   "id": "ada",
+   "pos": [
+    55,
+    29
+   ],
+   "facing": "left"
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_stack",
+   "pos": [
+    53,
+    30
    ],
    "solid": [
     1,
@@ -183,28 +541,759 @@
    ]
   },
   {
-   "type": "npc",
-   "id": "osei",
+   "type": "prop",
+   "sprite": "barrel_water",
    "pos": [
-    12,
-    8
+    53,
+    31
    ],
-   "facing": "down"
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "antenna_small",
+   "pos": [
+    52,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_panel",
+   "pos": [
+    54,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "beacon",
+   "pos": [
+    56,
+    12
+   ],
+   "light": {
+    "color": "#ff4a4a",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "beacon",
+   "pos": [
+    56,
+    24
+   ],
+   "light": {
+    "color": "#ff4a4a",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "city_barrier_mars",
+   "pos": [
+    59,
+    11
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "city_barrier_mars",
+   "pos": [
+    59,
+    13
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    69,
+    41
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    68,
+    17
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    64,
+    28
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    64,
+    6
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    61,
+    30
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    61,
+    27
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    69,
+    10
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    65,
+    3
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    60,
+    40
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    45,
+    34
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    45,
+    33
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    50,
+    36
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "boulder_mars",
+   "pos": [
+    43,
+    25
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    65,
+    7
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    70,
+    39
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    55,
+    5
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    70,
+    23
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    67,
+    36
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    53,
+    11
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    43,
+    28
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    54,
+    40
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    46,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    56,
+    18
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    57,
+    25
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    46,
+    21
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    67,
+    4
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    60,
+    37
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    47,
+    24
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    61,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    56,
+    34
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    50,
+    32
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    49,
+    39
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    56,
+    23
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    55,
+    34
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    44,
+    31
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    70,
+    11
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    61,
+    19
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    64,
+    18
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    44,
+    23
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    60,
+    33
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    62,
+    25
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    44,
+    27
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rocks_mars",
+   "pos": [
+    52,
+    25
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    42,
+    21
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    60,
+    16
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_drift_mars",
+   "pos": [
+    62,
+    19
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    67,
+    41
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_drift_mars",
+   "pos": [
+    55,
+    39
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_drift_mars",
+   "pos": [
+    45,
+    40
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    60,
+    6
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_drift_mars",
+   "pos": [
+    59,
+    6
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    59,
+    34
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crater_mars",
+   "pos": [
+    52,
+    37
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "launch_pad",
+   "pos": [
+    6.5,
+    17
+   ],
+   "z": -1
+  },
+  {
+   "type": "ship",
+   "id": "astra",
+   "pos": [
+    6.5,
+    16
+   ],
+   "prompt": "Subir a ASTRA y despegar",
+   "radius": 34
+  },
+  {
+   "type": "spawn",
+   "id": "ship",
+   "pos": [
+    6.5,
+    20
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_ship",
+   "pos": [
+    6.5,
+    16
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 3.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "service",
+   "id": "service_mars",
+   "pos": [
+    10,
+    20
+   ],
+   "sprite": "service_pump",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Estación de servicio · MarsCorp",
+   "rate": 0.6,
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -22
+    ],
+    "scale": 1.4,
+    "energy": 0.8
+   },
+   "free_flag": "methane_distilled",
+   "free_text": "El destilador de Bruno abastece la estación: servicio gratis para ASTRA."
+  },
+  {
+   "type": "prop",
+   "sprite": "beacon",
+   "pos": [
+    2,
+    12
+   ],
+   "light": {
+    "color": "#ff4a4a",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "beacon",
+   "pos": [
+    11,
+    12
+   ],
+   "light": {
+    "color": "#ff4a4a",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "beacon",
+   "pos": [
+    2,
+    21
+   ],
+   "light": {
+    "color": "#ff4a4a",
+    "offset": [
+     0,
+     -18
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_lab_5",
+   "pos": [
+    4.0,
+    9
+   ],
+   "solid": [
+    5,
+    6
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.6,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_silo_2",
+   "pos": [
+    8.5,
+    9
+   ],
+   "solid": [
+    2,
+    5
+   ]
   },
   {
    "type": "object",
-   "id": "mars_greenhouse",
+   "sprite": "bld_r_greenhouse",
    "pos": [
-    8,
-    13
+    14.5,
+    9
    ],
-   "sprite": "dome_empty",
-   "sprite_done": "dome_alive",
-   "done_flag": "mars_planted",
    "solid": [
-    3,
-    1
+    4,
+    5
    ],
+   "id": "mars_greenhouse",
+   "sprite_done": "bld_r_greenhouse_alive",
+   "done_flag": "mars_planted",
+   "radius": 30,
    "prompt": "Plantar un brote de La Semilla",
    "locked_text": "El invernadero de la base. Primero termina los estudios que pidió la comandante.",
    "use_lines": [
@@ -225,122 +1314,137 @@
    ]
   },
   {
-   "type": "scan",
-   "id": "mars_rover",
+   "type": "light",
+   "id": "light_greenhouse",
    "pos": [
-    25,
-    7
+    14.5,
+    10
    ],
-   "sprite": "rover",
-   "solid": [
-    2,
-    1
-   ],
-   "radius": 40
-  },
-  {
-   "type": "scan",
-   "id": "mars_delta",
-   "pos": [
-    28,
-    17
-   ],
-   "sprite": "sample",
-   "radius": 40
-  },
-  {
-   "type": "terminal",
-   "id": "delta_terminal",
-   "challenge_id": "delta_samples",
-   "pos": [
-    21,
-    15
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "locked_text": "Terminal de muestras. Primero escanea el delta y el rover."
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 2.6,
+    "energy": 0.7
+   }
   },
   {
    "type": "prop",
-   "sprite": "rock_mars",
+   "sprite": "bld_r_dome_5",
    "pos": [
-    20,
-    8
+    20.0,
+    9
    ],
    "solid": [
-    1,
-    1
+    5,
+    6
    ]
   },
   {
    "type": "prop",
-   "sprite": "rock_mars",
+   "sprite": "bld_r_block_4",
    "pos": [
-    32,
-    13
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "rock_mars",
-   "pos": [
-    14,
-    18
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "rock_mars",
-   "pos": [
-    27,
-    22
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "rock_mars",
-   "pos": [
-    34,
-    5
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "door",
-   "sprite": "bld_mars_bar",
-   "pos": [
-    8.5,
-    29
+    25.5,
+    9
    ],
    "solid": [
     4,
-    2
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_tower_4",
+   "pos": [
+    30.5,
+    9
+   ],
+   "solid": [
+    4,
+    9
    ],
    "light": {
     "color": "#ff3ea5",
     "offset": [
      0,
-     -39
+     -80
     ],
-    "scale": 2.3,
-    "energy": 0.75
+    "scale": 3.0,
+    "energy": 0.7,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_silo_2",
+   "pos": [
+    34.5,
+    9
+   ],
+   "solid": [
+    2,
+    5
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_silo_2",
+   "pos": [
+    37.5,
+    9
+   ],
+   "solid": [
+    2,
+    5
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "osei",
+   "pos": [
+    6.0,
+    10
+   ],
+   "facing": "down"
+  },
+  {
+   "type": "light",
+   "id": "light_base",
+   "pos": [
+    4.0,
+    10
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -8
+    ],
+    "scale": 3.4,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "door",
+   "sprite": "bld_r_bar",
+   "pos": [
+    16.0,
+    22
+   ],
+   "solid": [
+    5,
+    6
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -40
+    ],
+    "scale": 2.4,
+    "energy": 0.8
    },
    "id": "door_mars_bar",
    "label": "Cantina",
@@ -350,32 +1454,24 @@
    "radius": 26
   },
   {
-   "type": "spawn",
-   "id": "bar_door",
-   "pos": [
-    8.5,
-    30
-   ]
-  },
-  {
    "type": "door",
-   "sprite": "bld_mars_shop",
+   "sprite": "bld_r_shop",
    "pos": [
-    15.5,
-    29
+    22.0,
+    22
    ],
    "solid": [
-    4,
-    2
+    5,
+    6
    ],
    "light": {
     "color": "#7dff9a",
     "offset": [
      0,
-     -39
+     -40
     ],
-    "scale": 2.3,
-    "energy": 0.75
+    "scale": 2.4,
+    "energy": 0.8
    },
    "id": "door_mars_shop",
    "label": "Mercado",
@@ -385,32 +1481,24 @@
    "radius": 26
   },
   {
-   "type": "spawn",
-   "id": "shop_door",
-   "pos": [
-    15.5,
-    30
-   ]
-  },
-  {
    "type": "door",
-   "sprite": "bld_mars_school",
+   "sprite": "bld_r_school",
    "pos": [
-    22.5,
-    29
+    28.0,
+    22
    ],
    "solid": [
-    4,
-    2
+    5,
+    6
    ],
    "light": {
     "color": "#3de7c9",
     "offset": [
      0,
-     -39
+     -40
     ],
-    "scale": 2.3,
-    "energy": 0.75
+    "scale": 2.2,
+    "energy": 0.7
    },
    "id": "door_school",
    "label": "Escuela",
@@ -429,147 +1517,117 @@
   },
   {
    "type": "door",
-   "sprite": "bld_mars_garage",
+   "sprite": "bld_r_garage",
    "pos": [
-    29.5,
-    29
+    34.0,
+    22
    ],
    "solid": [
-    4,
-    2
+    5,
+    6
    ],
    "light": {
     "color": "#f4d35e",
     "offset": [
      0,
-     -35
+     -40
     ],
-    "scale": 2.3,
-    "energy": 0.75
+    "scale": 2.4,
+    "energy": 0.8,
+    "flicker": true
    },
-   "id": "door_garage",
+   "id": "door_mars_garage",
    "label": "Taller",
-   "prompt": "Asomarse al taller",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Dentro hay tres rovers desmontados y una radio que suena muy alto."
-    },
-    {
-     "who": "hal",
-     "text": "Bruno suele estar en la puerta, peleándose con una rueda."
-    }
-   ],
+   "prompt": "Entrar en el Taller de Bruno",
+   "target": "mars_garage",
+   "spawn": "entrance",
    "radius": 26
   },
   {
-   "type": "door",
-   "sprite": "bld_mars_house",
+   "type": "prop",
+   "sprite": "bld_r_silo_2",
    "pos": [
-    8,
-    36
+    38.5,
+    22
    ],
    "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -31
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "mars_house_a",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia Osei."
-    },
-    {
-     "who": "hal",
-     "text": "La comandante casi nunca está en casa. En la puerta hay una piedra con forma de corazón."
-    }
-   ],
-   "radius": 26
+    2,
+    5
+   ]
   },
   {
-   "type": "door",
-   "sprite": "bld_mars_house",
+   "type": "spawn",
+   "id": "bar_door",
    "pos": [
-    14,
-    36
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -31
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "mars_house_b",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia de Nia."
-    },
-    {
-     "who": "hal",
-     "text": "Una nota infantil: «Fui a la cantina. Vuelvo antes del atardecer azul»."
-    }
-   ],
-   "radius": 26
+    16.0,
+    23
+   ]
   },
   {
-   "type": "door",
-   "sprite": "bld_mars_house",
+   "type": "spawn",
+   "id": "shop_door",
    "pos": [
-    33,
-    36
+    22.0,
+    23
+   ]
+  },
+  {
+   "type": "spawn",
+   "id": "garage_door",
+   "pos": [
+    34.0,
+    23
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "yusuf",
+   "pos": [
+    22,
+    31
    ],
+   "facing": "down",
+   "wander": 2
+  },
+  {
+   "type": "object",
+   "id": "co2_compressor",
+   "pos": [
+    30,
+    31
+   ],
+   "sprite": "compressor_off",
+   "sprite_done": "compressor_on",
    "solid": [
-    3,
-    2
+    1,
+    1
    ],
-   "light": {
-    "color": "#f4d35e",
-    "offset": [
-     0,
-     -31
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "mars_house_c",
-   "prompt": "Llamar a la puerta",
-   "lines": [
+   "done_flag": "co2_compressed",
+   "prompt": "Encender el compresor de Nia",
+   "locked_text": "Un compresor casero con una pegatina: «Proyecto de ciencias de Nia. ¡No tocar!».",
+   "use_lines": [
     {
-     "who": "hal",
-     "text": "Casa de la familia Wei."
+     "who": "andres",
+     "text": "El interruptor estaba atascado con polvo. Un golpecito… ¡y arranca!"
     },
     {
      "who": "hal",
-     "text": "Cajas apiladas hasta el techo: Chen guarda aquí la mercancía."
+     "text": "El compresor aprieta el aire de Marte dentro de una bombona. Casi todo es CO₂. Bombona guardada."
     }
    ],
-   "radius": 26
+   "done_lines": [
+    {
+     "who": "hal",
+     "text": "El compresor de Nia sigue llenando bombonas. Ronronea como un gato."
+    }
+   ]
   },
   {
    "type": "sign",
    "id": "holo_marscorp",
    "pos": [
-    26,
-    34
+    37,
+    30
    ],
    "sprite": "holo_mars",
    "solid": [
@@ -600,155 +1658,14 @@
   },
   {
    "type": "prop",
-   "sprite": "lamp_pink",
+   "sprite": "planter_hydro",
    "pos": [
-    5,
-    32
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_cyan",
-   "pos": [
-    12,
-    32
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_pink",
-   "pos": [
-    19,
-    32
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_cyan",
-   "pos": [
-    33,
-    32
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "barrel_rust",
-   "pos": [
-    35,
-    29
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "crate",
-   "pos": [
-    35,
-    30
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "npc",
-   "id": "yusuf",
-   "pos": [
-    22,
-    32
-   ],
-   "facing": "down",
-   "wander": 2
-  },
-  {
-   "type": "npc",
-   "id": "bruno",
-   "pos": [
-    29,
+    15,
     31
    ],
-   "facing": "down",
-   "wander": 1
-  },
-  {
-   "type": "light",
-   "id": "light_base",
-   "pos": [
-    8,
-    5
-   ],
-   "light": {
-    "color": "#f4d35e",
-    "offset": [
-     0,
-     -8
-    ],
-    "scale": 3.4,
-    "energy": 0.6
-   }
-  },
-  {
-   "type": "light",
-   "id": "light_greenhouse",
-   "pos": [
-    8,
-    13
+   "solid": [
+    1,
+    1
    ],
    "light": {
     "color": "#7dff9a",
@@ -756,45 +1673,1276 @@
      0,
      -10
     ],
-    "scale": 2.6,
-    "energy": 0.7
+    "scale": 0.9,
+    "energy": 0.5
    }
   },
   {
-   "type": "light",
-   "id": "light_ship",
+   "type": "prop",
+   "sprite": "planter_hydro",
    "pos": [
-    6.5,
-    20
+    18,
+    32
+   ],
+   "solid": [
+    1,
+    1
    ],
    "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     0
-    ],
-    "scale": 3.0,
-    "energy": 0.6
-   }
-  },
-  {
-   "type": "light",
-   "id": "light_delta_terminal",
-   "pos": [
-    21,
-    15
-   ],
-   "light": {
-    "color": "#3de7c9",
+    "color": "#7dff9a",
     "offset": [
      0,
      -10
     ],
-    "scale": 1.5,
-    "energy": 0.8
+    "scale": 0.9,
+    "energy": 0.5
    }
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    26,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 0.9,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    34,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 0.9,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_tree",
+   "pos": [
+    25,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -40
+    ],
+    "scale": 1.2,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "antenna_small",
+   "pos": [
+    39,
+    32
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#e0283c",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    20,
+    32
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    28,
+    32
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "kiosk_info",
+   "pos": [
+    33,
+    31
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -16
+    ],
+    "scale": 1.0,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "door",
+   "sprite": "bld_r_house",
+   "pos": [
+    3.5,
+    39
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "id": "mars_house_a",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Osei."
+    },
+    {
+     "who": "hal",
+     "text": "La comandante casi nunca está en casa. En la puerta hay una piedra con forma de corazón."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_block_4",
+   "pos": [
+    8.5,
+    39
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_r_house",
+   "pos": [
+    13.5,
+    39
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "id": "mars_house_b",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia de Nia."
+    },
+    {
+     "who": "hal",
+     "text": "Una nota infantil: «Fui a la cantina. Vuelvo antes del atardecer azul»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_dome_5",
+   "pos": [
+    19.0,
+    39
+   ],
+   "solid": [
+    5,
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_block_4",
+   "pos": [
+    24.5,
+    39
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_r_house",
+   "pos": [
+    29.5,
+    39
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "id": "mars_house_c",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Wei."
+    },
+    {
+     "who": "hal",
+     "text": "Cajas apiladas hasta el techo: Chen guarda aquí la mercancía."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_r_block_4",
+   "pos": [
+    34.5,
+    39
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    4,
+    23
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    10,
+    23
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    40,
+    23
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    7,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    13,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    19,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    25,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    31,
+    29
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.65
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "charge_post",
+   "pos": [
+    9,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    18,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydrant_water",
+   "pos": [
+    27,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "charge_post",
+   "pos": [
+    36,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    16,
+    10
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    22,
+    10
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    28,
+    10
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    34,
+    10
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    40,
+    10
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    15,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    20,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    25,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    30,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    35,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    40,
+    13
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    6,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    20,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    27,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_r",
+   "pos": [
+    34,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    5,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    13,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    21,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    29,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    37,
+    41
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hover_stop",
+   "pos": [
+    33,
+    29
+   ],
+   "solid": [
+    3,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -24
+    ],
+    "scale": 1.6,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_stack",
+   "pos": [
+    37,
+    14
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_marscorp",
+   "pos": [
+    35,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_marscorp",
+   "pos": [
+    27,
+    14
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_marscorp",
+   "pos": [
+    36,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    28,
+    41
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    35,
+    41
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    1,
+    27
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    28,
+    29
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    32,
+    40
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    30,
+    11
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    41,
+    25
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    21,
+    11
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    41,
+    27
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    14,
+    13
+   ],
+   "z": -1
   }
  ],
+ "ambient_life": {
+  "movers": [
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "rover_mars"
+    ],
+    "interval": [
+     3.5,
+     7.5
+    ],
+    "speed": 55,
+    "altitude": 6,
+    "two_way": false,
+    "path": [
+     [
+      44,
+      25
+     ],
+     [
+      -2,
+      25
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "rover_mars"
+    ],
+    "interval": [
+     3.5,
+     7.5
+    ],
+    "speed": 55,
+    "altitude": 6,
+    "two_way": false,
+    "path": [
+     [
+      -2,
+      27
+     ],
+     [
+      44,
+      27
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "bot_worker"
+    ],
+    "path": [
+     [
+      12,
+      14
+     ],
+     [
+      40,
+      14
+     ]
+    ],
+    "count": 1,
+    "speed": 10,
+    "altitude": 0,
+    "loop": "pingpong",
+    "pause": [
+     1.0,
+     3.0
+    ]
+   },
+   {
+    "kinds": [
+     "bot_cleaner"
+    ],
+    "path": [
+     [
+      2,
+      41
+     ],
+     [
+      41,
+      41
+     ]
+    ],
+    "count": 1,
+    "speed": 12,
+    "altitude": 0,
+    "loop": "pingpong",
+    "pause": [
+     1.0,
+     2.0
+    ]
+   },
+   {
+    "kinds": [
+     "rover_mars"
+    ],
+    "path": [
+     [
+      42,
+      26
+     ],
+     [
+      56,
+      26
+     ],
+     [
+      70,
+      26
+     ]
+    ],
+    "interval": [
+     16,
+     28
+    ],
+    "speed": 18,
+    "altitude": 0
+   },
+   {
+    "kinds": [
+     "cargo_drone"
+    ],
+    "path": [
+     [
+      8,
+      6
+     ],
+     [
+      30,
+      18
+     ],
+     [
+      48,
+      12
+     ],
+     [
+      30,
+      4
+     ]
+    ],
+    "count": 2,
+    "speed": 26,
+    "altitude": 34,
+    "loop": "cycle"
+   },
+   {
+    "kinds": [
+     "delivery_drone"
+    ],
+    "path": [
+     [
+      20,
+      24
+     ],
+     [
+      20,
+      35
+     ],
+     [
+      38,
+      35
+     ],
+     [
+      38,
+      12
+     ],
+     [
+      20,
+      12
+     ]
+    ],
+    "count": 1,
+    "speed": 30,
+    "altitude": 26,
+    "loop": "cycle"
+   }
+  ],
+  "crowd": [
+   {
+    "path": [
+     [
+      13,
+      11
+     ],
+     [
+      41,
+      11
+     ]
+    ],
+    "count": 4,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Aquí el cielo es rosado de día… y el atardecer es azul.",
+     "Un año en Marte dura 687 días terrestres. ¡Casi dos cumpleaños de espera!",
+     "Imprimimos las casas con regolito: la arena de aquí, mezclada y calentada.",
+     "Las tormentas de polvo pueden cubrir el planeta entero durante semanas.",
+     "MarsCorp cobra el agua… pero la de Bruno es gratis.",
+     "En el delta corría un río hace miles de millones de años."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      24
+     ],
+     [
+      41,
+      24
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Aquí el cielo es rosado de día… y el atardecer es azul.",
+     "Un año en Marte dura 687 días terrestres. ¡Casi dos cumpleaños de espera!",
+     "Imprimimos las casas con regolito: la arena de aquí, mezclada y calentada.",
+     "Las tormentas de polvo pueden cubrir el planeta entero durante semanas.",
+     "MarsCorp cobra el agua… pero la de Bruno es gratis.",
+     "En el delta corría un río hace miles de millones de años."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      28
+     ],
+     [
+      41,
+      28
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Aquí el cielo es rosado de día… y el atardecer es azul.",
+     "Un año en Marte dura 687 días terrestres. ¡Casi dos cumpleaños de espera!",
+     "Imprimimos las casas con regolito: la arena de aquí, mezclada y calentada.",
+     "Las tormentas de polvo pueden cubrir el planeta entero durante semanas.",
+     "MarsCorp cobra el agua… pero la de Bruno es gratis.",
+     "En el delta corría un río hace miles de millones de años."
+    ]
+   },
+   {
+    "path": [
+     [
+      14,
+      31
+     ],
+     [
+      39,
+      31
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     10,
+     16
+    ],
+    "pause": [
+     1.5,
+     5.0
+    ],
+    "barks": [
+     "Aquí el cielo es rosado de día… y el atardecer es azul.",
+     "Un año en Marte dura 687 días terrestres. ¡Casi dos cumpleaños de espera!",
+     "Imprimimos las casas con regolito: la arena de aquí, mezclada y calentada.",
+     "Las tormentas de polvo pueden cubrir el planeta entero durante semanas.",
+     "MarsCorp cobra el agua… pero la de Bruno es gratis.",
+     "En el delta corría un río hace miles de millones de años."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      40
+     ],
+     [
+      41,
+      40
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Aquí el cielo es rosado de día… y el atardecer es azul.",
+     "Un año en Marte dura 687 días terrestres. ¡Casi dos cumpleaños de espera!",
+     "Imprimimos las casas con regolito: la arena de aquí, mezclada y calentada.",
+     "Las tormentas de polvo pueden cubrir el planeta entero durante semanas.",
+     "MarsCorp cobra el agua… pero la de Bruno es gratis.",
+     "En el delta corría un río hace miles de millones de años."
+    ]
+   }
+  ],
+  "sky": {
+   "kinds": [
+    "sky_hopper",
+    "sky_shuttle",
+    "sky_freighter"
+   ],
+   "interval": [
+    9,
+    20
+   ],
+   "speed": [
+    16,
+    30
+   ],
+   "rows": [
+    2,
+    40
+   ]
+  }
+ },
  "arrival_lines": [
   {
    "who": "hal",
@@ -802,11 +2950,15 @@
   },
   {
    "who": "hal",
-   "text": "Un día en Marte (un «sol») dura unas 24 h y 40 min. La comandante Osei está en la base, al noroeste."
+   "text": "Un día en Marte (un «sol») dura unas 24 h y 40 min. La comandante Osei está en la base de mando, al norte."
   },
   {
    "who": "hal",
-   "text": "Al sur está la colonia: cantina, mercado, escuela y taller. MarsCorp lo controla casi todo."
+   "text": "La Avenida Roja cruza la colonia: cantina, mercado, escuela y taller. MarsCorp lo controla casi todo."
+  },
+  {
+   "who": "hal",
+   "text": "Al este quedan el delta del antiguo río y, tras la pared de roca, el Barranco de Óxido. Dicen que allí patrullan robots."
   }
  ]
 }

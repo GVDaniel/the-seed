@@ -1,269 +1,420 @@
 {
  "id": "earth",
  "display_name": "Barrio Semilla · Tierra",
- "tileset": "earth",
+ "tileset": "city_earth",
  "void_color": "#141020",
  "ambient": "#6e6c96",
  "weather": "rain",
  "dark": true,
  "music": "mission",
  "legend": {
-  ".": {
-   "tile": [
-    0,
-    0,
-    0,
-    1
-   ]
-  },
-  ":": {
-   "tile": [
-    25,
-    25,
-    40,
-    41
-   ]
-  },
-  "#": {
-   "tile": 43
-  },
-  "_": {
-   "tile": 109
-  },
-  "m": {
-   "tile": 29
-  },
-  "T": {
-   "tile": 15,
-   "solid": true
-  },
-  "t": {
-   "tile": 27,
-   "solid": true
-  },
-  "Y": {
-   "tile": 3,
-   "solid": true
-  },
-  "g": {
-   "tile": 4,
-   "solid": true
-  },
-  "f": {
-   "tile": 81,
-   "solid": true
-  },
-  "F": {
-   "tile": 80,
-   "solid": true
-  },
-  "G": {
-   "tile": 82,
-   "solid": true
-  },
-  "q": {
-   "tile": 48,
-   "solid": true
-  },
-  "o": {
-   "tile": 49,
-   "solid": true
-  },
-  "e": {
-   "tile": 50,
-   "solid": true
-  },
   "a": {
-   "tile": 60,
-   "solid": true
-  },
-  "s": {
-   "tile": 61,
-   "solid": true
-  },
-  "d": {
-   "tile": 62,
-   "solid": true
-  },
-  "z": {
-   "tile": 88,
-   "solid": true
-  },
-  "x": {
-   "tile": 89,
-   "solid": true
-  },
-  "r": {
-   "tile": 52,
-   "solid": true
-  },
-  "y": {
-   "tile": 53,
-   "solid": true
-  },
-  "u": {
-   "tile": 54,
-   "solid": true
-  },
-  "h": {
-   "tile": 64,
-   "solid": true
-  },
-  "j": {
-   "tile": 65,
-   "solid": true
-  },
-  "k": {
-   "tile": 66,
-   "solid": true
-  },
-  "v": {
-   "tile": 84,
-   "solid": true
+   "tile": [
+    0,
+    1,
+    2,
+    3
+   ]
   },
   "b": {
-   "tile": 85,
-   "solid": true
+   "tile": [
+    6,
+    7,
+    8
+   ]
+  },
+  "c": {
+   "tile": [
+    4,
+    5
+   ]
+  },
+  "d": {
+   "tile": 32
+  },
+  "e": {
+   "tile": [
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  "f": {
+   "tile": [
+    29,
+    30
+   ]
+  },
+  "g": {
+   "tile": 33
+  },
+  "h": {
+   "tile": 31
+  },
+  "i": {
+   "tile": 36
+  },
+  "j": {
+   "tile": 35
+  },
+  "k": {
+   "tile": 37
+  },
+  "l": {
+   "tile": 19
+  },
+  "m": {
+   "tile": 14
   },
   "n": {
-   "tile": 84,
-   "solid": true
+   "tile": 20
   },
-  "M": {
+  "o": {
+   "tile": 15
+  },
+  "p": {
    "tile": [
-    99,
-    100,
-    100,
-    101
+    21,
+    22,
+    23
+   ]
+  },
+  "q": {
+   "tile": 25
+  },
+  "r": {
+   "tile": 16
+  },
+  "s": {
+   "tile": 27
+  },
+  "t": {
+   "tile": 26
+  },
+  "u": {
+   "tile": 28
+  },
+  "v": {
+   "tile": 13
+  },
+  "w": {
+   "tile": [
+    40,
+    41,
+    42
    ],
    "solid": true
   },
-  "W": {
-   "tile": 126,
+  "x": {
+   "tile": 44,
    "solid": true
   },
-  "S": {
-   "tile": 83,
-   "solid": true
-  },
-  "B": {
-   "tile": 107,
+  "y": {
+   "tile": 39,
    "solid": true
   }
  },
  "ground": [
-  "............................................................",
-  "............................................................",
-  "...............................................###..........",
-  "...............................................###..........",
-  "...............................................###..........",
-  "...............................................###..........",
-  "....:....:.....................................###..........",
-  "....:....:................:######..............###..........",
-  "....:....:................:######..............###..........",
-  "....:....:...###########..:....................###..........",
-  "....:....:...###########..:....................###..........",
-  "....:....:...###########..:...:::::::::::::::::###..........",
-  "....:::::::::###########:::::::................###..........",
-  "......:......###########......:................###..........",
-  "......:......###########......:................###..........",
-  "......:......###########..___________..........###..........",
-  "...................:......___________..........###..........",
-  "...................:......___________..........###..........",
-  "...................:......___________..........###..........",
-  "...................:......___________..........###..........",
-  "...................:......___________..........###..........",
-  "...................:......___________..........###________..",
-  "...................:......___________..........###________..",
-  "...................:......___________..........###________..",
-  "...................:...........................###________..",
-  "...................:...........................###________..",
-  "..################################################________..",
-  "..################################################________..",
-  "...............................................###________..",
-  "...............................................###________..",
-  "...............................................###..........",
-  "...............................................###..........",
-  "............................................................",
-  "............................................................"
+  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "aaabbbaaaaabbbbbbbaaaaabbbaaaaabbbbbbaaaaaabbbaaaaaaaaaaaaaaaaaa",
+  "aaabbbaaaaabbbbbbbaaaaabbbaaaaaaaaaaaaaaaaabbbaaaaaaaaaaaaaaaaaa",
+  "aaabbbaaaaaaaabbbaaaaaaabaaaaaaaaaaaaaaaaaabbaaaaaaccccaaaaabbba",
+  "aaabbbaaaaaaaaabbaaaaaaaaaaaaaaaaaaaaaaabbbbbaaaaaaaaaaaaaabbbba",
+  "aaabbbbaaaaaaaabbaaadddddaaaaaaaaaaaaaaaaaabbaaaaaaaaaaaaaabbbba",
+  "aaabbbbaaaaaaaabbbaadddddaaaaaaaaaaaaaaaaaabbbbaaaaaaaaaacaaaaaa",
+  "aabbbbbbbaaaaaabbbaadddddaaaaaaaaaaaaaaaaaabbbbbbbbbbaaaaaaaaaaa",
+  "aabbbbbbbbaaaaabbbaadddddaaaaaaaaaaabaaaaaabbbbbbbbbbbaaaaaaaaaa",
+  "aeeeeeeeeeeeeeeeeeeeeeeeeeffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeea",
+  "aeeeeeeeeeeeeeeeeeeeeeeeeeffffffffffeeeeeeeeeeeeeeeegeeeeeeeeeea",
+  "aeeeeeeeeegeeeeeeeeeeeeeeeffffhhffffeeeeeeeeeeeeeeeeeeeeeeeeeeea",
+  "aeeeeeeeeeeeeeeeeeeeeeeeeeffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeea",
+  "abbbbbbaaeebbbbbbbaeeeeeeeaaaaaabbbbbbbaeeeeeeebbbbbbbbbbbaaccca",
+  "abaabbbbbeebbbbbbaaeeeeeeeaiiiiiiiiiiiibeeeeeeebcccaacccacccccaa",
+  "aaaabbbffffffbbbbaaeeeeeeeajjjjjkkjjjjjbeeeeeeeaacccaaaaaaccacaa",
+  "aaeeeeeffffffeeeeaaeeeeeeeajjjjjkkjjjjjbeeeeeeeaacccaaaaaacaaaaa",
+  "aaaaaaaffffffbbabbaeeeeeeeajjjjjkkjjjjjbeeeeeeeaaaaccaaaaacaacaa",
+  "aaaaaaaffffffbbabbaeeeeeeeajjjjjkkjjjjjaeeeeeeeaaaaccaaaccacccaa",
+  "abbaaaabbeebbbbbbbaeeeeeeeajjjjjkkjjjjjaeeeeeeeaccaccaaacaacccaa",
+  "aaabbbbbbbbbbbbbbaaeeeeeeeajjjjjkkjjjjjaeeeeeeeaccccaacaaaaaaaaa",
+  "aaabbbbbbbbbbbbbbbaeeeeeeeajjjjjkkjjjjjaeeeeeeeaccccaaaacaaaaaaa",
+  "aabbbbbbabbbbbbbbbbeeeeeeeajjjjjkkjjjjjaeeeeeeeacccaaaacccaaaaaa",
+  "abbbbbaaaabbbbbbbbbeeeeeeeajjjjjkkjjjjjaeeeeeeeaccaacaacccaacaaa",
+  "abbbaaaaaaabbbbbbbbeeeeeeeaiiiiiiiiiiiiaeeeeeeeacaaacaacccccccaa",
+  "abbbbbaaaaabbbbbbbbelmmmneaaaaaeeeeaaaaaelmmmneaaaaaaaaaaaaaaaaa",
+  "aeeeeeeeeeeeeeeeeeeeopqpreeeeeeeeeeeeeeeeopqpreeeeeeeeeeeeeeeeea",
+  "ammmmmmmmmmmmmmmmmmmmsssmmmmmmmmmmmmmmmmmmsssmmmmmmmmmmmmmmmmmma",
+  "appppppppppppppppppptppptpppppppppppppppptppptpppppppppppppppppa",
+  "appppppppppppppppppptppptpppppppppppppppptppptpppppppppppppppppa",
+  "auuuuuuuuuuuuuuuuuuutppptuuuuuuuuuuuuuuuutppptuuuuuuuuuuuuuuuuua",
+  "appppppppppppppppppptppptpppppppppppppppptppptpppppppppppppppppa",
+  "appppppppppppppppppptppptpppppppppppppppptppptpppppppppppppppppa",
+  "avvvvvvvvvvvvvvvvvvvgsssvvvvvvvvvvvvvvvvvvsssvvvvvvvvvvvvvvvvvva",
+  "aeeeeeeeeeeeeeeeeeeeopqpreeeeeeeeeeeeeeeeopqpreeeeeeeeeeeeeeeeea",
+  "abbbbbbbbbbbbbbbbbbeopqpreffffffffffffffeopqprebbbbbbbbbbbbbbbba",
+  "abddddddddddddddddbeopqpreffffffffffffffeopqgrebddddddddddddddba",
+  "abddddddddddddddddbeopqpreffffffffffffffeopqprebddddddddddddddba",
+  "aaaaaaaaabbbbbbaaaaeopqpreaaaaaaaaaaaaabeopqpreaaaabbbaaaaaabbba",
+  "aaabbbbbabbbbbbbbbbeopqpreaaaaaaaabbbbbbeopqpreaaaaaaaaaaabbbbba",
+  "aaabbbbbbbbbbbbbbbbeopqpreaaaaaabbbbbbbbeopqpreaaaaaaaabbbbbbbba",
+  "aaabbbbaaabbbbbbbbbeopqpreaaaaaabbbbbbbbeopqpreaaaaaaaaabbbbbbba",
+  "abaaaaaaaabbbbbbbbaeopqpreaaaaaabbbbbbbaeopqpreaaaaaaaaabbbbbbba",
+  "abaaaaaaaabbbbbbaaaeopqpreaaaaaabbbbbbbaeopqpreaaaaaaaaabbbbbbaa",
+  "ammmmmmmmmmmmmmmmmmmmpqpmmmmmmmmmmmmmmmmmmpqpmmmmmmmmmmmmmmmmmma",
+  "appppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppa",
+  "apppppgpppppppppppppppppppppppppppppppppppppppppppppppppppgppppa",
+  "avvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvva",
+  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
  ],
  "objects": [
-  "gYTgtggtgTTTgggYTgYYggYYYtYTgYgTgTTYtYTTgYTYtggYtgYTYgTgYgTY",
-  "Y                                                          t",
-  "Y                       MMMMMMMMMM                         t",
-  "Y  ryu  qoe        T    WWWWWWWWWW                         Y",
-  "Y  hjk  asd    T        WWWWWWWWWW T                       Y",
-  "g  vbn  zxz           T WWWWWWWWWW                         T",
-  "T                       WWWWWWWWWW                         t",
-  "Y                                                          t",
-  "Y           S                                              t",
-  "Y      m                            T                      t",
-  "g           B                                              T",
-  "T                                                          Y",
-  "Y                                                          t",
-  "g                                                          t",
-  "T                        FfffG FfffffG                     Y",
-  "t T                                                        g",
-  "Y            B         B                                   t",
-  "T                                                          T",
-  "t               m                                          Y",
-  "t  qoe   ryu                                               Y",
-  "Y  asd   hjk  T         m                                  T",
-  "Y  zxz   vbn        t                                      t",
-  "g                                                          Y",
-  "Y                 m                                        g",
-  "Y                                                          g",
-  "Y                                                          g",
-  "g                                                          T",
-  "g                                                          t",
-  "t                                                          T",
-  "g                                                          g",
-  "t                                                          T",
-  "g                                                          Y",
-  "Y                                                          t",
-  "TgTYtgttTtYYggtTttggYtTtTYTgTTtYgTgYTTTtYtYYggTgYYYgTtYYYTTY"
+  "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww      ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                               ",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                         xxxxxxxxxxxxxx       yxxxxxxxxxxxxxxyw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         y            y                      yw",
+  "w                         y            y                      yw",
+  "w                         y            y                      yw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         y            y       y              yw",
+  "w                         yxxxx    xxxxy       yxxxxxxxxxxxxxxxw",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "w                                                              w",
+  "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
  ],
  "entities": [
   {
    "type": "spawn",
    "id": "start",
    "pos": [
-    4,
-    7
+    3.5,
+    9
    ]
   },
   {
-   "type": "spawn",
-   "id": "ship",
+   "type": "prop",
+   "sprite": "bld_e_home_andres",
    "pos": [
-    31,
-    23
-   ]
-  },
-  {
-   "type": "npc",
-   "id": "lucia",
-   "pos": [
-    26,
+    3.5,
     8
    ],
-   "facing": "down"
+   "solid": [
+    4,
+    5
+   ],
+   "light": {
+    "color": "#ffb070",
+    "offset": [
+     0,
+     -20
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_house_3a",
+   "pos": [
+    8.0,
+    8
+   ],
+   "solid": [
+    3,
+    4
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_house_3b",
+   "pos": [
+    12.0,
+    8
+   ],
+   "solid": [
+    3,
+    4
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_house_4a",
+   "pos": [
+    16.5,
+    8
+   ],
+   "solid": [
+    4,
+    5
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    20,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    22,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    24,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    21,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_tree",
+   "pos": [
+    23,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -40
+    ],
+    "scale": 1.2,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_vault",
+   "pos": [
+    30.5,
+    8
+   ],
+   "solid": [
+    10,
+    6
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -24
+    ],
+    "scale": 3.0,
+    "energy": 0.8
+   }
   },
   {
    "type": "scan",
    "id": "seed_vault",
    "pos": [
-    28.5,
-    6
+    30.5,
+    9
    ],
-   "sprite": "vault_door"
+   "radius": 30
+  },
+  {
+   "type": "npc",
+   "id": "lucia",
+   "pos": [
+    28,
+    10
+   ],
+   "facing": "down"
   },
   {
    "type": "item",
    "id": "the_seed",
    "pos": [
-    31,
-    8
+    33,
+    10
    ],
    "sprite": "seed_chest",
    "prompt": "Tomar La Semilla",
@@ -275,291 +426,72 @@
     },
     {
      "who": "hal",
-     "text": "Cofre asegurado en la mochila. Siguiente paso: la terminal de la plataforma de lanzamiento, al sureste."
+     "text": "Cofre asegurado en la mochila. Siguiente paso: la terminal del puerto espacial, al sur del paseo."
     }
    ]
   },
   {
-   "type": "prop",
-   "sprite": "greenhouse_dead",
+   "type": "light",
+   "id": "light_vault",
    "pos": [
-    18,
-    8
-   ],
-   "solid": [
-    3,
-    1
-   ]
-  },
-  {
-   "type": "scan",
-   "id": "earth_dead_plant",
-   "pos": [
-    21,
-    9
-   ],
-   "sprite": "plant_dead"
-  },
-  {
-   "type": "prop",
-   "sprite": "plant_dead",
-   "pos": [
-    15,
-    9
-   ]
-  },
-  {
-   "type": "scan",
-   "id": "earth_air_sensor",
-   "pos": [
-    6,
-    15
-   ],
-   "sprite": "sensor",
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "solar_panel",
-   "pos": [
-    8,
-    15
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "sign",
-   "id": "sign_town",
-   "pos": [
-    12,
-    8
-   ],
-   "prompt": "Leer el cartel",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "«Barrio Semilla. Población: 312. Cúpula de aire más cercana: 4 km.»"
-    },
-    {
-     "who": "hal",
-     "text": "Antes de La Marchitez, este barrio tenía un parque con 200 árboles."
-    }
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "launch_pad",
-   "pos": [
-    31,
-    22
-   ],
-   "z": -1
-  },
-  {
-   "type": "ship",
-   "id": "astra",
-   "pos": [
-    31,
-    21
-   ],
-   "prompt": "Subir a ASTRA y despegar",
-   "radius": 34
-  },
-  {
-   "type": "terminal",
-   "id": "launch_terminal",
-   "challenge_id": "launch_sequence",
-   "pos": [
-    27,
-    17
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "locked_text": "La terminal de despegue necesita que primero tengas La Semilla."
-  },
-  {
-   "type": "prop",
-   "sprite": "antenna",
-   "pos": [
-    35,
-    17
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    11,
-    6
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    14,
-    6
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    20,
-    6
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    36,
-    12
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    2,
-    17
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    13,
-    21
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    22,
-    18
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    7,
-    23
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "dead_tree",
-   "pos": [
-    33,
+    30.5,
     10
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_shop",
-   "pos": [
-    44.5,
-    9
-   ],
-   "solid": [
-    4,
-    2
-   ],
-   "light": {
-    "color": "#7dff9a",
-    "offset": [
-     0,
-     -47
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "door_earth_shop",
-   "label": "El Último Brote",
-   "prompt": "Entrar en El Último Brote",
-   "target": "earth_shop",
-   "spawn": "entrance",
-   "radius": 26
-  },
-  {
-   "type": "spawn",
-   "id": "shop_door",
-   "pos": [
-    44.5,
-    10
-   ]
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_a",
-   "pos": [
-    52,
-    9
-   ],
-   "solid": [
-    3,
-    2
    ],
    "light": {
     "color": "#f4d35e",
     "offset": [
      0,
-     -43
+     -10
     ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
+    "scale": 3.2,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_kiosk_2",
+   "pos": [
+    37.5,
+    8
+   ],
+   "solid": [
+    2,
+    3
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_apt_5a",
+   "pos": [
+    43.0,
+    8
+   ],
+   "solid": [
+    5,
+    8
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -50
+    ],
+    "scale": 2.0,
+    "energy": 0.6,
+    "flicker": true
+   }
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_4a",
+   "pos": [
+    48.5,
+    8
+   ],
+   "solid": [
+    4,
+    5
+   ],
    "id": "house_okafor",
    "prompt": "Llamar a la puerta",
    "lines": [
@@ -576,23 +508,23 @@
   },
   {
    "type": "door",
-   "sprite": "bld_earth_house_b",
+   "sprite": "bld_e_apt_5b",
    "pos": [
-    56,
-    9
+    54.0,
+    8
    ],
    "solid": [
-    3,
-    2
+    5,
+    7
    ],
    "light": {
-    "color": "#ff3ea5",
+    "color": "#3de7c9",
     "offset": [
      0,
-     -51
+     -50
     ],
-    "scale": 2.3,
-    "energy": 0.75
+    "scale": 2.0,
+    "energy": 0.6
    },
    "id": "house_lindqvist",
    "prompt": "Llamar a la puerta",
@@ -610,32 +542,1706 @@
   },
   {
    "type": "prop",
-   "sprite": "bld_earth_ruin",
+   "sprite": "bld_e_tower_6",
    "pos": [
-    43,
-    20
+    60.5,
+    8
    ],
    "solid": [
-    3,
+    6,
+    11
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -100
+    ],
+    "scale": 3.0,
+    "energy": 0.7,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "fountain_dry",
+   "pos": [
+    9.5,
+    17
+   ],
+   "solid": [
+    2,
     2
    ],
    "light": {
     "color": "#3de7c9",
     "offset": [
      0,
-     -35
+     -12
     ],
-    "scale": 2.3,
-    "energy": 0.75,
+    "scale": 1.6,
+    "energy": 0.5
+   }
+  },
+  {
+   "type": "sign",
+   "id": "sign_town",
+   "pos": [
+    11,
+    13
+   ],
+   "sprite": "sign_arrow",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Leer el cartel",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "«Parque Marchito. Barrio Semilla. Población: 312. Cúpula de aire más cercana: 4 km.»"
+    },
+    {
+     "who": "hal",
+     "text": "Antes de La Marchitez, este parque tenía 200 árboles. Hoy quedan troncos secos."
+    }
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_greenhouse_4",
+   "pos": [
+    3.5,
+    15
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -14
+    ],
+    "scale": 2.0,
+    "energy": 0.5,
+    "flicker": true
+   }
+  },
+  {
+   "type": "scan",
+   "id": "earth_dead_plant",
+   "pos": [
+    6,
+    17
+   ],
+   "sprite": "plant_dead"
+  },
+  {
+   "type": "scan",
+   "id": "earth_air_sensor",
+   "pos": [
+    15,
+    14
+   ],
+   "sprite": "sensor",
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_sensor",
+   "pos": [
+    15,
+    14
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -8
+    ],
+    "scale": 1.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_panel",
+   "pos": [
+    16,
+    13
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "amaru",
+   "pos": [
+    4,
+    18
+   ],
+   "facing": "right",
+   "wander": 1.5
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    7,
+    14
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    7,
+    19
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    12,
+    19
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    2,
+    19
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    15,
+    18
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    16,
+    19
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    13,
+    13
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    7,
+    13
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    14,
+    17
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    6,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    6,
+    14
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    15,
+    16
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    16,
+    18
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    12,
+    17
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    1,
+    18
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    7,
+    15
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "launch_pad",
+   "pos": [
+    32.5,
+    20
+   ],
+   "z": -1
+  },
+  {
+   "type": "ship",
+   "id": "astra",
+   "pos": [
+    32.5,
+    19
+   ],
+   "prompt": "Subir a ASTRA y despegar",
+   "radius": 34
+  },
+  {
+   "type": "spawn",
+   "id": "ship",
+   "pos": [
+    32.5,
+    22
+   ]
+  },
+  {
+   "type": "terminal",
+   "id": "launch_terminal",
+   "challenge_id": "launch_sequence",
+   "pos": [
+    28,
+    22
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "locked_text": "La terminal de despegue necesita que primero tengas La Semilla."
+  },
+  {
+   "type": "light",
+   "id": "light_terminal",
+   "pos": [
+    28,
+    22
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.5,
+    "energy": 0.9
+   }
+  },
+  {
+   "type": "service",
+   "id": "service_earth",
+   "pos": [
+    37,
+    22
+   ],
+   "sprite": "service_pump",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Estación de servicio · AgroNet",
+   "rate": 0.5,
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -22
+    ],
+    "scale": 1.4,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_pad",
+   "pos": [
+    32.5,
+    18
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 4.0,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "antenna_small",
+   "pos": [
+    37,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#e0283c",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 0.8,
+    "energy": 0.9,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_stack",
+   "pos": [
+    28,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    29,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_stack",
+   "pos": [
+    36,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bollard_light",
+   "pos": [
+    27,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 0.8,
+    "energy": 0.8,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bollard_light",
+   "pos": [
+    38,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 0.8,
+    "energy": 0.8,
     "flicker": true
    }
   },
   {
    "type": "sign",
-   "id": "holo_agronet_east",
+   "id": "sign_scrapyard",
+   "pos": [
+    46,
+    18
+   ],
+   "sprite": "sign_arrow",
+   "solid": [
+    1,
+    1
+   ],
+   "prompt": "Leer el cartel",
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -16
+    ],
+    "scale": 1.2,
+    "energy": 0.8,
+    "flicker": true
+   },
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Cartel pintado a mano: «Chatarrería de Chispa. Si se rompe, se arregla»."
+    },
+    {
+     "who": "hal",
+     "text": "Reutilizar piezas ahorra energía y materiales: es lo contrario de tirar."
+    }
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "zoe",
+   "pos": [
+    53,
+    19
+   ],
+   "facing": "left",
+   "wander": 1.5
+  },
+  {
+   "type": "prop",
+   "sprite": "scrap_pile",
+   "pos": [
+    57.5,
+    16
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "scrap_pile",
+   "pos": [
+    59.5,
+    20
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "scrap_pile",
+   "pos": [
+    55.5,
+    23
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "scrap_pile",
+   "pos": [
+    50.5,
+    23
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_stack",
+   "pos": [
+    50,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_rust",
+   "pos": [
+    51,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_toxic",
+   "pos": [
+    60,
+    15
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -8
+    ],
+    "scale": 0.8,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "trash_robot_dock",
+   "pos": [
+    49,
+    19
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 0.8,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "vendor_cart",
+   "pos": [
+    57,
+    19
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    59,
+    22
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    57,
+    24
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    54,
+    24
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    53,
+    21
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    52,
+    24
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_apt_4b",
+   "pos": [
+    2.5,
+    25
+   ],
+   "solid": [
+    4,
+    6
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -50
+    ],
+    "scale": 2.0,
+    "energy": 0.6,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_ruin_4",
+   "pos": [
+    6.5,
+    25
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_shop",
+   "pos": [
+    11.0,
+    25
+   ],
+   "solid": [
+    5,
+    6
+   ],
+   "light": {
+    "color": "#7dff9a",
+    "offset": [
+     0,
+     -40
+    ],
+    "scale": 2.4,
+    "energy": 0.8
+   },
+   "id": "door_earth_shop",
+   "label": "El Último Brote",
+   "prompt": "Entrar en El Último Brote",
+   "target": "earth_shop",
+   "spawn": "entrance",
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_kiosk_2",
+   "pos": [
+    14.5,
+    25
+   ],
+   "solid": [
+    2,
+    3
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_house_3a",
+   "pos": [
+    17.0,
+    25
+   ],
+   "solid": [
+    3,
+    4
+   ]
+  },
+  {
+   "type": "spawn",
+   "id": "shop_door",
+   "pos": [
+    11.0,
+    26
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_3a",
+   "pos": [
+    3.0,
+    43
+   ],
+   "solid": [
+    3,
+    4
+   ],
+   "id": "house_quispe",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Quispe."
+    },
+    {
+     "who": "hal",
+     "text": "Amaru vive aquí. En la ventana hay una planta de plástico… y una de verdad, muy pequeña."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_3b",
+   "pos": [
+    7.0,
+    43
+   ],
+   "solid": [
+    3,
+    4
+   ],
+   "id": "house_mateo",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia de Mateo."
+    },
+    {
+     "who": "hal",
+     "text": "Dibujo pegado en el cristal: un cohete, una estrella y la palabra «ANDRÉS»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_ruin_4",
+   "pos": [
+    11.5,
+    43
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_apt_4a",
+   "pos": [
+    16.5,
+    43
+   ],
+   "solid": [
+    4,
+    7
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_apt_4b",
+   "pos": [
+    27.5,
+    43
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_4a",
+   "pos": [
+    32.5,
+    43
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "id": "house_ruiz",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Ruiz."
+    },
+    {
+     "who": "hal",
+     "text": "Nadie responde. Por la rendija sale olor a sopa de algas."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_apt_4b",
+   "pos": [
+    37.5,
+    43
+   ],
+   "solid": [
+    4,
+    6
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_3b",
+   "pos": [
+    48.0,
+    43
+   ],
+   "solid": [
+    3,
+    4
+   ],
+   "id": "house_nakamura",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia Nakamura."
+    },
+    {
+     "who": "hal",
+     "text": "Un letrero: «Se reparan visores y radios. Pregunte por la abuela Nakamura»."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_ruin_3",
+   "pos": [
+    52.0,
+    43
+   ],
+   "solid": [
+    3,
+    5
+   ]
+  },
+  {
+   "type": "door",
+   "sprite": "bld_e_house_4a",
+   "pos": [
+    56.5,
+    43
+   ],
+   "solid": [
+    4,
+    5
+   ],
+   "id": "house_ramiro",
+   "prompt": "Llamar a la puerta",
+   "lines": [
+    {
+     "who": "hal",
+     "text": "Casa de la familia de Don Ramiro."
+    },
+    {
+     "who": "hal",
+     "text": "El tendero vive aquí… y guarda las cajas de repuesto de El Último Brote."
+    }
+   ],
+   "radius": 26
+  },
+  {
+   "type": "prop",
+   "sprite": "bld_e_kiosk_2",
+   "pos": [
+    60.5,
+    43
+   ],
+   "solid": [
+    2,
+    3
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "mateo",
+   "pos": [
+    12,
+    44
+   ],
+   "facing": "down",
+   "wander": 2
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_tree",
+   "pos": [
+    7,
+    36
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    11,
+    37
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_tree",
+   "pos": [
+    11,
+    36
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    5,
+    37
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "solar_tree",
+   "pos": [
+    53,
+    37
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    52,
+    36
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    48,
+    36
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    48,
+    37
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    6,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    12,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    18,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    24,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    36,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    42,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    60,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    9,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    15,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    21,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    27,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    33,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    39,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
    "pos": [
     45,
-    15
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_hydro",
+   "pos": [
+    51,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bench_holo",
+   "pos": [
+    57,
+    12
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    5,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    19,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    26,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    33,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    40,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    47,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    54,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    61,
+    26
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    8,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    15,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    29,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    36,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    50,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    57,
+    34
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.2,
+    "energy": 0.7
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "charge_post",
+   "pos": [
+    8,
+    27
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    17,
+    27
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydrant_water",
+   "pos": [
+    26,
+    27
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "charge_post",
+   "pos": [
+    35,
+    27
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydrant_water",
+   "pos": [
+    53,
+    27
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sign",
+   "id": "holo_agronet_east",
+   "pos": [
+    48,
+    34
    ],
    "sprite": "holo_agronet",
    "solid": [
@@ -668,8 +2274,8 @@
    "type": "sign",
    "id": "vending_air",
    "pos": [
-    51,
-    12
+    20,
+    26
    ],
    "sprite": "vending_air",
    "solid": [
@@ -701,8 +2307,8 @@
    "type": "sign",
    "id": "holo_air_east",
    "pos": [
-    51,
-    16
+    56,
+    34
    ],
    "sprite": "holo_air",
    "solid": [
@@ -735,499 +2341,53 @@
    ]
   },
   {
-   "type": "prop",
-   "sprite": "lamp_cyan",
-   "pos": [
-    46,
-    4
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_pink",
-   "pos": [
-    50,
-    19
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_cyan",
-   "pos": [
-    46,
-    25
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "cable_pole",
-   "pos": [
-    41,
-    13
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "cable_pole",
-   "pos": [
-    55,
-    17
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
    "type": "sign",
-   "id": "sign_scrapyard",
+   "id": "holo_antihuman_earth",
    "pos": [
-    51,
-    20
+    8,
+    34
    ],
-   "sprite": "crate",
+   "sprite": "holo_antihuman",
    "solid": [
     1,
     1
    ],
-   "prompt": "Leer el cartel",
+   "prompt": "Mirar la pintada",
    "light": {
-    "color": "#ff3ea5",
+    "color": "#e0283c",
     "offset": [
      0,
-     -10
+     -30
     ],
-    "scale": 1.2,
-    "energy": 0.8,
+    "scale": 2.2,
+    "energy": 0.9,
     "flicker": true
    },
    "lines": [
     {
      "who": "hal",
-     "text": "Cartel pintado a mano: «Chatarrería de Chispa. Si se rompe, se arregla»."
+     "text": "Pintada holográfica: «LA TIERRA RESPIRA MEJOR SIN HUMANOS. — LOS ANTIHUMANISTAS»."
+    },
+    {
+     "who": "andres",
+     "text": "¿Quiénes son?"
     },
     {
      "who": "hal",
-     "text": "Reutilizar piezas ahorra energía y materiales: es lo contrario de tirar."
-    }
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "scrap_pile",
-   "pos": [
-    52.5,
-    25
-   ],
-   "solid": [
-    2,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "scrap_pile",
-   "pos": [
-    56.5,
-    26
-   ],
-   "solid": [
-    2,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "scrap_pile",
-   "pos": [
-    54.5,
-    28
-   ],
-   "solid": [
-    2,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "barrel_rust",
-   "pos": [
-    57,
-    22
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "prop",
-   "sprite": "barrel_toxic",
-   "pos": [
-    50,
-    24
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#7dff9a",
-    "offset": [
-     0,
-     -8
-    ],
-    "scale": 0.8,
-    "energy": 0.6
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "crate",
-   "pos": [
-    57,
-    29
-   ],
-   "solid": [
-    1,
-    1
-   ]
-  },
-  {
-   "type": "npc",
-   "id": "zoe",
-   "pos": [
-    54,
-    22
-   ],
-   "facing": "down",
-   "wander": 1.5
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_a",
-   "pos": [
-    6,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -43
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "house_quispe",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia Quispe."
+     "text": "Un clan de humanos y máquinas que no quiere que la humanidad se reconstruya. Sabotean invernaderos y naves."
     },
     {
      "who": "hal",
-     "text": "Amaru vive aquí. En la ventana hay una planta de plástico… y una de verdad, muy pequeña."
+     "text": "Es verdad que las personas dañamos el clima. Pero también podemos repararlo: para eso llevamos La Semilla."
     }
-   ],
-   "radius": 26
-  },
-  {
-   "type": "prop",
-   "sprite": "bld_earth_ruin",
-   "pos": [
-    11,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -35
-    ],
-    "scale": 2.3,
-    "energy": 0.75,
-    "flicker": true
-   }
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_b",
-   "pos": [
-    16,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -51
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "house_mateo",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia de Mateo."
-    },
-    {
-     "who": "hal",
-     "text": "Dibujo pegado en el cristal: un cohete, una estrella y la palabra «ANDRÉS»."
-    }
-   ],
-   "radius": 26
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_a",
-   "pos": [
-    26,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#f4d35e",
-    "offset": [
-     0,
-     -43
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "house_ruiz",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia Ruiz."
-    },
-    {
-     "who": "hal",
-     "text": "Nadie responde. Por la rendija sale olor a sopa de algas."
-    }
-   ],
-   "radius": 26
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_b",
-   "pos": [
-    31,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -51
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "house_nakamura",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia Nakamura."
-    },
-    {
-     "who": "hal",
-     "text": "Un letrero: «Se reparan visores y radios. Pregunte por la abuela Nakamura»."
-    }
-   ],
-   "radius": 26
-  },
-  {
-   "type": "prop",
-   "sprite": "bld_earth_ruin",
-   "pos": [
-    36,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#f4d35e",
-    "offset": [
-     0,
-     -35
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   }
-  },
-  {
-   "type": "door",
-   "sprite": "bld_earth_house_a",
-   "pos": [
-    42,
-    32
-   ],
-   "solid": [
-    3,
-    2
-   ],
-   "light": {
-    "color": "#7dff9a",
-    "offset": [
-     0,
-     -43
-    ],
-    "scale": 2.3,
-    "energy": 0.75
-   },
-   "id": "house_ramiro",
-   "prompt": "Llamar a la puerta",
-   "lines": [
-    {
-     "who": "hal",
-     "text": "Casa de la familia de Don Ramiro."
-    },
-    {
-     "who": "hal",
-     "text": "El tendero vive encima de su tienda… y aquí guarda las cajas de repuesto."
-    }
-   ],
-   "radius": 26
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_pink",
-   "pos": [
-    9,
-    25
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_cyan",
-   "pos": [
-    23,
-    25
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#3de7c9",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
-  },
-  {
-   "type": "prop",
-   "sprite": "lamp_pink",
-   "pos": [
-    34,
-    25
-   ],
-   "solid": [
-    1,
-    1
-   ],
-   "light": {
-    "color": "#ff3ea5",
-    "offset": [
-     0,
-     -30
-    ],
-    "scale": 2.0,
-    "energy": 0.65
-   }
+   ]
   },
   {
    "type": "sign",
    "id": "holo_agronet_south",
    "pos": [
-    28,
-    25
+    26,
+    35
    ],
    "sprite": "holo_agronet",
    "solid": [
@@ -1257,146 +2417,1684 @@
    ]
   },
   {
-   "type": "npc",
-   "id": "mateo",
+   "type": "prop",
+   "sprite": "tram_stop",
    "pos": [
-    13,
-    26
+    32,
+    34
    ],
-   "facing": "down",
-   "wander": 2
-  },
-  {
-   "type": "npc",
-   "id": "amaru",
-   "pos": [
-    10,
-    17
-   ],
-   "facing": "left",
-   "wander": 1
-  },
-  {
-   "type": "light",
-   "id": "light_vault",
-   "pos": [
-    28.5,
-    7
-   ],
-   "light": {
-    "color": "#f4d35e",
-    "offset": [
-     0,
-     -10
-    ],
-    "scale": 3.0,
-    "energy": 0.8
-   }
-  },
-  {
-   "type": "light",
-   "id": "light_pad",
-   "pos": [
-    31,
-    20
+   "solid": [
+    3,
+    1
    ],
    "light": {
     "color": "#3de7c9",
     "offset": [
      0,
-     0
+     -24
     ],
-    "scale": 4.0,
-    "energy": 0.8
+    "scale": 1.8,
+    "energy": 0.7
    }
   },
   {
-   "type": "light",
-   "id": "light_terminal",
+   "type": "prop",
+   "sprite": "kiosk_info",
    "pos": [
-    27,
-    17
+    37,
+    34
+   ],
+   "solid": [
+    1,
+    1
    ],
    "light": {
     "color": "#3de7c9",
     "offset": [
      0,
-     -10
+     -16
     ],
-    "scale": 1.5,
-    "energy": 0.9
+    "scale": 1.0,
+    "energy": 0.7
    }
   },
   {
-   "type": "light",
-   "id": "light_houses",
+   "type": "prop",
+   "sprite": "stall_tech",
    "pos": [
-    7,
-    6
+    30.5,
+    36
+   ],
+   "solid": [
+    2,
+    1
    ],
    "light": {
-    "color": "#ffb070",
+    "color": "#3de7c9",
     "offset": [
      0,
-     0
+     -14
     ],
-    "scale": 3.0,
-    "energy": 0.6
+    "scale": 1.4,
+    "energy": 0.7,
+    "flicker": true
    }
   },
   {
-   "type": "light",
-   "id": "light_south_houses",
+   "type": "prop",
+   "sprite": "stall_plants",
    "pos": [
-    7,
-    21
+    34.5,
+    36
    ],
-   "light": {
-    "color": "#ffb070",
-    "offset": [
-     0,
-     0
-    ],
-    "scale": 3.0,
-    "energy": 0.6
-   }
-  },
-  {
-   "type": "light",
-   "id": "light_greenhouse",
-   "pos": [
-    18,
-    8
+   "solid": [
+    2,
+    1
    ],
    "light": {
     "color": "#7dff9a",
     "offset": [
      0,
-     -8
+     -14
     ],
-    "scale": 2.0,
-    "energy": 0.5,
+    "scale": 1.4,
+    "energy": 0.7,
     "flicker": true
    }
   },
   {
-   "type": "light",
-   "id": "light_sensor",
+   "type": "prop",
+   "sprite": "stall_food",
    "pos": [
-    6,
-    15
+    37.5,
+    36
+   ],
+   "solid": [
+    2,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -14
+    ],
+    "scale": 1.4,
+    "energy": 0.7,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "vendor_cart",
+   "pos": [
+    24,
+    35
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -10
+    ],
+    "scale": 1.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    5,
+    44
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    29,
+    44
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    37,
+    44
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    45,
+    44
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    53,
+    44
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 2.0,
+    "energy": 0.6
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    7,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    16,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydrant_water",
+   "pos": [
+    25,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "bin_smart",
+   "pos": [
+    34,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    43,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "hydrant_water",
+   "pos": [
+    52,
+    47
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    19,
+    16
+   ],
+   "solid": [
+    1,
+    1
    ],
    "light": {
     "color": "#3de7c9",
     "offset": [
      0,
-     -8
+     -30
     ],
-    "scale": 1.2,
-    "energy": 0.7
+    "scale": 1.8,
+    "energy": 0.55
    }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    19,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    19,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    25,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    25,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    25,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    40,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    40,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    40,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    46,
+    16
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    46,
+    24
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "lamp_smart_e",
+   "pos": [
+    46,
+    40
+   ],
+   "solid": [
+    1,
+    1
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -30
+    ],
+    "scale": 1.8,
+    "energy": 0.55
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    21,
+    41
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    41,
+    17
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    45,
+    23
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    39,
+    12
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    42,
+    31
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    39,
+    35
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    21,
+    21
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    44,
+    35
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    12,
+    18
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    50,
+    26
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    59,
+    28
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    39,
+    9
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    61,
+    31
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    7,
+    15
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    46,
+    34
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    29,
+    28
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    39,
+    26
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle",
+   "pos": [
+    37,
+    35
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    36,
+    32
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    11,
+    10
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    21,
+    38
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    56,
+    10
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    24,
+    11
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_l",
+   "pos": [
+    23,
+    28
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    44,
+    45
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_puddle_s",
+   "pos": [
+    19,
+    10
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    62,
+    10
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    21,
+    12
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    4,
+    31
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    20,
+    13
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    23,
+    35
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    26,
+    37
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    56,
+    14
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    36,
+    12
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    57,
+    26
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    3,
+    38
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    56,
+    12
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    24,
+    44
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    4,
+    9
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    50,
+    37
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    14,
+    45
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack_b",
+   "pos": [
+    40,
+    11
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    39,
+    2
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    50,
+    26
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    51,
+    9
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    54,
+    14
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_crack",
+   "pos": [
+    1,
+    7
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_leaves",
+   "pos": [
+    22,
+    21
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "ac_unit",
+   "pos": [
+    11,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    2,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    12,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "ac_unit",
+   "pos": [
+    9,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "planter_dead",
+   "pos": [
+    2,
+    2
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "ac_unit",
+   "pos": [
+    39,
+    2
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    57,
+    1
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    40,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    48,
+    3
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tree_dead_big",
+   "pos": [
+    47,
+    1
+   ],
+   "solid": [
+    1,
+    1
+   ]
   }
  ],
+ "ambient_life": {
+  "movers": [
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "hover_taxi",
+     "hover_bus"
+    ],
+    "interval": [
+     2.2,
+     5.5
+    ],
+    "speed": 70,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      65,
+      28
+     ],
+     [
+      -2,
+      28
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "hover_taxi",
+     "hover_bus"
+    ],
+    "interval": [
+     2.2,
+     5.5
+    ],
+    "speed": 70,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      -2,
+      32
+     ],
+     [
+      65,
+      32
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "maglev_tram"
+    ],
+    "path": [
+     [
+      -8,
+      30
+     ],
+     [
+      71,
+      30
+     ]
+    ],
+    "interval": [
+     14,
+     24
+    ],
+    "speed": 95,
+    "altitude": 2,
+    "two_way": false
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      67,
+      45
+     ],
+     [
+      -3,
+      45
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      -3,
+      46
+     ],
+     [
+      67,
+      46
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      21,
+      26
+     ],
+     [
+      21,
+      44
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      23,
+      44
+     ],
+     [
+      23,
+      26
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      42,
+      26
+     ],
+     [
+      42,
+      44
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "hover_taxi",
+     "hover_van",
+     "delivery_drone"
+    ],
+    "interval": [
+     5.0,
+     11.0
+    ],
+    "speed": 55,
+    "altitude": 8,
+    "two_way": false,
+    "path": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      26
+     ]
+    ]
+   },
+   {
+    "kinds": [
+     "bot_cleaner"
+    ],
+    "path": [
+     [
+      3,
+      11
+     ],
+     [
+      60,
+      11
+     ]
+    ],
+    "count": 1,
+    "speed": 12,
+    "altitude": 0,
+    "loop": "pingpong",
+    "pause": [
+     1.0,
+     3.0
+    ]
+   },
+   {
+    "kinds": [
+     "bot_courier"
+    ],
+    "path": [
+     [
+      3,
+      33
+     ],
+     [
+      60,
+      33
+     ]
+    ],
+    "count": 1,
+    "speed": 22,
+    "altitude": 0,
+    "loop": "pingpong",
+    "pause": [
+     0.5,
+     2.0
+    ]
+   },
+   {
+    "kinds": [
+     "cargo_drone"
+    ],
+    "path": [
+     [
+      4,
+      6
+     ],
+     [
+      32,
+      17
+     ],
+     [
+      55,
+      19
+     ],
+     [
+      60,
+      4
+     ],
+     [
+      30,
+      3
+     ]
+    ],
+    "count": 2,
+    "speed": 28,
+    "altitude": 34,
+    "loop": "cycle"
+   },
+   {
+    "kinds": [
+     "delivery_drone"
+    ],
+    "path": [
+     [
+      14,
+      24
+     ],
+     [
+      14,
+      39
+     ],
+     [
+      50,
+      39
+     ],
+     [
+      50,
+      9
+     ],
+     [
+      14,
+      9
+     ]
+    ],
+    "count": 1,
+    "speed": 34,
+    "altitude": 26,
+    "loop": "cycle"
+   },
+   {
+    "kinds": [
+     "patrol_drone"
+    ],
+    "path": [
+     [
+      2,
+      30
+     ],
+     [
+      61,
+      30
+     ]
+    ],
+    "count": 1,
+    "speed": 20,
+    "altitude": 40,
+    "loop": "pingpong",
+    "pause": [
+     0.5,
+     1.5
+    ]
+   }
+  ],
+  "crowd": [
+   {
+    "path": [
+     [
+      2,
+      10
+     ],
+     [
+      61,
+      10
+     ]
+    ],
+    "count": 5,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Mi abuela dice que aquí antes había un parque con 200 árboles.",
+     "¿Has visto? ¡Están regando el huerto con agua de lluvia filtrada!",
+     "La lluvia ácida se forma con el humo de quemar carbón y petróleo.",
+     "Hoy la cúpula de aire funciona. ¡Qué alivio!",
+     "Dicen que en la Luna hay hielo en los cráteres que nunca ven el Sol."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      27
+     ],
+     [
+      61,
+      27
+     ]
+    ],
+    "count": 4,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "El tranvía maglev flota sobre imanes: casi no hace ruido.",
+     "AgroNet ha vuelto a subir el precio del aire embotellado…",
+     "¡Cuidado con los charcos, que pican!",
+     "Mi hermana trabaja en la cúpula de aire. Dice que las algas producen oxígeno.",
+     "¿Ese es el chico de la nave? ¡Suerte, Andrés!",
+     "Los aerotaxis funcionan con baterías que se cargan con luz solar."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      33
+     ],
+     [
+      61,
+      33
+     ]
+    ],
+    "count": 4,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "El tranvía maglev flota sobre imanes: casi no hace ruido.",
+     "AgroNet ha vuelto a subir el precio del aire embotellado…",
+     "¡Cuidado con los charcos, que pican!",
+     "Mi hermana trabaja en la cúpula de aire. Dice que las algas producen oxígeno.",
+     "¿Ese es el chico de la nave? ¡Suerte, Andrés!",
+     "Los aerotaxis funcionan con baterías que se cargan con luz solar."
+    ]
+   },
+   {
+    "path": [
+     [
+      26,
+      37
+     ],
+     [
+      39,
+      37
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     10,
+     16
+    ],
+    "pause": [
+     1.5,
+     5.0
+    ],
+    "barks": [
+     "¡Batidos de alga espirulina! ¡Tienen mucha proteína!",
+     "Se reparan visores, radios y robots. ¡Precio justo!",
+     "Semillas de verdad no quedan… solo esquejes de laboratorio."
+    ]
+   },
+   {
+    "path": [
+     [
+      2,
+      44
+     ],
+     [
+      61,
+      44
+     ]
+    ],
+    "count": 3,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Las plantas del balcón crecen mejor con luz de lámparas LED.",
+     "¿Sabías que un árbol puede dar oxígeno a dos personas?",
+     "Esta noche se ve Marte: es el punto rojizo sobre la torre."
+    ]
+   },
+   {
+    "path": [
+     [
+      3,
+      16
+     ],
+     [
+      16,
+      16
+     ]
+    ],
+    "count": 2,
+    "speed": [
+     10,
+     16
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "Mi abuela dice que aquí antes había un parque con 200 árboles.",
+     "¿Has visto? ¡Están regando el huerto con agua de lluvia filtrada!",
+     "La lluvia ácida se forma con el humo de quemar carbón y petróleo.",
+     "Hoy la cúpula de aire funciona. ¡Qué alivio!",
+     "Dicen que en la Luna hay hielo en los cráteres que nunca ven el Sol."
+    ]
+   },
+   {
+    "path": [
+     [
+      20,
+      14
+     ],
+     [
+      20,
+      43
+     ]
+    ],
+    "count": 2,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "El tranvía maglev flota sobre imanes: casi no hace ruido.",
+     "AgroNet ha vuelto a subir el precio del aire embotellado…",
+     "¡Cuidado con los charcos, que pican!",
+     "Mi hermana trabaja en la cúpula de aire. Dice que las algas producen oxígeno.",
+     "¿Ese es el chico de la nave? ¡Suerte, Andrés!",
+     "Los aerotaxis funcionan con baterías que se cargan con luz solar."
+    ]
+   },
+   {
+    "path": [
+     [
+      45,
+      14
+     ],
+     [
+      45,
+      43
+     ]
+    ],
+    "count": 2,
+    "speed": [
+     16,
+     26
+    ],
+    "pause": [
+     0.6,
+     4.0
+    ],
+    "barks": [
+     "El tranvía maglev flota sobre imanes: casi no hace ruido.",
+     "AgroNet ha vuelto a subir el precio del aire embotellado…",
+     "¡Cuidado con los charcos, que pican!",
+     "Mi hermana trabaja en la cúpula de aire. Dice que las algas producen oxígeno.",
+     "¿Ese es el chico de la nave? ¡Suerte, Andrés!",
+     "Los aerotaxis funcionan con baterías que se cargan con luz solar."
+    ]
+   }
+  ],
+  "sky": {
+   "kinds": [
+    "sky_shuttle",
+    "sky_hopper",
+    "sky_freighter"
+   ],
+   "interval": [
+    8,
+    18
+   ],
+   "speed": [
+    18,
+    34
+   ],
+   "rows": [
+    2,
+    44
+   ]
+  }
+ },
  "arrival_lines": [
   {
    "who": "hal",
@@ -1412,7 +4110,7 @@
   },
   {
    "who": "hal",
-   "text": "Llovizna ácida de nivel bajo y apagón en medio barrio. Por suerte, los letreros de neón nunca se apagan."
+   "text": "Llovizna ácida de nivel bajo. Los aerotaxis vuelan bajo por la Avenida Neón: mejor cruzar por los pasos de peatones."
   }
  ]
 }

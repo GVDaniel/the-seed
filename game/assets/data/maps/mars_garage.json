@@ -1,0 +1,481 @@
+{
+ "id": "mars_garage",
+ "region": "mars",
+ "display_name": "Taller de Bruno · Marte",
+ "tileset": "interior",
+ "void_color": "#0b0812",
+ "ambient": "#8a84a8",
+ "weather": "",
+ "dark": true,
+ "music": "mission",
+ "legend": {
+  ".": {
+   "tile": [
+    0,
+    1
+   ]
+  },
+  ",": {
+   "tile": [
+    2,
+    3
+   ]
+  },
+  ";": {
+   "tile": [
+    4,
+    5
+   ]
+  },
+  "r": {
+   "tile": 6
+  },
+  "x": {
+   "tile": 7
+  },
+  "#": {
+   "tile": 8,
+   "solid": true
+  },
+  "w": {
+   "tile": 9,
+   "solid": true
+  },
+  "c": {
+   "tile": 10,
+   "solid": true
+  },
+  "m": {
+   "tile": 11,
+   "solid": true
+  },
+  "s": {
+   "tile": 12,
+   "solid": true
+  },
+  "C": {
+   "tile": 13,
+   "solid": true
+  },
+  "S": {
+   "tile": 14,
+   "solid": true
+  },
+  "B": {
+   "tile": 15,
+   "solid": true
+  },
+  "a": {
+   "tile": 16
+  },
+  "b": {
+   "tile": 17
+  },
+  "e": {
+   "tile": 18
+  },
+  "u": {
+   "tile": 19
+  },
+  "g": {
+   "tile": 20
+  },
+  "l": {
+   "tile": 21
+  },
+  "y": {
+   "tile": 22
+  },
+  "z": {
+   "tile": 23
+  },
+  "h": {
+   "tile": 24
+  },
+  "d": {
+   "tile": 25
+  },
+  "P": {
+   "tile": 26,
+   "solid": true
+  },
+  "N": {
+   "tile": 27,
+   "solid": true
+  },
+  "O": {
+   "tile": 28,
+   "solid": true
+  },
+  "Q": {
+   "tile": 29,
+   "solid": true
+  },
+  "V": {
+   "tile": 30,
+   "solid": true
+  },
+  "K": {
+   "tile": 31,
+   "solid": true
+  }
+ },
+ "ground": [
+  ";;;;;;;;;;;;;;;;",
+  ";;;;;;;;;;;;;;;;",
+  ";eeeeeeeeeeeeee;",
+  ";;;;z;z;;;;;;;;;",
+  ";;;;;;;;z;;;;;;;",
+  ";;z;;;l;;;rrrr;;",
+  ";;z;;z;;;;rrrr;;",
+  ";;;;;;z;;drrrr;;",
+  ";;;;;;;;;;;;;;;;",
+  ";;;;;zzxx;hhhhh;",
+  ";;;;;;;;;;;;;;;;"
+ ],
+ "objects": [
+  "################",
+  "#SSSSSSSSKKPPKV#",
+  "#              #",
+  "#CCCCCCCC      #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "#              #",
+  "################"
+ ],
+ "entities": [
+  {
+   "type": "spawn",
+   "id": "entrance",
+   "pos": [
+    7.5,
+    7
+   ]
+  },
+  {
+   "type": "door",
+   "id": "exit",
+   "pos": [
+    7.5,
+    9
+   ],
+   "label": "Salida",
+   "prompt": "Salir a la colonia",
+   "target": "mars",
+   "spawn": "garage_door",
+   "radius": 18
+  },
+  {
+   "type": "npc",
+   "id": "bruno",
+   "pos": [
+    4,
+    2
+   ],
+   "facing": "down",
+   "radius": 46
+  },
+  {
+   "type": "prop",
+   "sprite": "plant_pot",
+   "pos": [
+    14,
+    2
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "light",
+   "id": "light_counter",
+   "pos": [
+    4.5,
+    3
+   ],
+   "light": {
+    "color": "#ffb070",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 3.0,
+    "energy": 0.9
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_room",
+   "pos": [
+    11.5,
+    6
+   ],
+   "light": {
+    "color": "#ff3ea5",
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 3.2,
+    "energy": 0.6,
+    "flicker": true
+   }
+  },
+  {
+   "type": "light",
+   "id": "light_exit",
+   "pos": [
+    7.5,
+    9
+   ],
+   "light": {
+    "color": "#3de7c9",
+    "offset": [
+     0,
+     -4
+    ],
+    "scale": 1.6,
+    "energy": 0.8
+   }
+  },
+  {
+   "type": "object",
+   "id": "mars_workbench",
+   "pos": [
+    11.5,
+    3
+   ],
+   "sprite": "workbench",
+   "solid": [
+    2,
+    1
+   ],
+   "done_flag": "engine_installed",
+   "prompt": "Instalar el motor de metano",
+   "locked_text": "El banco de trabajo de Bruno. Primero hace falta un motor que instalar.",
+   "use_lines": [
+    {
+     "who": "bruno",
+     "text": "¡Allá vamos! Quito el CX-50, ajusto los anclajes y conecto las tuberías de metano y oxígeno."
+    },
+    {
+     "who": "bruno",
+     "text": "Listo. El Corazón Rojo está montado… pero el tanque de metano está vacío."
+    },
+    {
+     "who": "hal",
+     "text": "Para fabricar metano necesitamos tres ingredientes: hidrógeno (del hielo), carbono (del CO₂) y un catalizador de níquel."
+    },
+    {
+     "who": "hal",
+     "text": "Pregunta en la colonia: Yusuf, Nia y Ada pueden ayudarnos. Son misiones secundarias, haz las que quieras primero."
+    }
+   ],
+   "done_lines": [
+    {
+     "who": "bruno",
+     "text": "El Corazón Rojo está bien sujeto. Ni una tuerca floja."
+    }
+   ]
+  },
+  {
+   "type": "object",
+   "id": "methane_distiller",
+   "pos": [
+    13.5,
+    7
+   ],
+   "sprite": "distiller_off",
+   "sprite_done": "distiller_on",
+   "solid": [
+    1,
+    1
+   ],
+   "done_flag": "methane_distilled",
+   "prompt": "Destilar metano",
+   "locked_text": "El destilador Sabatier de Bruno. Faltan ingredientes: hielo, CO₂ y níquel.",
+   "use_lines": [
+    {
+     "who": "hal",
+     "text": "Paso 1: electrólisis. El hielo derretido se separa en hidrógeno y oxígeno."
+    },
+    {
+     "who": "hal",
+     "text": "Paso 2: reacción de Sabatier. CO₂ + 4 H₂ → CH₄ + 2 H₂O, con el níquel como catalizador."
+    },
+    {
+     "who": "bruno",
+     "text": "¡Y el agua que sale vuelve al paso 1! Así no se desperdicia nada."
+    },
+    {
+     "who": "hal",
+     "text": "Tanque de metano y oxígeno: lleno. Casco revisado. ASTRA está lista."
+    }
+   ],
+   "done_lines": [
+    {
+     "who": "hal",
+     "text": "El destilador sigue goteando metano para la colonia. Ya no dependen de MarsCorp."
+    }
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "rover",
+   "pos": [
+    11.5,
+    7
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate",
+   "pos": [
+    2,
+    6
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_rust",
+   "pos": [
+    2,
+    7
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "screen_news",
+   "pos": [
+    11.5,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tool_board",
+   "pos": [
+    9.5,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "neon_taller",
+   "pos": [
+    13,
+    1
+   ],
+   "light": {
+    "color": "#f4d35e",
+    "offset": [
+     0,
+     -6
+    ],
+    "scale": 1.2,
+    "energy": 0.8,
+    "flicker": true
+   }
+  },
+  {
+   "type": "prop",
+   "sprite": "engine_block",
+   "pos": [
+    4.5,
+    6
+   ],
+   "solid": [
+    2,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "crate_marscorp",
+   "pos": [
+    1,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "barrel_water",
+   "pos": [
+    14,
+    9
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "cable_spool",
+   "pos": [
+    5,
+    8
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "tank_o2",
+   "pos": [
+    14,
+    4
+   ],
+   "solid": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    9,
+    5
+   ],
+   "z": -1
+  },
+  {
+   "type": "prop",
+   "sprite": "decal_oil",
+   "pos": [
+    4,
+    4
+   ],
+   "z": -1
+  }
+ ],
+ "arrival_lines": [
+  {
+   "who": "hal",
+   "text": "El Taller de Bruno: rovers desmontados, herramientas por todas partes y una radio demasiado alta."
+  }
+ ]
+}

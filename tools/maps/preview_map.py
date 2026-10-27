@@ -25,7 +25,12 @@ def tile_img(atlas, cols, idx):
 
 def main(map_id, out):
     data = json.load(open(os.path.join(GAME, "assets/data/maps", map_id + ".json")))
-    path, cols = ATLAS[data["tileset"]]
+    tileset = data["tileset"]
+    if tileset in ATLAS:
+        path, cols = ATLAS[tileset]
+    else:
+        manifest = json.load(open(os.path.join(GAME, "assets/art/tiles", tileset + ".json")))
+        path, cols = "assets/art/tiles/%s.png" % tileset, manifest["columns"]
     atlas = Image.open(os.path.join(GAME, path)).convert("RGBA")
     legend = data["legend"]
     h = len(data["ground"])
@@ -42,7 +47,7 @@ def main(map_id, out):
                 tile = tile_img(atlas, cols, idx)
                 img.alpha_composite(tile, (x * T, y * T))
     d = ImageDraw.Draw(img)
-    for e in sorted(data["entities"], key=lambda e: e["pos"][1]):
+    for e in sorted(data["entities"], key=lambda e: (e.get("z", 0), e["pos"][1])):
         px = int(e["pos"][0] * T + T / 2)
         py = int((e["pos"][1] + 1) * T)
         sprite = e.get("sprite")
@@ -64,7 +69,8 @@ def main(map_id, out):
                  "door": (255, 62, 165)}.get(e["type"])
         if color:
             d.rectangle([px - 2, py - 2, px + 2, py + 2], outline=color)
-    img = img.resize((img.width * 2, img.height * 2), Image.NEAREST)
+    scale = int(sys.argv[3]) if len(sys.argv) > 3 else 2
+    img = img.resize((img.width * scale, img.height * scale), Image.NEAREST)
     img.save(out)
     print(out)
 

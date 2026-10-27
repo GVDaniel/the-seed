@@ -124,8 +124,12 @@ func _on_buy() -> void:
 		return
 	if App.economy().buy(_shop.id, def.id):
 		App.sfx().play("pickup")
-		_status.text = "¡Comprado! HAL lo guardó en tu inventario." if def.effects.is_empty() \
-				else "¡Comprado! HAL instalará la mejora en ASTRA."
+		if not def.effects.is_empty():
+			_status.text = "¡Comprado! HAL instalará la mejora en ASTRA."
+		elif def.is_consumable():
+			_status.text = "¡Comprado! Úsalo desde HAL (Tab → Inventario)."
+		else:
+			_status.text = "¡Comprado! HAL lo guardó en tu inventario."
 	else:
 		App.sfx().play("error")
 		_status.text = App.economy().buy_block_reason(_shop.id, def.id)
@@ -142,7 +146,10 @@ static func _effect_text(def: ItemDef) -> String:
 	var names := {
 		"max_energy": "energía máxima", "max_speed": "velocidad máxima", "acceleration": "aceleración",
 		"energy_regen": "recarga de energía", "debris_damage": "daño por basura espacial",
+		"fuel_use": "consumo de combustible", "fuel_capacity": "capacidad del tanque",
 	}
+	if def.is_consumable():
+		return def.use_text()
 	var parts := PackedStringArray()
 	for key in def.effects.keys():
 		var pct := int(round((float(def.effects[key]) - 1.0) * 100.0))

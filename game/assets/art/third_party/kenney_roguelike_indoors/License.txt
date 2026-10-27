@@ -1,0 +1,17 @@
+	Roguelike Indoors
+
+	Created/distributed by Kenney (www.kenney.nl)
+	Pack page: https://kenney.nl/assets/roguelike-indoors
+
+			------------------------------
+
+	License: (Creative Commons Zero, CC0)
+	http://creativecommons.org/publicdomain/zero/1.0/
+
+	This content is free to use in personal, educational and commercial projects.
+	Support us by crediting Kenney or www.kenney.nl (this is not mandatory)
+
+			------------------------------
+
+	The Seed: hoja original sin modificar. Los recortes recoloreados que usa el juego
+	los genera tools/pixelart/third_party.py en art/props/ (prefijos city_ e in_).

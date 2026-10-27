@@ -1,0 +1,13 @@
+{
+  "id": "co2_tank",
+  "order": 11,
+  "category": "muestra",
+  "display_name": "Bombona de CO₂ marciano",
+  "description": "Aire de Marte comprimido por el compresor de Nia. Casi todo es dióxido de carbono.",
+  "fact": "La atmósfera de Marte es un 95 % dióxido de carbono (CO₂). El rover Perseverance llevó MOXIE, un aparato que sacó oxígeno de ese CO₂.",
+  "granted_by": {
+    "type": "interact",
+    "value": "co2_compressor"
+  },
+  "icon": "res://assets/art/items/co2_tank.png"
+}

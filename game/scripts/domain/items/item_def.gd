@@ -10,6 +10,8 @@ const CATEGORY_NAMES := {
 	"mejora": "Mejora de ASTRA",
 	"recuerdo": "Recuerdo",
 	"comida": "Comida y bebida",
+	"medicina": "Medicina",
+	"repuesto": "Repuesto de ASTRA",
 }
 
 var id: String = ""
@@ -25,6 +27,8 @@ var starter: bool = false
 var granted_by: Dictionary = {}
 ## Multiplicadores para ASTRA (ver ShipUpgrades).
 var effects: Dictionary = {}
+## Consumible: {"heal": n} cura a Andrés, {"repair": n} repara el casco de ASTRA.
+var use: Dictionary = {}
 
 
 static func from_dict(data: Dictionary) -> ItemDef:
@@ -41,7 +45,29 @@ static func from_dict(data: Dictionary) -> ItemDef:
 	def.granted_by = grant if typeof(grant) == TYPE_DICTIONARY else {}
 	var fx: Variant = data.get("effects", {})
 	def.effects = fx if typeof(fx) == TYPE_DICTIONARY else {}
+	var u: Variant = data.get("use", {})
+	def.use = u if typeof(u) == TYPE_DICTIONARY else {}
 	return def
+
+
+func is_consumable() -> bool:
+	return not use.is_empty() and not starter
+
+
+func heal_amount() -> int:
+	return int(use.get("heal", 0))
+
+
+func repair_amount() -> int:
+	return int(use.get("repair", 0))
+
+
+func use_text() -> String:
+	if heal_amount() > 0:
+		return "Usar: +%d de salud para Andrés" % heal_amount()
+	if repair_amount() > 0:
+		return "Usar: +%d %% de casco para ASTRA" % repair_amount()
+	return ""
 
 
 func category_name() -> String:

@@ -3,11 +3,11 @@
   "order": 22,
   "category": "mejora",
   "display_name": "Motor iónico",
-  "description": "Un propulsor de segunda mano del Mercado de Jezero. ASTRA acelera mejor y alcanza más velocidad.",
+  "description": "Un propulsor iónico de segunda mano del Mercado de Jezero. Ayuda al motor: ASTRA gasta un 25 % menos de combustible y corre algo más.",
   "fact": "Los motores iónicos empujan muy poco, pero durante meses. La sonda Dawn los usó para visitar los asteroides Vesta y Ceres.",
   "icon": "res://assets/art/items/ion_thruster.png",
   "effects": {
-    "max_speed": 1.25,
-    "acceleration": 1.2
+    "fuel_use": 0.75,
+    "max_speed": 1.1
   }
 }

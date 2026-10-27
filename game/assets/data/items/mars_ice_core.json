@@ -1,0 +1,9 @@
+{
+  "id": "mars_ice_core",
+  "order": 10,
+  "category": "muestra",
+  "display_name": "Testigo de hielo marciano",
+  "description": "Un cilindro de hielo sacado bajo el polvo. Con electricidad se separa en hidrógeno y oxígeno.",
+  "fact": "En 2008 la sonda Phoenix de la NASA excavó el suelo cerca del polo norte de Marte y encontró hielo de agua a pocos centímetros.",
+  "icon": "res://assets/art/items/mars_ice_core.png"
+}

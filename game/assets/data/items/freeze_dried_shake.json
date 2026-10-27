@@ -5,5 +5,8 @@
   "display_name": "Batido de fresa liofilizada",
   "description": "La especialidad del Bar Cráter: polvo rosa + agua del hielo lunar.",
   "fact": "La comida de los astronautas suele ir liofilizada: se le quita el agua para que pese menos y dure más.",
-  "icon": "res://assets/art/items/freeze_dried_shake.png"
+  "icon": "res://assets/art/items/freeze_dried_shake.png",
+  "use": {
+    "heal": 15
+  }
 }

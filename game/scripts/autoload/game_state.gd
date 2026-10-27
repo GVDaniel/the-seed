@@ -61,6 +61,15 @@ func add_item(item_id: String) -> bool:
 	return true
 
 
+func remove_item(item_id: String) -> bool:
+	var idx := items.find(item_id)
+	if idx < 0:
+		return false
+	items.remove_at(idx)
+	save_local()
+	return true
+
+
 func has_flag(flag: String) -> bool:
 	return world_flags.has(flag)
 

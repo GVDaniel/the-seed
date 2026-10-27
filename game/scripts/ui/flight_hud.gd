@@ -1,6 +1,6 @@
 class_name FlightHud
 extends CanvasLayer
-## HUD futurista de vuelo: telemetría, rango, objetivo y avisos.
+## HUD futurista de vuelo: telemetría, combustible, casco, objetivo y avisos.
 
 @export var ship_path: NodePath
 @export var director_path: NodePath
@@ -14,10 +14,15 @@ extends CanvasLayer
 @onready var _xp_label: Label = %XpLabel
 @onready var _toast: Label = %ToastLabel
 @onready var _lab_btn: Button = %LabButton
+@onready var _fuel_label: Label = %FuelLabel
+@onready var _fuel_bar: ProgressBar = %FuelBar
+@onready var _hull_label: Label = %HullLabel
+@onready var _hull_bar: ProgressBar = %HullBar
 
 var _ship: ShipController
 var _director: SpaceDirector
 var _toast_timer: float = 0.0
+var _warned_low_fuel: bool = false
 
 
 func _ready() -> void:
@@ -38,6 +43,8 @@ func _ready() -> void:
 	App.bus().experience_changed.connect(_on_xp)
 	App.bus().credits_changed.connect(func(_c: int) -> void: _on_xp(int(App.game_state().experience)))
 	_on_xp(int(App.game_state().get("experience")))
+	App.bus().ship_state_changed.connect(_refresh_ship)
+	_refresh_ship()
 
 
 func _process(delta: float) -> void:
@@ -53,6 +60,32 @@ func _on_telemetry(speed: float, energy: float, ship_name: String) -> void:
 	_energy.text = "NRG  %03d" % int(energy)
 	_energy_bar.max_value = _ship.stats.max_energy if _ship and _ship.stats else 100.0
 	_energy_bar.value = energy
+	_refresh_fuel()
+
+
+func _refresh_ship() -> void:
+	_refresh_fuel()
+	var ship := App.ship()
+	_hull_label.text = "CASCO  %d%%" % int(round(ship.hull))
+	_hull_bar.value = ship.hull_ratio()
+	_hull_label.modulate = Color(1, 0.45, 0.45) if ship.hull_ratio() < 0.35 else Color.WHITE
+
+
+func _refresh_fuel() -> void:
+	var ship := App.ship()
+	var ratio: float = ship.fuel_ratio()
+	if ship.is_empty():
+		_fuel_label.text = "RESERVA"
+	else:
+		_fuel_label.text = "COMB  %d/%d" % [int(ceil(ship.fuel)), int(round(ship.capacity()))]
+	_fuel_bar.value = ratio
+	var low := ratio < 0.2
+	_fuel_label.modulate = Color(1, 0.45, 0.45) if low else Color.WHITE
+	if low and not _warned_low_fuel:
+		_warned_low_fuel = true
+		_show_toast("HAL: combustible bajo. Reposta en una estación de servicio (surtidor dorado).")
+	elif not low:
+		_warned_low_fuel = false
 
 
 func _on_hint(text: String) -> void:
@@ -68,7 +101,7 @@ func _on_mode(mode: SpaceDirector.Mode) -> void:
 
 
 func _on_xp(total_xp: int) -> void:
-	_xp_label.text = "%s · XP %d · %d cr" % [App.game_state().rank_name(), total_xp, int(App.game_state().credits)]
+	_xp_label.text = "Nv %d · XP %d · %d cr" % [int(App.hero().level()), total_xp, int(App.game_state().credits)]
 
 
 func _show_toast(text: String) -> void:

@@ -1,16 +1,17 @@
 {
   "id": "bruno",
   "display_name": "Bruno",
-  "role": "Mecánico de rovers",
-  "home": "mars",
+  "role": "Mecánico de rovers y naves",
+  "home": "mars_garage",
   "group": "local",
   "order": 34,
   "portrait": "res://assets/art/portraits/bruno.png",
   "sprite": "res://assets/art/characters/bruno.png",
-  "bio": "Repara rovers en el taller de la colonia. Cresta verde, visor naranja y una llave en cada bolsillo.",
+  "bio": "Repara rovers y naves en el Taller de la colonia. Cresta verde, visor naranja y una llave en cada bolsillo.",
   "idle_lines": [
     "Las ruedas de los rovers se gastan con las rocas afiladas. El rover Curiosity tiene agujeros en las suyas.",
     "Los rovers reales se manejan desde la Tierra con retraso: la señal tarda entre 3 y 22 minutos en llegar.",
+    "Un motor de cohete no «empuja contra el aire»: lanza gas hacia atrás y la nave sale hacia delante. Es la tercera ley de Newton.",
     "Mi visor naranja filtra el polvo. Bueno… y también me queda genial."
   ]
 }
